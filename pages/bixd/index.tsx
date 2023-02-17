@@ -10,7 +10,7 @@ type Props = {
     posts: Post[]
 }
 
-export default function BixdIndex({ posts }: Props) {
+export default function BwuIndex({ posts }: Props) {
     return (
         <Layout>
             <Head>
@@ -23,7 +23,7 @@ export default function BixdIndex({ posts }: Props) {
                     <ul>
                         {posts.map((post) => (
                             <li key={post.slug}>
-                                <Link href={`/bixd/${post.slug}`}>
+                                <Link href={`${post.slug}`}>
                                     {post.title}
                                 </Link>
                             </li>

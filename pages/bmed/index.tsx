@@ -23,7 +23,7 @@ export default function BmedIndex({ posts }: Props) {
                     <ul>
                         {posts.map((post) => (
                             <li key={post.slug}>
-                                <Link href={`/bmed/${post.slug}`}>
+                                <Link href={`${post.slug}`}>
                                     {post.title}
                                 </Link>
                             </li>

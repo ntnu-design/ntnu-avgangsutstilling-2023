@@ -7,7 +7,7 @@ Next.js's [Static Generation](https://nextjs.org/docs/basic-features/pages) feat
 The content are stored in `/_content` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
 
 File structure of _content:
-/_content
+```_content
 ├── bixd
 │   ├── adriannr
 │   │   ├── content.md
@@ -41,7 +41,7 @@ File structure of _content:
 │   │   ├── portrait.png
 │   │   ├── project_1.png
 │   │   ├── project_2.png
-
+```
 
 https://tailwindcss.com) [(v3.0)] (https://tailwindcss.com/blog/tailwindcss-v3).
 

@@ -1,4 +1,4 @@
-import PostTitle from './post-title'
+import PostTitle from "./post-title"
 
 type Props = {
   title: string

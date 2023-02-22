@@ -1,11 +1,7 @@
-import Head from 'next/head'
+import Head from "next/head"
 
 const Meta = () => {
-  return (
-    <Head>
-      {/* Primary Meta Tags */}
-    </Head>
-  )
+  return <Head>{/* Primary Meta Tags */}</Head>
 }
 
 export default Meta

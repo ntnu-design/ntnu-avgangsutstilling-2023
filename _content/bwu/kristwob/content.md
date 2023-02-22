@@ -1,6 +1,7 @@
 ---
-title: 'Kristian Wobbes'
-author: 'Kristian Wobbes'
-picture: './portrait.png'
+title: "Kristian Wobbes"
+author: "Kristian Wobbes"
+picture: "./portrait.png"
 ---
+
 Tekst

@@ -1,11 +1,10 @@
-import Container from '../components/layout/container'
-import Intro from '../components/intro'
-import Layout from '../components/layout/layout'
-import Head from 'next/head'
-import Navbar from '../components/navigation/navbar'
+import Container from "../components/layout/container"
+import Intro from "../components/intro"
+import Layout from "../components/layout/layout"
+import Head from "next/head"
+import Navbar from "../components/navigation/navbar"
 
 export default function Index() {
-
   return (
     <>
       <Layout>
@@ -20,4 +19,3 @@ export default function Index() {
     </>
   )
 }
-

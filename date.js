@@ -21,11 +21,11 @@ function showRemaining() {
   document.getElementById("countdown").innerHTML = `
 <div>
     <span>${days}</span>
-    <span>DAYS</span>
+    <span>DAGER</span>
 </div>
 <div>
     <span>${hours}</span>
-    <span>HOURS</span>
+    <span>TIMER</span>
 </div>
 `;
 }

@@ -17,8 +17,6 @@ function showRemaining() {
   }
   const days = Math.floor(distance / _day);
   const hours = Math.floor((distance % _day) / _hour);
-  const minutes = Math.floor((distance % _hour) / _minute);
-  const seconds = Math.floor((distance % _minute) / _second);
 
   document.getElementById("countdown").innerHTML = `
 <div>
@@ -28,14 +26,6 @@ function showRemaining() {
 <div>
     <span>${hours}</span>
     <span>HOURS</span>
-</div>
-<div>
-    <span>${minutes}</span>
-    <span>MINUTES</span>
-</div>
-<div>
-    <span>${seconds}</span>
-    <span>${seconds === 1 ? "SECOND" : "SECONDS"}</span>
 </div>
 `;
 }

@@ -169,12 +169,19 @@ body {
 
 .countdown {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.5em;
 
   margin-top: 1em;
   margin-bottom: 1em;
+}
+
+.countdown > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .countdown > div > :first-child {
@@ -184,14 +191,6 @@ body {
 
 @media screen and (min-width: 30em) {
   .countdown {
-    justify-content: center;
-    flex-direction: row;
     gap: 1em;
-  }
-  .countdown > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 }

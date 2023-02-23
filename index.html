@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avgangsutstilling 2023</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="grid wrapper">
+      <!-- Background image -->
+      <picture class="bg-image">
+        <source media="(min-width: 50em)" srcset="images/bg-desktop.svg" />
+        <source media="(min-width: 30em)" srcset="images/bg-tablet.svg" />
+        <img src="images/bg-mobile.svg" alt="" />
+      </picture>
+
+      <main class="grid main-content">
+        <!-- Countdown -->
+        <div id="countdown" class="countdown"></div>
+
+        <!-- Logo -->
+        <picture class="logo">
+          <source media="(min-width: 30em)" srcset="images/Avgangsutstilling.svg" />
+          <img src="images/Avgangsutstilling_2_rader.svg" alt="Avgangsutstilling 2023" />
+        </picture>
+
+        <!-- Text content -->
+        <div class="content">
+          <div class="flex content_text">
+            <p class="text-bold">2. juni - 3. juni</p>
+            <p class="text-bold">Kl. 10 - 16</p>
+            <p class="text-bold">Mustad Næringspark</p>
+          </div>
+          <div class="social-links">
+            <ul role="list" class="social-list">
+              <li>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/ba_webutvikling_ntnu/" class="social-link"
+                  >@ba_webutvikling_ntnu</a
+                >
+              </li>
+              <li>
+                <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/ba_interaksjonsdesign_ntnu" class="social-link"
+                  >@ba_interaksjonsdesign_ntnu</a
+                >
+              </li>
+              <li>
+                <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/grafisk_design_ntnu" class="social-link"
+                  >@grafisk_design_ntnu</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="date.js"></script>
+  </body>
 </html>

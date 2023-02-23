@@ -13,6 +13,7 @@ export default function Index() {
         </Head>
         <Container>
           <Navbar />
+          <p>Halla balla</p>
           <Intro />
         </Container>
       </Layout>

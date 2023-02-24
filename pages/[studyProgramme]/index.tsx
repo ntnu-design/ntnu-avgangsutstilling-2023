@@ -1,43 +1,14 @@
 import Link from "next/link"
 import { getStudents } from "../../lib/api"
-
-import Container from "../../components/layout/container"
-import Layout from "../../components/layout/layout"
+import { getHeading } from "../../lib/utils"
 import Head from "next/head"
+import Layout from "../../components/layout/layout"
 import Navbar from "../../components/navigation/navbar"
-import StudentType from "../../interfaces/student"
+import Container from "../../components/layout/container"
+import { GetStaticPaths, GetStaticPathsResult } from "next"
+import type { StudentItem, StudyProgrammeParams } from "../../interfaces/student"
 
-type Props = {
-    students: StudentType[]
-    params: any
-}
-
-type Params = {
-    params: {
-        studyProgramme: string
-    }
-}
-
-const getHeading = (studyProgramme) => {
-    let heading
-    switch (studyProgramme) {
-        case "bwu":
-            heading = "Webutvikling"
-            break
-        case "bixd":
-            heading = "Interaksjonsdesign"
-            break
-        case "bmed":
-            heading = "Grafisk Design"
-            break
-        default:
-            heading = "Avgangsutstilling"
-            break
-    }
-    return heading
-}
-
-export default function StudyprogrammeIndex({ students, params }: Props) {    
+export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
     const heading = getHeading(studyProgramme)
 
@@ -65,7 +36,7 @@ export default function StudyprogrammeIndex({ students, params }: Props) {
     )
 }
 
-export const getStaticProps = async ({ params }: Params) => {
+export const getStaticProps = async ({ params }: { params: StudyProgrammeParams }) => {
     const { studyProgramme } = params
     const students = getStudents(
         // ! Her legger man til de feltene man trenger fra content.md filen
@@ -78,7 +49,7 @@ export const getStaticProps = async ({ params }: Params) => {
     }
 }
 
-export const getStaticPaths = async function () {
+export const getStaticPaths: GetStaticPaths = async function (): Promise<GetStaticPathsResult> {
     return {
         paths: [
             { params: { studyProgramme: "bwu" } },
@@ -87,4 +58,9 @@ export const getStaticPaths = async function () {
         ],
         fallback: false,
     }
+}
+
+interface Props {
+    students: StudentItem[];
+    params: StudyProgrammeParams;
 }

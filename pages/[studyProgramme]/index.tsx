@@ -44,7 +44,7 @@ export default function StudyprogrammeIndex({ students, params }: Props) {
     return (
         <Layout>
             <Head>
-                <title>{`Avgangsutstilling 2023`}</title>
+                <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
             <Container>
                 <Navbar />

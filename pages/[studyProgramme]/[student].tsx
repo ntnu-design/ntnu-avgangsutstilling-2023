@@ -1,33 +1,15 @@
-// Next
-import { useRouter } from "next/router"
-import ErrorPage from "next/error"
 import Head from "next/head"
-
-// API
+import ErrorPage from "next/error"
+import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
 //import markdownToHtml from "../../lib/markdownToHtml"
-
-// Components
-import Container from "../../components/layout/container"
 import Layout from "../../components/layout/layout"
-import PostTitle from "../../components/posts/post-title"
 import Navbar from "../../components/navigation/navbar"
-
-// Types
-import type StudentType from "../../interfaces/student"
-type Props = {
-    student: StudentType
-}
-type Params = {
-    params: {
-        student: string
-        studyProgramme: string
-    }
-}
+import Container from "../../components/layout/container"
+import PostTitle from "../../components/posts/post-title"
+import type { StudentItem } from "../../interfaces/student"
 
 export default function Student({ student }: Props) {
-    //console.log(student);
-
     const router = useRouter()
     if (!router.isFallback && !student?.slug) {
         return <ErrorPage statusCode={404} />
@@ -80,10 +62,10 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-    const bwu = getStudents(["slug"], "bwu")
-    const bixd = getStudents(["slug"], "bixd")
-    const bmed = getStudents(["slug"], "bmed")
-    const students = [...bwu, ...bixd, ...bmed]
+    const bwu: StudentItem[] = getStudents(["slug"], "bwu")
+    const bixd: StudentItem[] = getStudents(["slug"], "bixd")
+    const bmed: StudentItem[] = getStudents(["slug"], "bmed")
+    const students: StudentItem[] = [...bwu, ...bixd, ...bmed]
 
     return {
         paths: students.map((student) => {
@@ -95,5 +77,16 @@ export async function getStaticPaths() {
             }
         }),
         fallback: false,
+    }
+}
+
+interface Props {
+    student: StudentItem;
+}
+
+interface Params {
+    params: {
+        student: string;
+        studyProgramme: string;
     }
 }

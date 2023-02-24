@@ -1,23 +1,33 @@
-import type SocialType from "./socials"
-
-type StudentType = {
-    title: String
-    slug: String
-    bio: String
-    profile_picture: String
-    portfolio: String
-    email: String
-    socials: SocialType
-    project_image_1: String
-    project_desc_1: String
-    project_desc_2: String
-    project_image_2: String
-    project_image_3: String
-    project_desc_3: String
-    project_image_4: String
-    project_desc_4: String
-    project_image_5: String
-    project_desc_5: String
+export interface StudentItem {
+    title: string;
+    slug: string;
+    bio: string;
+    profile_picture: string;
+    portfolio: string;
+    email: string;
+    socials?: SocialItem;
+    project_image_1: string;
+    project_desc_1: string;
+    project_desc_2: string;
+    project_image_2: string;
+    project_image_3: string;
+    project_desc_3: string;
+    project_image_4?: string;
+    project_desc_4?: string;
+    project_image_5?: string;
+    project_desc_5?: string;
 }
 
-export default StudentType
+export interface SocialItem {
+    linkedin?: string;
+    instagram?: string;
+    twitter?: string;
+    facebook?: string;
+    behance?: string;
+}
+
+export type StudyProgramme = "bwu" | "bixd" | "bmed" | "avgang";
+
+export interface StudyProgrammeParams {
+    studyProgramme: StudyProgramme;
+}

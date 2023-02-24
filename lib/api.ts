@@ -1,10 +1,11 @@
+import { StudentItem, StudyProgramme } from "./../interfaces/student"
 import fs from "fs"
 import { join } from "path"
 import matter from "gray-matter"
 
 const CONTENT_DIRECTORY = join(process.cwd(), "_content")
 
-export function getStudentSlugs(studyProgramme: string) {
+export function getStudentSlugs(studyProgramme: StudyProgramme): string[] {
     const slugs = fs
         .readdirSync(CONTENT_DIRECTORY)
         .filter(
@@ -33,16 +34,30 @@ export function getStudentSlugs(studyProgramme: string) {
     return slugs
 }
 
-export function getStudentBySlug(slug: string, fields: string[] = []) {
+export function getStudentBySlug(
+    slug: string,
+    fields: string[] = []
+): StudentItem {
     const realSlug = slug.replace("/content.md", "")
     const fullPath = join(CONTENT_DIRECTORY, slug)
     const fileContents = fs.readFileSync(fullPath, "utf8")
     const { data } = matter(fileContents)
 
-    type Items = {
-        [key: string]: string
+    const items: StudentItem = {
+        title: "",
+        slug: "",
+        bio: "",
+        profile_picture: "",
+        portfolio: "",
+        email: "",
+        socials: {},
+        project_image_1: "",
+        project_desc_1: "",
+        project_desc_2: "",
+        project_image_2: "",
+        project_image_3: "",
+        project_desc_3: "",
     }
-    const items: Items = {}
 
     fields.forEach((field) => {
         if (field === "slug") items[field] = realSlug
@@ -52,8 +67,10 @@ export function getStudentBySlug(slug: string, fields: string[] = []) {
     return items
 }
 
-export function getStudents(fields: string[] = [], studyProgramme: string) {
-    
+export function getStudents(
+    fields: string[] = [],
+    studyProgramme: StudyProgramme
+): StudentItem[] {
     const slugs = getStudentSlugs(studyProgramme)
     const posts = slugs.map((slug) => getStudentBySlug(slug, fields))
 

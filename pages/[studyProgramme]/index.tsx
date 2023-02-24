@@ -9,9 +9,38 @@ import StudentType from "../../interfaces/student"
 
 type Props = {
     students: StudentType[]
+    params: any
 }
 
-export default function StudyprogrammeIndex({ students }: Props) {
+type Params = {
+    params: {
+        studyProgramme: string
+    }
+}
+
+const getHeading = (studyProgramme) => {
+    let heading
+    switch (studyProgramme) {
+        case "bwu":
+            heading = "Webutvikling"
+            break
+        case "bixd":
+            heading = "Interaksjonsdesign"
+            break
+        case "bmed":
+            heading = "Grafisk Design"
+            break
+        default:
+            heading = "Avgangsutstilling"
+            break
+    }
+    return heading
+}
+
+export default function StudyprogrammeIndex({ students, params }: Props) {    
+    const { studyProgramme } = params
+    const heading = getHeading(studyProgramme)
+
     return (
         <Layout>
             <Head>
@@ -20,7 +49,7 @@ export default function StudyprogrammeIndex({ students }: Props) {
             <Container>
                 <Navbar />
                 <div>
-                    <h1>Webutvikling</h1>
+                    <h1 className="text-xl font-bold">{heading}</h1>
                     <ul>
                         {students.map((student, index) => (
                             <li key={index}>
@@ -34,12 +63,6 @@ export default function StudyprogrammeIndex({ students }: Props) {
             </Container>
         </Layout>
     )
-}
-
-type Params = {
-    params: {
-        studyProgramme: string
-    }
 }
 
 export const getStaticProps = async ({ params }: Params) => {

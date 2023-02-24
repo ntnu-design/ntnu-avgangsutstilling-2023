@@ -54,7 +54,7 @@ export function getPosts(fields: string[] = [], studyProgramme: string) {
   return posts
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+/* export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const author = params?.author as string
   const authorPath = join(process.cwd(), "_content", author)
   const files = fs.readdirSync(authorPath)
@@ -71,4 +71,4 @@ export const getServerSideProps: GetServerSideProps = async ({ params }) => {
   const images = files.filter((file) => file.endsWith(".png"))
 
   return { props: { author, postData, images } }
-}
+} */

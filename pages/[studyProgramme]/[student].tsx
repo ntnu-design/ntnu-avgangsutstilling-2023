@@ -62,13 +62,12 @@ export async function getStaticProps({ params }: Params) {
     const { student, studyProgramme } = params
     const slug = `${studyProgramme}/${student}/content.md`
 
-    const studentContent = getStudentBySlug(slug, [
+    const studentContent = getStudentBySlug(slug, [ // ! Legg til de feltene man trenger fra content.md
         "title",
         "slug",
         "profile_picture",
         "bio",
         "portfolio",
-        "",
     ])
 
     //const content = await markdownToHtml(post.content || "")

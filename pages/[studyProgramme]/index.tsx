@@ -68,6 +68,7 @@ export default function StudyprogrammeIndex({ students, params }: Props) {
 export const getStaticProps = async ({ params }: Params) => {
     const { studyProgramme } = params
     const students = getStudents(
+        // ! Her legger man til de feltene man trenger fra content.md filen
         ["title", "slug", "bio", "portfolio", "email"],
         studyProgramme
     )

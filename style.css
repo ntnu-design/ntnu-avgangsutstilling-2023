@@ -80,11 +80,13 @@ select {
   --clr-grey-3: #b9bfc7;
 
   --fs-base: 1rem;
+  --fs-small: .9rem;
 }
 
 @media screen and (min-width: 50em) {
   :root {
     --fs-base: 1.25rem;
+    --fs-small: 1rem;
   }
 }
 
@@ -108,6 +110,10 @@ body {
 
 .text-bold {
   font-weight: 700;
+}
+
+.text-small {
+  font-size: var(--fs-small);
 }
 
 .main-content {

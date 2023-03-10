@@ -35,13 +35,6 @@ export default function Student({ student }: Props) {
                             <PostTitle>{student.title}</PostTitle>
                     </article>
 
-                    <Image
-            className="md:ml-[-20%]"
-            src="/project_1_Ola Nordmann.webp"
-            alt="Avgangsutstilling 2023 logo"
-            width={300}
-            height={300}
-          />
 
                     
                     </>

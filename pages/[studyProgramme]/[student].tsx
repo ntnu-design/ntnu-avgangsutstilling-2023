@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from 'next/image'
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
@@ -33,6 +34,9 @@ export default function Student({ student }: Props) {
                             </Head>
                             <PostTitle>{student.title}</PostTitle>
                     </article>
+
+
+                    
                     </>
                 )}
             </Container>

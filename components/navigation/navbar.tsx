@@ -2,22 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Navbar() {
+  //receive props from parent component for styling active link
+  let activeLink = "text-orange font-bold";
+  let inactiveLink = "text-accent-7";
+  
   return (
-    <nav className="flex md:flex-row md:justify-start justify-center">
-      <p>
-        <Link href="/">
-          <Image
-            className="md:ml-[-20%]"
-            src="/logo.svg"
-            alt="Avgangsutstilling 2023 logo"
-            width={300}
-            height={300}
-          />
-        </Link>
-      </p>
-      <ul className="flex items-center space-x-10 content-left">
+    <nav className="w-full hidden lg:flex py-5 lg:px-20 xl:px-40 2xl:px-60 shadow-lg shadow-accent-2/75 ">
+      <ul className="flex space-x-20">
         <li>
-          <Link className="text-orange" href="/">Om utstillingen</Link>
+          <Link className="text-orange" href="/">Hjem</Link>
         </li>
         <li>
           <Link href="/bmed">Grafisk design</Link>
@@ -29,6 +22,7 @@ export default function Navbar() {
           <Link href="/bwu">Webutvikling</Link>
         </li>
       </ul>
+      <p className="ml-auto">Om utstilling</p>
     </nav>
   );
 }

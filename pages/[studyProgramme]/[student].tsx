@@ -32,7 +32,7 @@ export default function Student({ student }: Props) {
                                 <meta property="og:image" content="" />
                             </Head>
                             <PostTitle>{student.title}</PostTitle>
-                        </article>
+                    </article>
                     </>
                 )}
             </Container>
@@ -47,9 +47,37 @@ export async function getStaticProps({ params }: Params) {
     const studentContent = getStudentBySlug(slug, [ // ! Legg til de feltene man trenger fra content.md
         "title",
         "slug",
+        "student",
         "profile_picture",
         "bio",
         "portfolio",
+        "e-mail",
+        "linkedin",
+        "twitter",
+        "facebook",
+        "behance",
+        "instagram",
+        "studyProgram",
+        "p1_headline_1",
+        "p1_headline_2",
+        "project_image_1",
+        "project_desc_1",
+        "p2_headline_1",
+        "p2_headline_2",
+        "project_image_2",
+        "project_desc_2",
+        "p3_headline_1",
+        "p3_headline_2",
+        "project_image_3",
+        "project_desc_3",
+        "p4_headline_1",
+        "p4_headline_2",
+        "project_image_4",
+        "project_desc_4",
+        "p5_headline_1",
+        "p5_headline_2",
+        "project_image_5",
+        "project_desc_5",
     ])
 
     //const content = await markdownToHtml(post.content || "")

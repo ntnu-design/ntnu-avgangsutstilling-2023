@@ -34,7 +34,7 @@ export default function Student({ student }: Props) {
                             </Head>
                             <PostTitle>{student.title}</PostTitle>
                     </article>
-
+                     <Image src={`/${student.slug}/${student.title}_${student.title}.jpg`} alt={student.title} width={400} height={400} />
 
                     
                     </>

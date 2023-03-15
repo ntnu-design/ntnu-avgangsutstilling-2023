@@ -1,5 +1,5 @@
 import Head from "next/head"
-import Image from 'next/image'
+import Image from "next/image"
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
@@ -15,6 +15,46 @@ export default function Student({ student }: Props) {
     if (!router.isFallback && !student?.slug) {
         return <ErrorPage statusCode={404} />
     }
+    const socialMediaLinks = [
+        { name: "email", url: student.email },
+        { name: "globe", url: student.portfolio },
+        { name: "linkedin", url: student.linkedin },
+        { name: "behance", url: student.behance },
+        { name: "instagram", url: student.instagram },
+    ]
+    const studentProjects = [
+        {
+            headline_1: student.p1_headline_1,
+            headline_2: student.p1_headline_2,
+            image: student.project_image_1,
+            desc: student.project_desc_1,
+        },
+        {
+            headline_1: student.p2_headline_1,
+            headline_2: student.p2_headline_2,
+            image: student.project_image_2,
+            desc: student.project_desc_2,
+        },
+        {
+            headline_1: student.p3_headline_1,
+            headline_2: student.p3_headline_2,
+            image: student.project_image_3,
+            desc: student.project_desc_3,
+        },
+        {
+            headline_1: student.p4_headline_1,
+            headline_2: student.p4_headline_2,
+            image: student.project_image_4,
+            desc: student.project_desc_4,
+        },
+        {
+            headline_1: student.p5_headline_1,
+            headline_2: student.p5_headline_2,
+            image: student.project_image_5,
+            desc: student.project_desc_5,
+        },
+    ]
+
     return (
         <Layout>
             <Head>
@@ -29,14 +69,76 @@ export default function Student({ student }: Props) {
 
                         <article className="mb-32">
                             <Head>
-                                <title></title>
+                                <title>{student.title}</title>
                                 <meta property="og:image" content="" />
                             </Head>
-                            <PostTitle>{student.title}</PostTitle>
-                    </article>
-                     <Image src={`/${student.slug}/${student.title}_${student.title}.jpg`} alt={student.title} width={400} height={400} />
-
-                    
+                        </article>
+                        <main className="h-screen">
+                            <div className="flex">
+                                <Image
+                                    src={`/${student.slug}/${student.title}_${student.title}.jpg`}
+                                    alt={student.title}
+                                    width={400}
+                                    height={400}
+                                />
+                                <div>
+                                    <PostTitle>{student.title}</PostTitle>
+                                    <p>{student.bio}</p>
+                                </div>
+                            </div>
+                            <div className="flex">
+                                {socialMediaLinks.map((link) => {
+                                    if (link.url !== "") {
+                                        return (
+                                            <a href={link.url}>
+                                                <Image
+                                                    src={
+                                                        "/social-media/" +
+                                                        link.name +
+                                                        ".svg"
+                                                    }
+                                                    alt={link.name + " icon"}
+                                                    width={50}
+                                                    height={50}
+                                                />
+                                            </a>
+                                        )
+                                    }
+                                })}
+                            </div>
+                            <div className="flex justify-center">
+                                <button>
+                                    <a href="#prosjekter">prosjekter</a>
+                                </button>
+                            </div>
+                        </main>
+                        <section id="prosjekter">
+                            <h2>Prosjekter</h2>
+                            {studentProjects.map((project) => {
+                                if (project.headline_1 !== "") {
+                                    return (
+                                        <div className="flex">
+                                            <Image
+                                                src={
+                                                    "/" +
+                                                    student.slug +
+                                                    "/" +
+                                                    project.image
+                                                }
+                                                width={400}
+                                                height={400}
+                                                alt={project.headline_1}
+                                            />
+                                            <div>
+                                                <h4>{project.headline_2}</h4>
+                                                <h3>{project.headline_1}</h3>
+                                                <p>{project.desc}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </section>
                     </>
                 )}
             </Container>
@@ -48,14 +150,15 @@ export async function getStaticProps({ params }: Params) {
     const { student, studyProgramme } = params
     const slug = `${studyProgramme}/${student}/content.md`
 
-    const studentContent = getStudentBySlug(slug, [ // ! Legg til de feltene man trenger fra content.md
+    const studentContent = getStudentBySlug(slug, [
+        // ! Legg til de feltene man trenger fra content.md
         "title",
         "slug",
         "student",
         "profile_picture",
         "bio",
         "portfolio",
-        "e-mail",
+        "email",
         "linkedin",
         "twitter",
         "facebook",
@@ -113,12 +216,12 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-    student: StudentItem;
+    student: StudentItem
 }
 
 interface Params {
     params: {
-        student: string;
-        studyProgramme: string;
+        student: string
+        studyProgramme: string
     }
 }

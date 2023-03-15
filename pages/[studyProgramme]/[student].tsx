@@ -55,7 +55,7 @@ export async function getStaticProps({ params }: Params) {
         "profile_picture",
         "bio",
         "portfolio",
-        "e-mail",
+        "email",
         "linkedin",
         "twitter",
         "facebook",

@@ -108,7 +108,13 @@ export default function Student({ student }: Props) {
                             </div>
                             <div className="flex justify-center">
                                 <button>
-                                    <a href="#prosjekter">prosjekter</a>
+                                    <a href="#prosjekter">
+                                        <Image
+                                            src={"/scrollarrow.svg"}
+                                            width={50}
+                                            height={50}
+                                        />
+                                    </a>
                                 </button>
                             </div>
                         </main>

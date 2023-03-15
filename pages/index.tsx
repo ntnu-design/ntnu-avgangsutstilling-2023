@@ -3,6 +3,8 @@ import Intro from "../components/intro"
 import Layout from "../components/layout/layout"
 import Head from "next/head"
 import Navbar from "../components/navigation/navbar"
+import HomeContent from "../components/studyprograminfo"
+import BottomMap from "../components/homemap"
 
 export default function Index() {
   return (
@@ -14,6 +16,8 @@ export default function Index() {
         <Navbar />
         <Container>
           <Intro />
+          <HomeContent />
+          <BottomMap />
         </Container>
       </Layout>
     </>

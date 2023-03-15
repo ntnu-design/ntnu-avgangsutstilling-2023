@@ -11,8 +11,8 @@ export default function Index() {
         <Head>
           <title>{`Avgangsutstilling 2023`}</title>
         </Head>
+        <Navbar />
         <Container>
-          <Navbar />
           <Intro />
         </Container>
       </Layout>

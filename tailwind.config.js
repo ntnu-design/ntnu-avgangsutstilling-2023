@@ -10,6 +10,7 @@ module.exports = {
         "orange": '#EE7439',
         success: '#0070f3',
         cyan: '#79FFE1',
+        gray: '#C2C2C2',
       },
       spacing: {
         28: "7rem",

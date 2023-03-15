@@ -17,8 +17,8 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
+            <Navbar />
             <Container>
-                <Navbar />
                 <div>
                     <h1 className="text-xl font-bold">{heading}</h1>
                     <ul>

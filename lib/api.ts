@@ -45,22 +45,41 @@ export function getStudentBySlug(
 
     const items: StudentItem = {
         title: "",
-        slug: "",
-        bio: "",
+        student: "",
         profile_picture: "",
+        bio: "",
         portfolio: "",
         email: "",
-        socials: {},
+        linkedin: "",
+        twitter: "",
+        facebook: "",
+        behance: "",
+        instagram: "",
+        studyProgramme: "",
+        p1_headline_1: "",
+        p1_headline_2: "",
         project_image_1: "",
         project_desc_1: "",
-        project_desc_2: "",
+        p2_headline_1: "",
+        p2_headline_2: "",
         project_image_2: "",
+        project_desc_2: "",
+        p3_headline_1: "",
+        p3_headline_2: "",
         project_image_3: "",
         project_desc_3: "",
+        p4_headline_1: "",
+        p4_headline_2: "",
+        project_image_4: "",
+        project_desc_4: "",
+        p5_headline_1: "",
+        p5_headline_2: "",
+        project_image_5: "",
+        project_desc_5: "",
     }
 
     fields.forEach((field) => {
-        if (field === "slug") items[field] = realSlug
+        if (field === "studyProgramme") items[field] = realSlug
         if (typeof data[field] !== "undefined") items[field] = data[field]
     })
 

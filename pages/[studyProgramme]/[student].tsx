@@ -12,7 +12,7 @@ import type { StudentItem } from "../../interfaces/student"
 
 export default function Student({ student }: Props) {
     const router = useRouter()
-    if (!router.isFallback && !student?.slug) {
+    if (!router.isFallback && !student?.studyProgramme) {
         return <ErrorPage statusCode={404} />
     }
     const socialMediaLinks = [
@@ -76,21 +76,21 @@ export default function Student({ student }: Props) {
                         <main className="h-screen">
                             <div className="flex">
                                 <Image
-                                    src={`/${student.slug}/${student.title}_${student.title}.jpg`}
+                                    src={`/${student.studyProgramme}/${student.profile_picture}`}
                                     alt={student.title}
                                     width={400}
                                     height={400}
                                 />
                                 <div>
                                     <PostTitle>{student.title}</PostTitle>
-                                    <p>{student.bio}</p>
+                                    <div dangerouslySetInnerHTML={{ __html: student.bio }} />
                                 </div>
                             </div>
                             <div className="flex">
-                                {socialMediaLinks.map((link) => {
+                                {socialMediaLinks.map((link, index) => {
                                     if (link.url !== "") {
                                         return (
-                                            <a href={link.url}>
+                                            <a href={link.url} key={index}>
                                                 <Image
                                                     src={
                                                         "/social-media/" +
@@ -113,6 +113,7 @@ export default function Student({ student }: Props) {
                                             src={"/scrollarrow.svg"}
                                             width={50}
                                             height={50}
+                                            alt=""
                                         />
                                     </a>
                                 </button>
@@ -120,14 +121,14 @@ export default function Student({ student }: Props) {
                         </main>
                         <section id="prosjekter">
                             <h2>Prosjekter</h2>
-                            {studentProjects.map((project) => {
+                            {studentProjects.map((project, index) => {
                                 if (project.headline_1 !== "") {
                                     return (
-                                        <div className="flex">
+                                        <div className="flex" key={index}>
                                             <Image
                                                 src={
                                                     "/" +
-                                                    student.slug +
+                                                    student.studyProgramme +
                                                     "/" +
                                                     project.image
                                                 }
@@ -138,7 +139,7 @@ export default function Student({ student }: Props) {
                                             <div>
                                                 <h4>{project.headline_2}</h4>
                                                 <h3>{project.headline_1}</h3>
-                                                <p>{project.desc}</p>
+                                                <div dangerouslySetInnerHTML={{ __html: project.desc }} />
                                             </div>
                                         </div>
                                     )
@@ -159,7 +160,7 @@ export async function getStaticProps({ params }: Params) {
     const studentContent = getStudentBySlug(slug, [
         // ! Legg til de feltene man trenger fra content.md
         "title",
-        "slug",
+        "studyProgramme",
         "student",
         "profile_picture",
         "bio",
@@ -203,17 +204,17 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-    const bwu: StudentItem[] = getStudents(["slug"], "bwu")
-    const bixd: StudentItem[] = getStudents(["slug"], "bixd")
-    const bmed: StudentItem[] = getStudents(["slug"], "bmed")
+    const bwu: StudentItem[] = getStudents(["studyProgramme"], "bwu")
+    const bixd: StudentItem[] = getStudents(["studyProgramme"], "bixd")
+    const bmed: StudentItem[] = getStudents(["studyProgramme"], "bmed")
     const students: StudentItem[] = [...bwu, ...bixd, ...bmed]
 
     return {
         paths: students.map((student) => {
             return {
                 params: {
-                    student: `${student.slug.split("/")[1]}`,
-                    studyProgramme: `${student.slug.split("/")[0]}`,
+                    student: `${student.studyProgramme.split("/")[1]}`,
+                    studyProgramme: `${student.studyProgramme.split("/")[0]}`,
                 },
             }
         }),

@@ -56,12 +56,12 @@ export const sortStudents = (students: StudentItem[], sortOrder: string) => {
             currentDate.getDate()
         return [...students].sort((a, b) => {
             const randomA = getSeededRandomNumber(
-                seed + stringToHash(a.slug),
+                seed + stringToHash(a.studyProgramme),
                 0,
                 1
             )
             const randomB = getSeededRandomNumber(
-                seed + stringToHash(b.slug),
+                seed + stringToHash(b.studyProgramme),
                 0,
                 1
             )

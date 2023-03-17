@@ -73,8 +73,5 @@ export function getStudents(
 ): StudentItem[] {
     const slugs = getStudentSlugs(studyProgramme)
     const posts = slugs.map((slug) => getStudentBySlug(slug, fields))
-
-    posts.sort(() => Math.random() - 0.5)
-
     return posts
 }

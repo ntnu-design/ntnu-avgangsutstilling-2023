@@ -1,6 +1,7 @@
+import { useState } from "react";
 import Link from "next/link"
 import { getStudents } from "../../lib/api"
-import { getHeading } from "../../lib/utils"
+import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
 import Layout from "../../components/layout/layout"
 import Navbar from "../../components/navigation/navbar"
@@ -12,6 +13,10 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
     const heading = getHeading(studyProgramme)
 
+    const [sortOrder, setSortOrder] = useState("random");
+
+    const sortedStudents = sortStudents(students, sortOrder);
+
     return (
         <Layout>
             <Head>
@@ -21,8 +26,13 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Container>
                 <div>
                     <h1 className="text-xl font-bold">{heading}</h1>
+                    <div>
+                        <p>Sortering:</p>
+                        <button className={sortOrder === "random" ? 'font-bold' : ''} onClick={() => setSortOrder("random")}>Tilfeldig</button>
+                        <button className={sortOrder === "alphabetical" ? 'font-bold' : ''} onClick={() => setSortOrder("alphabetical")}>Alfabetisk</button>
+                    </div>
                     <ul>
-                        {students.map((student, index) => (
+                        {sortedStudents.map((student, index) => (
                             <li key={index}>
                                 <Link href={`${student.slug}`}>
                                     {student.title}
@@ -41,7 +51,7 @@ export const getStaticProps = async ({ params }: { params: StudyProgrammeParams 
     const students = getStudents(
         // ! Her legger man til de feltene man trenger fra content.md filen
         ["title", "slug", "bio", "portfolio", "email"],
-        studyProgramme
+        studyProgramme,
     )
 
     return {

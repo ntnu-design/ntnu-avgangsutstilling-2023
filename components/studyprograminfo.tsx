@@ -16,9 +16,9 @@ function StudyprogramInfo({ studydirection, imagestyle, imagelocation, imagealt,
                 <p className={pheadstyle}>
                     {studyprogram}
                 </p>
-                <p className="smd:text-[15px] text-[20px]">{studyprogramtext}</p>
-                <p className="mt-5 smd:text-[15px] text-[20px]">{studyprogramtext2}</p>
-                <button className={studybuttonstyle}><Link href={page}><p className="text-[20px]">Se studentene</p></Link></button>
+                <p className="ssd:text-[12px] smd:text-[15px] text-[20px]">{studyprogramtext}</p>
+                <p className="mt-5 ssd:text-[12px] smd:text-[15px] text-[20px]">{studyprogramtext2}</p>
+                <button className={studybuttonstyle}><Link href={page}><p className="ssd:text-[15px] text-[20px]">Se studentene</p></Link></button>
                 <div className="flex flex-row">
                 <Link href={`${instapage}`}>
                     <Image
@@ -50,12 +50,12 @@ export default function HomeContent() {
     return (
         <div>
             <StudyprogramInfo
-                studydirection={"flex sm:flex-col md:flex-row md:justify-around sm:my-32 md:my-52"}
-                imagestyle={"sm:mx-auto sm:my-20"}
+                studydirection={"flex ssd:flex-col sm:flex-col md:flex-row md:justify-around ssd:my-32 sm:my-32 md:my-52 ssd:w-full "}
+                imagestyle={"ssd:mx-auto sm:mx-auto ssd:my-16 sm:my-20"}
                 imagelocation={"/Interaksjonsdesign_hovedside.svg"}
                 imagealt={"Interaksjonsdesign square of icons"}
                 size={300}
-                pheadstyle={"smd:text-[30px] text-[40px] text-[#72ad56] font-extrabold"}
+                pheadstyle={"ssd:text-[30px] smd:text-[30px] text-[40px] text-[#72ad56] font-extrabold"}
                 studyprogram={'Interaksjonsdesign'}
                 studyprogramtext={'28 studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter.'}
                 studyprogramtext2={'Utstillingen inkluderer designarbeider for elektroniske medier, så vel som fysiske prototyper, og viser eksempler på hva studentene har jobbet med i emner som tjenestedesign, informasjonsarkitektur, tingenes web, forretningsdesign, og fysisk prototyping.'}
@@ -68,12 +68,12 @@ export default function HomeContent() {
             />
 
             <StudyprogramInfo
-                studydirection={"flex sm:flex-col md:flex-row-reverse md:justify-around sm:my-32 md:my-52"}
-                imagestyle={"sm:mx-auto sm:my-20"}
+                studydirection={"flex ssd:flex-col sm:flex-col md:flex-row-reverse md:justify-around ssd:my-32 sm:my-32 md:my-52"}
+                imagestyle={"ssd:mx-auto sm:mx-auto ssd:my-16 sm:my-20"}
                 imagelocation={"/GrafiskDesign_hovedside.svg"}
                 imagealt={"Grafisk design square of icons"}
                 size={300}
-                pheadstyle={"smd:text-[30px] text-[40px] text-[#d15b96] font-extrabold"}
+                pheadstyle={"ssd:text-[30px] smd:text-[30px] text-[40px] text-[#d15b96] font-extrabold"}
                 studyprogram={'Grafisk Design'}
                 studyprogramtext={'27 studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe.'}
                 studyprogramtext2={'Utstillingen inkluderer designarbeider for papirbaserte og elektroniske medier, samt skilt og veifinningssystemer. For eks­empel innen bedriftsprofilering, løsninger for web, mobil og nettbrett, bokdesign, tidsskriftdesign, avisdesign, kalligrafi og skriftdesign.'}
@@ -86,12 +86,12 @@ export default function HomeContent() {
             />
 
             <StudyprogramInfo
-                studydirection={"flex sm:flex-col md:flex-row md:justify-around sm:my-32 md:my-52"}
-                imagestyle={"sm:mx-auto sm:my-20"}
+                studydirection={"flex ssd:flex-col sm:flex-col md:flex-row md:justify-around ssd:my-32 sm:my-32 md:my-52"}
+                imagestyle={"ssd:mx-auto sm:mx-auto ssd:my-16 sm:my-20"}
                 imagelocation={"/Webutvikling_hovedside.svg"}
                 imagealt={"Webutvikling square of icons"}
                 size={300}
-                pheadstyle={"smd:text-[30px] text-[40px] text-[#5a92ce] font-extrabold"}
+                pheadstyle={"ssd:text-[30px] smd:text-[30px] text-[40px] text-[#5a92ce] font-extrabold"}
                 studyprogram={'Webutvikling'}
                 studyprogramtext={'18 studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter.'}
                 studyprogramtext2={'Studentene kombinerer brukersentrerte designmetoder og web-teknologier for å løse problemer. Utstillingen inkluderer en rekke ulike arbeider fra idéskaping, konseptualisering og prototyping til utvikling og implementering.'}

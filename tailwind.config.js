@@ -32,7 +32,8 @@ module.exports = {
         md: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },    
       screens: {
-      'smd': { 'min': '768px', 'max': '1536px' }
+      'smd': { 'min': '768px', 'max': '1536px' },
+      'ssd': { 'min': '320px', 'max': '640px' }
     },
     backgroundImage: {
       'hero-delbixd' : "/svg/bixd/Mac.svg",

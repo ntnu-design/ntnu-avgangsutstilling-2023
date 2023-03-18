@@ -36,7 +36,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                     <ul>
                         {sortedStudents.map((student, index) => (
                             <li key={index}>
-                                <Link href={`${student.slug}`}>
+                                <Link href={`${student.studyProgramme}`}>
                                     {student.title}
                                 </Link>
                             </li>
@@ -52,7 +52,7 @@ export const getStaticProps = async ({ params }: { params: StudyProgrammeParams 
     const { studyProgramme } = params
     const students = getStudents(
         // ! Her legger man til de feltene man trenger fra content.md filen
-        ["title", "slug", "bio", "portfolio", "email"],
+        ["title", "studyProgramme", "bio", "portfolio", "email"],
         studyProgramme,
     )
 

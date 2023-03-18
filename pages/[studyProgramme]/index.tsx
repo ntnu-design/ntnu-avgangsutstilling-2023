@@ -5,6 +5,7 @@ import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
 import Layout from "../../components/layout/layout"
 import Navbar from "../../components/navigation/navbar"
+import HeroDel from "../../components/temporary/hero-del"
 import Container from "../../components/layout/container"
 import { GetStaticPaths, GetStaticPathsResult } from "next"
 import type { StudentItem, StudyProgrammeParams } from "../../interfaces/student"
@@ -23,6 +24,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
             <Navbar />
+            <HeroDel />
             <Container>
                 <div>
                     <h1 className="text-xl font-bold">{heading}</h1>

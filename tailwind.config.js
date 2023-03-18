@@ -33,6 +33,12 @@ module.exports = {
       },    
       screens: {
       'smd': { 'min': '768px', 'max': '1536px' }
+    },
+    backgroundImage: {
+      'hero-delbixd' : "/svg/bixd/Mac.svg",
+      'hero-delbwu' : "/svg/bwu/Mac.svg",
+      'hero-delbmed' : "/svg/bmed/Mac.svg",
+      'hero-delhjem' : "/svg/bixd/Mac.svg"
     }
     },
   },

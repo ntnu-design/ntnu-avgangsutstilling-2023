@@ -5,6 +5,7 @@ import Head from "next/head"
 import Navbar from "../components/navigation/navbar"
 import HomeContent from "../components/studyprograminfo"
 import BottomMap from "../components/homemap"
+import HeroDel from "../components/temporary/hero-del"
 
 export default function Index() {
   return (
@@ -15,7 +16,7 @@ export default function Index() {
         </Head>
         <Navbar />
         <Container>
-          <Intro />
+          <HeroDel />
           <HomeContent />
           <BottomMap />
         </Container>

@@ -7,7 +7,6 @@ import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Navbar from "../../components/navigation/navbar"
 import Container from "../../components/layout/container"
-import PostTitle from "../../components/posts/post-title"
 import type { StudentItem } from "../../interfaces/student"
 
 export default function Student({ student }: Props) {
@@ -60,13 +59,13 @@ export default function Student({ student }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023`}</title>
             </Head>
+            <Navbar />
+
             <Container>
                 {router.isFallback ? (
-                    <PostTitle>Loading…</PostTitle>
+                    <p>Loading…</p>
                 ) : (
                     <>
-                        <Navbar />
-
                         <article className="mb-32">
                             <Head>
                                 <title>{student.title}</title>
@@ -82,7 +81,7 @@ export default function Student({ student }: Props) {
                                     height={400}
                                 />
                                 <div>
-                                    <PostTitle>{student.title}</PostTitle>
+                                    <p>{student.title}</p>
                                     <div dangerouslySetInnerHTML={{ __html: student.bio }} />
                                 </div>
                             </div>

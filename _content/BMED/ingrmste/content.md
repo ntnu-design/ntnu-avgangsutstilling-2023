@@ -1,0 +1,38 @@
+---
+title: "Ingrid Malene Steinsland"
+student: "Ingrid Malene Steinsland"
+profile_picture: "Ingrid Malene Steinsland_Ingrid Malene Steinsland.jpg"
+bio: "Mitt namn er Ingrid og eg studerer Grafisk Design ved NTNU Gjøvik. Gleda og interessa for det kreative har vore til stades gjennom heile barndomen, så val av studieretning overraska ikkje akkurat nokon. 
+Eg er glad i jobbe i kreative team, då fleire jobbar saman og delar idear for å skape den beste løysinga for den aktuelle oppgåva, både med tanke på brukarvenlegheit og estetikk. Eg syns det er spanande å jobbe tverrfagleg, då me gjerne har forskjellige tilnærmingar til problemet samstundes som ein får eit innblikk i andre viktige fagområde både i og utanfor designfaget.
+Etter tre år på Grafisk Design studiet har eg lært utruleg mykje om blant anna typografi, utskrift, fargestyring og ulike design verktøy. Kvart semester og emne har bydd på nye utfordringar men og dermed ny kunnskap og nye ferdigheiter; verdien av bra design har blitt tydelegare og tydelegare. 
+"
+portfolio: "https://www.ingridsteinsland.no"
+email: "ingrid.m.steinsland@gmail.com"
+linkedin: "https://www.linkedin.com/in/ingrid-malene-steinsland-a44185258/"
+twitter: ""
+facebook: "https://www.facebook.com/ingrid.malene.9"
+behance: ""
+instagram: "https://www.instagram.com/designbyingo/"
+studyProgram: "BMED"
+p1_headline_1: "Røynd Bryggeri"
+p1_headline_2: "Emneoverbyggande prosjekt // drøymeprosjekt"
+project_image_1: "project_1_Ingrid Malene Steinsland.jpg"
+project_desc_1: "Røynd Bryggeri er eit nyoppstarta fiktivt mikrobryggeri som trengte emballasjedesign til sin første øllansering for sal i butikk. Deira første lansering er ein ølserie med tre forskjellige øltypar med eit konsept basert på norsk folketru. Den gode opplevinga med Røynd Bryggeri skal byrje allereie når ein tek eit val i butikken, då ein blir invitert inn av både fargar og illustrasjon som vidare dreg deg inn i norsk folketru. Emballasjedesignet er skapt med eit formål om å modernisere norsk folketru på ein humoristisk måte slik at dei gamle forteljingane kan leve vidare."
+p2_headline_1: ""
+p2_headline_2: ""
+project_image_2: "project_2_Ingrid Malene Steinsland.jpg"
+project_desc_2: ""
+p3_headline_1: ""
+p3_headline_2: ""
+project_image_3: "project_3_Ingrid Malene Steinsland.jpg"
+project_desc_3: ""
+p4_headline_1: ""
+p4_headline_2: ""
+project_image_4: "project_4_Ingrid Malene Steinsland.jpg"
+project_desc_4: ""
+p5_headline_1: ""
+p5_headline_2: ""
+project_image_5: "project_5_Ingrid Malene Steinsland.jpg"
+project_desc_5: ""
+---
+

@@ -8,7 +8,6 @@ const Button = ({
     isActive,
     children,
 }: Props) => {
-    console.log(studyProgramme)
     switch (studyProgramme) {
         case "bwu":
             return (

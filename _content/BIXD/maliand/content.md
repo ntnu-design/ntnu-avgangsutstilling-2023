@@ -1,0 +1,38 @@
+---
+title: "Malin Andersen"
+student: "Malin Andersen"
+profile_picture: "Malin Andersen_Malin Andersen.jpg"
+bio: "Hei! Jeg heter Malin, er 23år og kommer fra Trondheim. 
+Jeg vil beskrive meg selv som aktiv og livlig, med typisk 100 forskjellige prosjekter gående samtidig. Utenom bachelor studiene UI/UX-design, holder jeg akkurat nå på med å pusse opp et møbel, male et nytt kunstverk, og så strikker på noe som skal bli en genser. 
+
+I et samfunn som stadig utvikler seg, med nye og bedre løsninger som kommer til, tror jeg design vil få en mer gjennomgående rolle fremover. I løpet av studietiden har jeg fått større innsikt i viktigheten av å skape design og løsninger som er universelt utformet slik at de ivaretar alle behov. Ikke bare for brukeren av selve løsningen, men for alle involverte i forbindelse med løsningen. Alt teller. Fra idéutvikling til produksjon, til bruker, videre til hvilke ressurser som kreves av planeten og mennesker. Det er et enormt ansvar å ta innover seg som nyutdannet UI/UX-designer i en stadig travlere og mer krevende verden. Hvordan det vil gå, det får tiden vise. Jeg krysser fingrene for det beste for vår felles fremtid med meg med på laget!
+"
+portfolio: "https://xd.adobe.com/view/4a51c9e0-e0a6-41e2-88b2-17c5ad1385e1-1f02/?fullscreen"
+email: "malinand9@gmail.com"
+linkedin: "https://www.linkedin.com/in/malin-andersen-73335a26a/"
+twitter: ""
+facebook: "https://www.facebook.com/malin.andersen.94/"
+behance: ""
+instagram: "https://www.instagram.com/_malinandersen/"
+studyProgram: "BIXD"
+p1_headline_1: "All inclusive – Velg båndet som dekker ditt behov"
+p1_headline_2: "Forretningsdesign"
+project_image_1: "project_1_Malin Andersen.jpg"
+project_desc_1: "I emnet forretningsdesign hadde vi ski-NM som oppdragsgiver, hvor målet var å utvikle et forslag til en forretningsplan for ski-NM 2023. Fokuset vårt var å lage en forretningsplan som er med på å synliggjøre og utnytte service og handel fra bykjernen, samtidig som vi ønsket å engasjere innbyggerne til å delta på arrangementet. For å oppnå dette så startet vi med å gjøre research rundt målgruppen. Videre jobbet vi med problemstillingskort, verdikart og kundeprofil for å få en bedre oversikt over målgruppens ulike problemer og behov. For å forstå behovene enda bedre gjennomførte vi en detaljert kunderise, med ulike touchpoint som starter i det kunden blir eksponert for reklame om arrangementet, og varer helt til hjemreisen etter arrangementet. Hvert touchpoints har ulike løsninger, de løsningene som tilfredsstiller kundens behov kaller vi «gain points». De løsningene som gjør det utfordrende for kunden kaller vi «pain points»."
+p2_headline_1: ""
+p2_headline_2: ""
+project_image_2: "project_2_Malin Andersen.jpg"
+project_desc_2: ""
+p3_headline_1: ""
+p3_headline_2: ""
+project_image_3: "project_3_Malin Andersen.jpg"
+project_desc_3: ""
+p4_headline_1: ""
+p4_headline_2: ""
+project_image_4: "project_4_Malin Andersen.jpg"
+project_desc_4: ""
+p5_headline_1: ""
+p5_headline_2: ""
+project_image_5: "project_5_Malin Andersen.jpg"
+project_desc_5: ""
+---

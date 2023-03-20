@@ -1,0 +1,38 @@
+---
+title: "Henriette Greve Schjelderup"
+student: "Henriette Greve Schjelderup"
+profile_picture: "Henriette Greve Schjelderup_Henriette Greve Schjelderup.jpg"
+bio: "Mitt navn er Henriette Greve Schjelderup, jeg er en 22 år gammel grafisk designer fra Bergen. Jeg går nå siste året bachelor i grafisk design ved NTNU i Gjøvik og har tidligere også tatt et år grafisk design ved Høyskolen Kristiania i Bergen. Videre har jeg tenkt å ta en master i interaksjonsdesign også her ved NTNU i Gjøvik. 
+Jeg mestrer godt og har bred kunnskap innen Adobe Illustrator, Adobe InDesign og Figma med flere. Jeg holder meg kontinuerlig oppdatert på utviklingen innen grafisk design og verktøy som kan være med på å optimalisere min egen arbeidsflyt. Jeg jobber godt både individuelt og i team arbeid, og har gjennom studie fått bred erfaring innen arbeid i grupper på tvers av fagfelt da vi har hatt en rekke prosjekter i samarbeid med webutvikling og interaksjonsdesign studenter. Jeg har ved siden av studiene også jobbet freelance som designer for digitale produkter og har derfor god erfaring med arbeid sammen med kunder for å sikre at de blir fornøyde med resultatet. Jeg har øye for detaljer og en lidenskap for design og visuell kommunikasjon."
+portfolio: "https://desemberdesign.com/"
+email: "henriegs@stud.ntnu.no"
+linkedin: ""
+twitter: "https://twitter.com/DesemberDesign"
+facebook: ""
+behance: ""
+instagram: "https://www.instagram.com/desemberdesign/"
+studyProgram: "BMED"
+p1_headline_1: "Crescent Moon Skincare; Visuell identitet og emballasjedesign"
+p1_headline_2: "IDG3014 Emneoverbyggende prosjekt"
+project_image_1: "project_1_Henriette Greve Schjelderup.jpg"
+project_desc_1: "Dette prosjektet er en selvvalgt oppgave i faget IDG3014 Emneoverbyggende prosjekt som består av visuell identitet og emballasjedesign for et fiktivt hudpleie/ansiktspleie merke ved navn Crescent Moon Skincare. De ønsket et moderne og elegant design som kunne appellerer til unge jenter i aldersgruppe 16 til 27 år da produktene deres er spesielt egnet for yngre hud og dens utfordringer. 
+Crescent Moon Skincare ønsker å informere, opplyse og fremme de mange positive virkningene daglig praktiseringen av “self-care” kan ha på en person sitt velvære. Dette ønsker de å fremme gjennom hud og ansiktspleie. “Self-care” handler om å ta vare på en selv og gjøre en selv godt og Crescent Moon Skincare ønsker å oppfordre målgruppen til å ta en liten pause hver dag for å gjøre akkurat dette, ved pleie av egen hud og ansikt.
+"
+p2_headline_1: ""
+p2_headline_2: ""
+project_image_2: "project_2_Henriette Greve Schjelderup.jpg"
+project_desc_2: ""
+p3_headline_1: ""
+p3_headline_2: ""
+project_image_3: "project_3_Henriette Greve Schjelderup.jpg"
+project_desc_3: ""
+p4_headline_1: ""
+p4_headline_2: ""
+project_image_4: "project_4_Henriette Greve Schjelderup.jpg"
+project_desc_4: ""
+p5_headline_1: ""
+p5_headline_2: ""
+project_image_5: "project_5_Henriette Greve Schjelderup.jpg"
+project_desc_5: ""
+---
+

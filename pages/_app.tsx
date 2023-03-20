@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 import "../styles/index.css";
 
 const montserrat = Montserrat({

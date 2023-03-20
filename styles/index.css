@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bwu-overlay {
+    @apply absolute inset-0 bg-bwu opacity-0 hover:opacity-30;
+}
+
+.bixd-overlay {
+    @apply absolute inset-0 bg-bixd opacity-0 hover:opacity-30;
+}
+
+.bmed-overlay {
+    @apply absolute inset-0 bg-bmed opacity-0 hover:opacity-30;
+}
+
+.bmed-circle {
+    @apply absolute opacity-0 transform -translate-x-1/2 -translate-y-1/2 scale-75 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 ease-in-out;
+    top: 50%;
+    left: 50%;
+    width: 8rem;
+    aspect-ratio: 1;
+    background-color: #e45197;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.bwu-square {
+    @apply absolute opacity-0 transform -translate-x-1/2 -translate-y-1/2 rotate-45 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100 transition-all duration-300 ease-in-out;
+    top: 50%;
+    left: 50%;
+    width: 8rem;
+    aspect-ratio: 1;
+    background-color: #508fce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.bixd-triangle {
+    @apply absolute opacity-0 transform -translate-x-1/2 -translate-y-1/2 rotate-45 scale-75 group-hover:opacity-100 group-hover:rotate-0 group-hover:scale-100 transition-all duration-300 ease-in-out;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8rem;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+.bixd-triangle::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+    border-bottom: 8rem solid #5ca545;
+    position: absolute;
+    z-index: -1;
+}

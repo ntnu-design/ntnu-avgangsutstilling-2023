@@ -71,8 +71,12 @@ export default function Student({ student }: Props) {
                                     height={400}
                                 />
                                 <div>
-                                    <p>{student.title}</p>
+                                    <p className="text-3xl text-[#5091CC] font-[800]">
+                                        {student.title}
+                                    </p>
+                                    <hr className="border-[#C2C2C2] my-8 2xl:my-4 " />
                                     <div
+                                        className="2xl:text-[20px] "
                                         dangerouslySetInnerHTML={{
                                             __html: student.bio,
                                         }}
@@ -139,10 +143,16 @@ export default function Student({ student }: Props) {
                                                 height={400}
                                                 alt={project.headline_1}
                                             />
-                                            <div>
-                                                <h4>{project.headline_2}</h4>
-                                                <h3>{project.headline_1}</h3>
+
+                                            <div className="mx-0 smd:mx-4 2xl:mx-12">
+                                                <h4 className="text-[16px] smd:text-[12px] 2xl:text-[22px]">
+                                                    {project.headline_2}
+                                                </h4>
+                                                <h3 className="font-bold text-[21px] smd:text-[21px] 2xl:text-[38px] mb-4 text-[#5091CC]">
+                                                    {project.headline_1}
+                                                </h3>
                                                 <div
+                                                    className="text-[16px] smd:text-[12px] 2xl:text-[20px]"
                                                     dangerouslySetInnerHTML={{
                                                         __html: project.desc,
                                                     }}

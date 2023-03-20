@@ -3,14 +3,19 @@ import { StudyProgramme } from "../../interfaces/student"
 import { getHeading } from "../../lib/utils"
 import Link from "next/link"
 import Button from "../Button"
+import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
 
 const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
     const heading = getHeading(studyProgramme)
     let imageSrc
     let textContent
     let textDescription
+    let instaPage
+    let facebookPage
     switch (studyProgramme) {
         case "bwu":
+            instaPage = "https://www.instagram.com/ba_webutvikling_ntnu/"
+            facebookPage = "https://www.facebook.com/webutvikling.ntnu"
             imageSrc = "/Webutvikling_hovedside.svg"
             textContent =
                 "18 studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
@@ -18,6 +23,8 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 "Studentene kombinerer brukersentrerte designmetoder og web-teknologier for å løse problemer. Utstillingen inkluderer en rekke ulike arbeider fra idéskaping, konseptualisering og prototyping til utvikling og implementering."
             break
         case "bixd":
+            instaPage = "https://www.instagram.com/ba_interaksjonsdesign_ntnu/"
+            facebookPage = "https://www.facebook.com/interaksjonsdesign.ntnu"
             imageSrc = "/Interaksjonsdesign_hovedside.svg"
             textContent =
                 "28 studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
@@ -25,6 +32,8 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 "Utstillingen inkluderer designarbeider for elektroniske medier, så vel som fysiske prototyper, og viser eksempler på hva studentene har jobbet med i emner som tjenestedesign, informasjonsarkitektur, tingenes web, forretningsdesign, og fysisk prototyping."
             break
         case "bmed":
+            instaPage = "https://www.instagram.com/grafisk_design_ntnu/"
+            facebookPage = "https://www.facebook.com/grafiskdesign.ntnu"
             imageSrc = "/GrafiskDesign_hovedside.svg"
             textContent =
                 "27 studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe."
@@ -35,13 +44,11 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             break
     }
     return (
-        <div>
+        <div className="grid md:grid-cols-2 gap-2 md:gap-14 mt-[6em] md:mt-[12em]">
             <div
-                className={
-                    /* `flex flex-col justify-center items-center ${
-                    reverse ? "md:flex-row-reverse" : "md:flex-row"
-                } md:justify-between` */ `grid md:grid-cols-2`
-                }
+                className={`${
+                    reverse ? "md:order-2" : "md:order-1"
+                } justify-self-center self-center hidden md:block`}
             >
                 <Image
                     src={imageSrc}
@@ -50,42 +57,42 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                     height={0}
                     style={{ width: "auto", height: "auto" }}
                 />
-                <div className={``}>
-                    <h2
-                        className={`text-${studyProgramme} text-xl sm:text-2xl md:text-3xl font-bold mb-2`}
-                    >
-                        {heading}
-                    </h2>
-                    <p className="mb-2">{textContent}</p>
-                    <p>{textDescription}</p>
-                </div>
             </div>
-            <div>
-                <Button studyProgramme={studyProgramme}>
-                    <Link href={`/${studyProgramme}`}>Vis studenter</Link>
-                </Button>
+            <div className={`${reverse ? "md:order-1" : "md:order-2"}`}>
+                <h2
+                    className={`text-${studyProgramme} text-xl sm:text-2xl md:text-3xl font-bold mb-6`}
+                >
+                    {heading}
+                </h2>
+                <p className="mb-2">{textContent}</p>
+                <p>{textDescription}</p>
+                <div className="mt-6 flex items-center justify-between">
+                    <Button studyProgramme={studyProgramme}>
+                        <Link href={`/${studyProgramme}`}>Vis studenter</Link>
+                    </Button>
 
-                <div className="flex flex-row mt-4">
-                    <Link href="">
-                        <Image
-                            className="mr-5"
-                            src="/instagramicon.svg"
-                            alt={""}
-                            width={0}
-                            height={0}
-                            style={{ width: "auto", height: "auto" }}
-                        />
-                    </Link>
-                    <Link href={""}>
-                        <Image
-                            className="mr-5"
-                            src="/facebookicon.svg"
-                            alt={""}
-                            width={0}
-                            height={0}
-                            style={{ width: "auto", height: "auto" }}
-                        />
-                    </Link>
+                    <div className="flex flex-row space-x-4">
+                        <Link
+                            href={instaPage}
+                            target="_blank"
+                            rel="noopenner norefferer"
+                        >
+                            <InstagramLogo
+                                size={64}
+                                className={`hover:text-${studyProgramme} transition`}
+                            />
+                        </Link>
+                        <Link
+                            href={facebookPage}
+                            target="_blank"
+                            rel="noopenner norefferer"
+                        >
+                            <FacebookLogo
+                                size={64}
+                                className={`hover:text-${studyProgramme} transition`}
+                            />
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

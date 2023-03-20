@@ -93,6 +93,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@phosphor-icons/react@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@phosphor-icons/react/-/react-2.0.6.tgz#6b05f206b7a7dc5946081fbba92b11aea5ff134f"
+  integrity sha512-vT5Tv+isibcRO1ATPW+cZs2w46n512SfShRX9kqZbETht8ME11CT387APBbcW9EAeBFEGM6buoYxP+0/IJJRKg==
+
 "@swc/helpers@0.4.14":
   version "0.4.14"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.14.tgz"

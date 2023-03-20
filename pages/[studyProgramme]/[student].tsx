@@ -6,7 +6,7 @@ import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
-import { CaretDown } from "@phosphor-icons/react"
+import { CaretDown, InstagramLogo } from "@phosphor-icons/react"
 
 export default function Student({ student }: Props) {
     const router = useRouter()
@@ -74,7 +74,9 @@ export default function Student({ student }: Props) {
                                     priority
                                 />
                                 <div className="lg:col-span-2">
-                                    <h1 className={`text-2xl md:text-4xl text-${student.studyProgram.toLowerCase()} font-bold`}>
+                                    <h1
+                                        className={`text-2xl md:text-4xl text-${student.studyProgram.toLowerCase()} font-bold`}
+                                    >
                                         {student.title}
                                     </h1>
                                     <hr className="border-gray-3 my-8 2xl:my-4 " />
@@ -98,8 +100,8 @@ export default function Student({ student }: Props) {
                                                         ".svg"
                                                     }
                                                     alt={link.name + " icon"}
-                                                    width={25}
-                                                    height={25}
+                                                    width={64}
+                                                    height={64}
                                                 />
                                             </a>
                                         )
@@ -131,13 +133,8 @@ export default function Student({ student }: Props) {
                                             <hr className="border-[#C2C2C2] mb-6 2xl:my-4 " />
 
                                             <Image
-                                                className="smd:object-contain smd:object-top 2xl:object-contain 2xl:object-top"
-                                                src={
-                                                    "/" +
-                                                    student.studyProgramme +
-                                                    "/" +
-                                                    project.image
-                                                }
+                                                className="md:object-contain md:object-top 2xl:object-contain 2xl:object-top"
+                                                src={`/${student.studyProgramme}/${project.image}`}
                                                 width={400}
                                                 height={400}
                                                 alt={project.headline_1}

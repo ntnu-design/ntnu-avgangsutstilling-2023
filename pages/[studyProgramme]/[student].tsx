@@ -62,8 +62,14 @@ export default function Student({ student }: Props) {
                     <p>Loading…</p>
                 ) : (
                     <>
+                        <article>
+                            <Head>
+                                <title>{student.title}</title>
+                                <meta property="og:image" content="" />
+                            </Head>
+                        </article>
                         <main className="h-screen">
-                            <div className="flex">
+                            <div className="flex flex-col my-6 gap-6 smd:flex-row 2xl:flex-row 2xl:pt-[6rem] ">
                                 <Image
                                     src={`/${student.studyProgramme}/${student.profile_picture}`}
                                     alt={student.title}
@@ -71,15 +77,19 @@ export default function Student({ student }: Props) {
                                     height={400}
                                 />
                                 <div>
-                                    <p>{student.title}</p>
+                                    <p className="text-3xl text-[#5091CC] font-[800]">
+                                        {student.title}
+                                    </p>
+                                    <hr className="border-[#C2C2C2] my-8 2xl:my-4 " />
                                     <div
+                                        className="2xl:text-[20px] "
                                         dangerouslySetInnerHTML={{
                                             __html: student.bio,
                                         }}
                                     />
                                 </div>
                             </div>
-                            <div className="flex">
+                            <div className="flex gap-5 pt-5 2xl:pt-0">
                                 {socialMediaLinks.map((link, index) => {
                                     if (link.url !== "") {
                                         return (
@@ -91,34 +101,44 @@ export default function Student({ student }: Props) {
                                                         ".svg"
                                                     }
                                                     alt={link.name + " icon"}
-                                                    width={50}
-                                                    height={50}
+                                                    width={25}
+                                                    height={25}
                                                 />
                                             </a>
                                         )
                                     }
                                 })}
                             </div>
-                            <div className="flex justify-center">
+                            <div className="flex justify-center invisible object-contain object-bottom smd:visible 2xl:visible 2xl:items-center">
                                 <button>
                                     <a href="#prosjekter">
-                                        <Image
-                                            src={"/scrollarrow.svg"}
-                                            width={50}
-                                            height={50}
-                                            alt=""
-                                        />
+                                        <div className="">
+                                            <Image
+                                                src={"/scrollarrow.svg"}
+                                                width={50}
+                                                height={50}
+                                                alt=""
+                                            />
+                                        </div>
                                     </a>
                                 </button>
                             </div>
                         </main>
-                        <section id="prosjekter">
-                            <h2>Prosjekter</h2>
+                        <section id="prosjekter" className="mb-12">
+                            <h2 className="text-xl font-bold mb-2 ssd:mt-16 sm:mt-16 smd:mt-24 2xl:mt-[-20px] 2xl:mb-[2rem] ">
+                                Prosjekter
+                            </h2>
                             {studentProjects.map((project, index) => {
                                 if (project.headline_1 !== "") {
                                     return (
-                                        <div className="flex" key={index}>
+                                        <div
+                                            className="flex flex-col gap-2 pt-[1rem] smd:flex-row 2xl:flex-row mb-[6rem] invisible:border-t smd:border-t 2xl:border-t border-[#C2C2C2] 2xl:pt-[4rem]"
+                                            key={index}
+                                        >
+                                            <hr className="border-[#C2C2C2] mb-6 2xl:my-4 " />
+
                                             <Image
+                                                className="smd:object-contain smd:object-top 2xl:object-contain 2xl:object-top"
                                                 src={
                                                     "/" +
                                                     student.studyProgramme +
@@ -129,10 +149,16 @@ export default function Student({ student }: Props) {
                                                 height={400}
                                                 alt={project.headline_1}
                                             />
-                                            <div>
-                                                <h4>{project.headline_2}</h4>
-                                                <h3>{project.headline_1}</h3>
+
+                                            <div className="mx-0 smd:mx-4 2xl:mx-12">
+                                                <h4 className="text-[16px] smd:text-[12px] 2xl:text-[22px]">
+                                                    {project.headline_2}
+                                                </h4>
+                                                <h3 className="font-bold text-[21px] smd:text-[21px] 2xl:text-[38px] mb-4 text-[#5091CC]">
+                                                    {project.headline_1}
+                                                </h3>
                                                 <div
+                                                    className="text-[16px] smd:text-[12px] 2xl:text-[20px]"
                                                     dangerouslySetInnerHTML={{
                                                         __html: project.desc,
                                                     }}

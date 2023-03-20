@@ -3,9 +3,7 @@ import Image from "next/image"
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
-//import markdownToHtml from "../../lib/markdownToHtml"
 import Layout from "../../components/layout/layout"
-import Navbar from "../../components/navigation/navbar"
 import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
 
@@ -53,13 +51,11 @@ export default function Student({ student }: Props) {
             desc: student.project_desc_5,
         },
     ]
-
     return (
         <Layout>
             <Head>
-                <title>{`Avgangsutstilling 2023`}</title>
+                <title>{`Avgangsutstilling 2023 - ${student.title}`}</title>
             </Head>
-            <Navbar />
 
             <Container>
                 {router.isFallback ? (
@@ -161,7 +157,8 @@ export default function Student({ student }: Props) {
                                                 <h3 className="font-bold text-[21px] smd:text-[21px] 2xl:text-[38px] mb-4 text-[#5091CC]">
                                                     {project.headline_1}
                                                 </h3>
-                                                <div className="text-[16px] smd:text-[12px] 2xl:text-[20px]"
+                                                <div
+                                                    className="text-[16px] smd:text-[12px] 2xl:text-[20px]"
                                                     dangerouslySetInnerHTML={{
                                                         __html: project.desc,
                                                     }}

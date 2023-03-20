@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react"
 import Image from "next/image"
 
 const ResponsiveHeroBackground = (props) => {
-    const [imageSrc, setImageSrc] = useState("/svg/bwu/Mobil.svg")
-
+    const [imageSrc, setImageSrc] = useState(
+        `/svg/${props.studyProgram}/Mobil.svg`
+    )
+    console.log(props.studyProgram)
     const updateImageSrc = () => {
         const screenWidth = window.innerWidth
 
@@ -27,12 +29,12 @@ const ResponsiveHeroBackground = (props) => {
         return () => {
             window.removeEventListener("resize", updateImageSrc)
         }
-    }, [])
+    }, [props.studyProgram])
 
     return (
         <Image
             src={imageSrc}
-            alt="Background image with symbols for web development"
+            alt="Background image"
             width={0}
             height={0}
             object-fit="contain"

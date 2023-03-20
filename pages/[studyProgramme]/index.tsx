@@ -30,36 +30,29 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
-            <HeroDel />
+            <HeroDel studyProgramme={studyProgramme} />
             <Container>
                 <div>
-                    <div className="text-center">
-                        {/* <Button studyProgramme={studyProgramme} onClick={() => setSortOrder("random")}
-                            disabled={sortOrder === "random"}>
-                            Tilfeldig
-                        </Button> */}
-                        <button
-                            className={`sortOrderButton ${
-                                sortOrder === "random"
-                                    ? "sortOrderButtonSelected"
-                                    : ""
-                            }`}
-                            onClick={() => setSortOrder("random")}
-                            disabled={sortOrder === "random"}
+                    <div
+                        className="text-center flex row justify-center"
+                        style={{ gap: "15px" }}
+                    >
+                        <Button
+                            studyProgramme={studyProgramme}
+                            onButtonClick={() => setSortOrder("random")}
+                            onDisabled={sortOrder === "random"}
+                            isActive={sortOrder === "random"}
                         >
                             Tilfeldig
-                        </button>
-                        <button
-                            className={`sortOrderButton ${
-                                sortOrder === "alphabetical"
-                                    ? "sortOrderButtonSelected"
-                                    : ""
-                            }`}
-                            onClick={() => setSortOrder("alphabetical")}
-                            disabled={sortOrder === "alphabetical"}
+                        </Button>
+                        <Button
+                            studyProgramme={studyProgramme}
+                            onButtonClick={() => setSortOrder("alphabetical")}
+                            onDisabled={sortOrder === "alphabetical"}
+                            isActive={sortOrder === "alphabetical"}
                         >
                             Alfabetisk
-                        </button>
+                        </Button>
                     </div>
                     <ul
                         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"

@@ -56,6 +56,7 @@ export function getStudentBySlug(
         behance: "",
         instagram: "",
         studyProgramme: "",
+        studyProgram: "",
         p1_headline_1: "",
         p1_headline_2: "",
         project_image_1: "",

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Link from "next/link"
+import Image from "next/image"
+
 import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
@@ -33,11 +35,17 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         <button className={sortOrder === "random" ? 'font-bold' : ''} onClick={() => setSortOrder("random")}>Tilfeldig</button>
                         <button className={sortOrder === "alphabetical" ? 'font-bold' : ''} onClick={() => setSortOrder("alphabetical")}>Alfabetisk</button>
                     </div>
-                    <ul>
+                    <ul className="flex justify-start ..">
                         {sortedStudents.map((student, index) => (
-                            <li key={index}>
+                            <li className="p-5" key={index}>
                                 <Link href={`${student.studyProgramme}`}>
-                                    {student.title}
+                                          <Image
+                                    src={`/${student.studyProgramme}/${student.profile_picture}${student.title}_${student.title}.jpg`}
+                                    alt={student.title}
+                                    width={400}
+                                    height={400}
+                                />
+                                <p className="p-2">{student.title}</p>    
                                 </Link>
                             </li>
                         ))}

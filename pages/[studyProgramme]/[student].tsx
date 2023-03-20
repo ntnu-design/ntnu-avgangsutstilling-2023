@@ -6,6 +6,7 @@ import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
+import { CaretDown } from "@phosphor-icons/react"
 
 export default function Student({ student }: Props) {
     const router = useRouter()
@@ -62,21 +63,23 @@ export default function Student({ student }: Props) {
                     <p>Loading…</p>
                 ) : (
                     <>
-                        <main className="h-screen">
-                            <div className="flex flex-col my-6 gap-6 smd:flex-row 2xl:flex-row 2xl:pt-[6rem] ">
+                        <main>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[6em] md:flex-row">
                                 <Image
                                     src={`/${student.studyProgramme}/${student.profile_picture}`}
                                     alt={student.title}
-                                    width={400}
-                                    height={400}
+                                    width={0}
+                                    height={0}
+                                    style={{ width: "auto", height: "auto" }}
+                                    priority
                                 />
-                                <div>
-                                    <p className="text-3xl text-[#5091CC] font-[800]">
+                                <div className="lg:col-span-2">
+                                    <h1 className={`text-2xl md:text-4xl text-${student.studyProgram.toLowerCase()} font-bold`}>
                                         {student.title}
-                                    </p>
-                                    <hr className="border-[#C2C2C2] my-8 2xl:my-4 " />
-                                    <div
-                                        className="2xl:text-[20px] "
+                                    </h1>
+                                    <hr className="border-gray-3 my-8 2xl:my-4 " />
+                                    <p
+                                        className="text-md md:text-lg"
                                         dangerouslySetInnerHTML={{
                                             __html: student.bio,
                                         }}
@@ -104,18 +107,14 @@ export default function Student({ student }: Props) {
                                 })}
                             </div>
                             <div className="flex justify-center invisible object-contain object-bottom smd:visible 2xl:visible 2xl:items-center">
-                                <button>
-                                    <a href="#prosjekter">
-                                        <div className="">
-                                            <Image
-                                                src={"/scrollarrow.svg"}
-                                                width={50}
-                                                height={50}
-                                                alt=""
-                                            />
-                                        </div>
-                                    </a>
-                                </button>
+                                <a href="#prosjekter">
+                                    <div className="">
+                                        <CaretDown
+                                            size={44}
+                                            className={`text-${student.studyProgram.toLowerCase()}`}
+                                        />
+                                    </div>
+                                </a>
                             </div>
                         </main>
                         <section id="prosjekter" className="mb-12">

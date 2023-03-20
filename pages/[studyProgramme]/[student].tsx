@@ -8,6 +8,11 @@ import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
 
 export default function Student({ student }: Props) {
+    const bwuText = "text-bwu"
+    const bixdText = "text-bixd"
+    const bmedText = "text-bmed"
+    const defaultText ="text-black"
+
     const router = useRouter()
     if (!router.isFallback && !student?.studyProgramme) {
         return <ErrorPage statusCode={404} />
@@ -77,7 +82,21 @@ export default function Student({ student }: Props) {
                                     height={400}
                                 />
                                 <div>
-                                    <p className="text-3xl text-[#5091CC] font-[800]">
+                                    <p className={`text-3xl text-[#5091CC] font-[800]
+                                    ${
+                                        router.query.studyProgramme === "bixd"
+                                            ? bixdText
+                                            : router.query.studyProgramme === "bwu"
+                                            ? bwuText
+                                            : router.query.studyProgramme === "bmed"
+                                            ? bmedText
+                                            : router.query.studyProgramme === "BIXD"
+                                            ? bixdText
+                                            : router.query.studyProgramme === "BMED"
+                                            ? bmedText
+                                            : defaultText
+                                    }
+                                    `}>
                                         {student.title}
                                     </p>
                                     <hr className="border-[#C2C2C2] my-8 2xl:my-4 " />
@@ -154,7 +173,21 @@ export default function Student({ student }: Props) {
                                                 <h4 className="text-[16px] smd:text-[12px] 2xl:text-[22px]">
                                                     {project.headline_2}
                                                 </h4>
-                                                <h3 className="font-bold text-[21px] smd:text-[21px] 2xl:text-[38px] mb-4 text-[#5091CC]">
+                                                <h3 className={`font-bold text-[21px] smd:text-[21px] 2xl:text-[38px] mb-4
+                                                ${
+                                                    router.query.studyProgramme === "bixd"
+                                                        ? bixdText
+                                                        : router.query.studyProgramme === "bwu"
+                                                        ? bwuText
+                                                        : router.query.studyProgramme === "bmed"
+                                                        ? bmedText
+                                                        : router.query.studyProgramme === "BIXD"
+                                                        ? bixdText
+                                                        : router.query.studyProgramme === "BMED"
+                                                        ? bmedText
+                                                        : defaultText
+                                                }
+                                                `}>
                                                     {project.headline_1}
                                                 </h3>
                                                 <div

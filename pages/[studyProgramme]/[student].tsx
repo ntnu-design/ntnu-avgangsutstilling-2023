@@ -54,7 +54,7 @@ export default function Student({ student }: Props) {
     return (
         <Layout>
             <Head>
-                <title>{`Avgangsutstilling 2023 ${student.title}`}</title>
+                <title>{`Avgangsutstilling 2023 - ${student.title}`}</title>
             </Head>
 
             <Container>

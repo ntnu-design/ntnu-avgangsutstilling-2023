@@ -18,6 +18,10 @@ function Footer() {
                     ? bwuBg
                     : router.query.studyProgramme === "bmed"
                     ? bmedBg
+                    : router.query.studyProgramme === "BIXD"
+                    ? bixdBg
+                    : router.query.studyProgramme === "BMED"
+                    ? bmedBg
                     : mainBg
             }`}
         >

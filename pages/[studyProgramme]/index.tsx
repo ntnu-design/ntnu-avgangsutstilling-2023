@@ -23,7 +23,6 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
-            <Navbar />
             <HeroDel />
             <Container>
                 <div>

@@ -8,17 +8,15 @@ function Footer() {
     let bmedBg = "bg-[#D95C95]"
 
     const router = useRouter()
-    console.log(router);
-    
 
     return (
         <footer
             className={`flex justify-center ${
-                router.query.studyProgramme == "bixd"
+                router.query.studyProgramme === "bixd"
                     ? bixdBg
-                    : router.query.studyProgramme == "bwu"
+                    : router.query.studyProgramme === "bwu"
                     ? bwuBg
-                    : router.query.studyProgramme == "bmed"
+                    : router.query.studyProgramme === "bmed"
                     ? bmedBg
                     : mainBg
             }`}

@@ -62,12 +62,6 @@ export default function Student({ student }: Props) {
                     <p>Loading…</p>
                 ) : (
                     <>
-                        <article>
-                            <Head>
-                                <title>{student.title}</title>
-                                <meta property="og:image" content="" />
-                            </Head>
-                        </article>
                         <main className="h-screen">
                             <div className="flex flex-col my-6 gap-6 smd:flex-row 2xl:flex-row 2xl:pt-[6rem] ">
                                 <Image

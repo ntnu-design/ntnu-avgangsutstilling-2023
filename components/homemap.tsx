@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function BottomMap() {
     return (
-        <div className="flex ssd:flex-col-reverse sm:flex-col-reverse md:flex-row sm:content-center smd:justify-around md:justify-around ssd:my-32 sm:my-32 md:my-52">
+        <div className="flex flex-col-reverse md:flex-row my-4 gap-10">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22459.846322662568!2d10.662827840869888!3d60.79146064219507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4641db7a7c610437%3A0x5783e79eaec830ba!2sNTNU%20Institutt%20for%20design%2C%20Gj%C3%B8vik!5e0!3m2!1sno!2sno!4v1678884205874!5m2!1sno!2sno"
                 className="border-0 ssd:w-[18rem] sm:w-[37.5rem] smd:w-[40%] md:w-[41rem] ssd:h-[18rem] sm:h-[37.5rem] smd:h-[30rem] md:h-[41rem]"
@@ -34,7 +34,7 @@ export default function BottomMap() {
                         height={25}
                         style={{ height: "auto", width: "auto" }}
                     />
-                    <p className="font-semibold ssd:text-[15px] smd:text-[15px] text-[20px]">
+                    <p className="text-md sm:text-lg font-semibold">
                         Raufossvegen 40, 2821 Gjøvik
                     </p>
                 </div>
@@ -46,7 +46,7 @@ export default function BottomMap() {
                         height={25}
                         style={{ height: "auto", width: "auto" }}
                     />
-                    <p className="font-semibold ssd:text-[15px] smd:text-[15px] text-[20px]">
+                    <p className="text-md sm:text-lg font-semibold">
                         Det er tilgjengelig gratis parkering på Mustad
                         Næringspark.
                     </p>

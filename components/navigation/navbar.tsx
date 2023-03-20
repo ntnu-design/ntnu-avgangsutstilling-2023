@@ -45,7 +45,7 @@ export default function Navbar() {
         </ul>
         <p className="ml-auto">Om utstilling</p>
       </div>
-      <div className="md:hidden flex justify-end">
+      <div className="md:hidden flex justify-end shadow-lg shadow-accent-2/75">
         <button
           onClick={toggle}
           className="p-2 rounded-md text-accent-7"

@@ -1,5 +1,6 @@
 import Container from "./layout/container"
 import { useRouter } from "next/router"
+import { InstagramLogo } from "@phosphor-icons/react"
 
 function Footer() {
     const mainBg = "bg-main"
@@ -29,9 +30,10 @@ function Footer() {
                     <div className="flex justify-center text-lg gap-7 pt-5">
                         <a
                             href="https://www.instagram.com/avgangsutstilling_ntnu/"
+                            rel="noopenner norefferer"
                             target="_blank"
                         >
-                            <img src="/instagramicon.svg" alt="instagram" />
+                            <InstagramLogo size={64} />
                         </a>
                     </div>
                 </div>

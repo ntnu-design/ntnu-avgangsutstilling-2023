@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={montserrat.className}>
+    <div className={montserrat.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 }

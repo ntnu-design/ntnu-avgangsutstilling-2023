@@ -4,6 +4,7 @@ import Head from "next/head"
 import HomeContent from "../components/studyprograminfo"
 import BottomMap from "../components/homemap"
 import HeroDel from "../components/temporary/hero-del"
+import StudyProgrammeInfo from "../components/StudyProgrammeInfo/StudyProgrammeInfo"
 
 export default function Index() {
   return (
@@ -14,7 +15,10 @@ export default function Index() {
         </Head>
         <Container>
           <HeroDel />
-          <HomeContent />
+          {/* <HomeContent /> */}
+          <StudyProgrammeInfo studyProgramme="bixd" reverse={false} />
+          <StudyProgrammeInfo studyProgramme="bmed" reverse={true} />
+          <StudyProgrammeInfo studyProgramme="bwu" reverse={false} />
           <BottomMap />
         </Container>
       </Layout>

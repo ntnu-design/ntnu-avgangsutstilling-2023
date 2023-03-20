@@ -5,7 +5,6 @@ const ResponsiveHeroBackground = (props) => {
     const [imageSrc, setImageSrc] = useState(
         `/svg/${props.studyProgram}/Mobil.svg`
     )
-    console.log(props.studyProgram)
     const updateImageSrc = () => {
         const screenWidth = window.innerWidth
 

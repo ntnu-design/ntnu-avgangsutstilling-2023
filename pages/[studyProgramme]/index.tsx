@@ -12,6 +12,7 @@ import type {
     StudentItem,
     StudyProgrammeParams,
 } from "../../interfaces/student"
+import Button from "../../components/Button"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
@@ -29,28 +30,34 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
-            <HeroDel />
+            <HeroDel studyProgramme={studyProgramme} />
             <Container>
                 <div>
-                    <div>
-                        <button
-                            className={
-                                sortOrder === "random" ? "font-bold" : ""
-                            }
-                            onClick={() => setSortOrder("random")}
+                    <div
+                        className="text-center flex row justify-center"
+                        style={{ gap: "15px" }}
+                    >
+                        <Button
+                            studyProgramme={studyProgramme}
+                            onButtonClick={() => setSortOrder("random")}
+                            onDisabled={sortOrder === "random"}
+                            isActive={sortOrder === "random"}
                         >
                             Tilfeldig
-                        </button>
-                        <button
-                            className={
-                                sortOrder === "alphabetical" ? "font-bold" : ""
-                            }
-                            onClick={() => setSortOrder("alphabetical")}
+                        </Button>
+                        <Button
+                            studyProgramme={studyProgramme}
+                            onButtonClick={() => setSortOrder("alphabetical")}
+                            onDisabled={sortOrder === "alphabetical"}
+                            isActive={sortOrder === "alphabetical"}
                         >
                             Alfabetisk
-                        </button>
+                        </Button>
                     </div>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <ul
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                        style={{ maxWidth: "1200px", margin: "0 auto" }}
+                    >
                         {sortedStudents.map((student, index) => (
                             <li
                                 className={`p-5 group ${

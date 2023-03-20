@@ -1,4 +1,4 @@
-import Footer from "../footer"
+import Footer from "../Footer"
 import Navbar from "../navigation/navbar"
 import Meta from "../meta"
 

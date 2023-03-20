@@ -4,7 +4,6 @@ import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
 import Layout from "../../components/layout/layout"
-import Navbar from "../../components/navigation/navbar"
 import HeroDel from "../../components/temporary/hero-del"
 import Container from "../../components/layout/container"
 import Image from "next/image"
@@ -30,7 +29,6 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <Head>
                 <title>{`Avgangsutstilling 2023 - ${heading}`}</title>
             </Head>
-            <Navbar />
             <HeroDel />
             <Container>
                 <div>

@@ -3,9 +3,7 @@ import Image from "next/image"
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
-//import markdownToHtml from "../../lib/markdownToHtml"
 import Layout from "../../components/layout/layout"
-import Navbar from "../../components/navigation/navbar"
 import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
 
@@ -53,25 +51,17 @@ export default function Student({ student }: Props) {
             desc: student.project_desc_5,
         },
     ]
-
     return (
         <Layout>
             <Head>
-                <title>{`Avgangsutstilling 2023`}</title>
+                <title>{`Avgangsutstilling 2023 - ${student.title}`}</title>
             </Head>
-            <Navbar />
 
             <Container>
                 {router.isFallback ? (
                     <p>Loading…</p>
                 ) : (
                     <>
-                        <article className="mb-32">
-                            <Head>
-                                <title>{student.title}</title>
-                                <meta property="og:image" content="" />
-                            </Head>
-                        </article>
                         <main className="h-screen">
                             <div className="flex">
                                 <Image
@@ -82,7 +72,11 @@ export default function Student({ student }: Props) {
                                 />
                                 <div>
                                     <p>{student.title}</p>
-                                    <div dangerouslySetInnerHTML={{ __html: student.bio }} />
+                                    <div
+                                        dangerouslySetInnerHTML={{
+                                            __html: student.bio,
+                                        }}
+                                    />
                                 </div>
                             </div>
                             <div className="flex">
@@ -138,7 +132,11 @@ export default function Student({ student }: Props) {
                                             <div>
                                                 <h4>{project.headline_2}</h4>
                                                 <h3>{project.headline_1}</h3>
-                                                <div dangerouslySetInnerHTML={{ __html: project.desc }} />
+                                                <div
+                                                    dangerouslySetInnerHTML={{
+                                                        __html: project.desc,
+                                                    }}
+                                                />
                                             </div>
                                         </div>
                                     )

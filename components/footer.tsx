@@ -2,10 +2,10 @@ import Container from "./layout/container"
 import { useRouter } from "next/router"
 
 function Footer() {
-    let mainBg = "bg-[#F47A43]"
-    let bwuBg = "bg-[#5091CC]"
-    let bixdBg = "bg-[#72AD56]"
-    let bmedBg = "bg-[#D95C95]"
+    const mainBg = "bg-main"
+    const bwuBg = "bg-bwu"
+    const bixdBg = "bg-bixd"
+    const bmedBg = "bg-bmed"
 
     const router = useRouter()
 

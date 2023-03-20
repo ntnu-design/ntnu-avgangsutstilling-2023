@@ -11,6 +11,7 @@ export interface StudentItem {
     behance?: string
     instagram?: string
     studyProgramme: string
+    studyProgram: string
     p1_headline_1: string
     p1_headline_2: string
     project_image_1: string

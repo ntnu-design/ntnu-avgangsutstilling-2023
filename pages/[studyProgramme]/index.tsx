@@ -12,6 +12,7 @@ import type {
     StudentItem,
     StudyProgrammeParams,
 } from "../../interfaces/student"
+import Button from "../../components/Button"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
@@ -32,25 +33,38 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             <HeroDel />
             <Container>
                 <div>
-                    <div>
+                    <div className="text-center">
+                        {/* <Button studyProgramme={studyProgramme} onClick={() => setSortOrder("random")}
+                            disabled={sortOrder === "random"}>
+                            Tilfeldig
+                        </Button> */}
                         <button
-                            className={
-                                sortOrder === "random" ? "font-bold" : ""
-                            }
+                            className={`sortOrderButton ${
+                                sortOrder === "random"
+                                    ? "sortOrderButtonSelected"
+                                    : ""
+                            }`}
                             onClick={() => setSortOrder("random")}
+                            disabled={sortOrder === "random"}
                         >
                             Tilfeldig
                         </button>
                         <button
-                            className={
-                                sortOrder === "alphabetical" ? "font-bold" : ""
-                            }
+                            className={`sortOrderButton ${
+                                sortOrder === "alphabetical"
+                                    ? "sortOrderButtonSelected"
+                                    : ""
+                            }`}
                             onClick={() => setSortOrder("alphabetical")}
+                            disabled={sortOrder === "alphabetical"}
                         >
                             Alfabetisk
                         </button>
                     </div>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <ul
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+                        style={{ maxWidth: "1200px", margin: "0 auto" }}
+                    >
                         {sortedStudents.map((student, index) => (
                             <li
                                 className={`p-5 group ${

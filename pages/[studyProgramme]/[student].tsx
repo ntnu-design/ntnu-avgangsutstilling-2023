@@ -164,9 +164,9 @@ export default function Student({ student }: Props) {
                                 </div>
                             </div>
 
-                            <div className="flex justify-center invisible object-contain object-bottom smd:visible 2xl:visible 2xl:items-center">
+                            <div className="flex justify-center invisible object-contain object-bottom md:visible 2xl:visible 2xl:items-center">
                                 <a href="#prosjekter">
-                                    <div className="mt-[8em]">
+                                    <div className="md:mt-[8em]">
                                         <CaretDown
                                             size={44}
                                             className={`text-${student.studyProgram.toLowerCase()}`}

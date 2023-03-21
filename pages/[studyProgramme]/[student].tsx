@@ -92,6 +92,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={`mailto:${link.url}?subject=Avgangsutstilling-2023`}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <Envelope
                                                                 size={44}
@@ -105,6 +107,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <Globe
                                                                 size={44}
@@ -119,6 +123,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <LinkedinLogo
                                                                 size={44}
@@ -133,6 +139,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <BehanceLogo
                                                                 size={44}
@@ -147,6 +155,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <InstagramLogo
                                                                 size={44}

@@ -16,10 +16,23 @@ export default function BottomMap() {
                     Trondheim, og er enkelt tilgjengelig med bil eller offentlig
                     transport. Det er gratis parkering tilgjengelig på området.
                     Hvis du har spørsmål eller trenger hjelp med å finne oss,
-                    kan du kontakte oss på [e-postadresse] eller
-                    [telefonnummer]. Du kan også bruke kartfunksjonen på
-                    nettsiden vår for å finne oss enkelt. Vi ser frem til å
-                    ønske deg velkommen til vår utstilling!
+                    kan du kontakte oss på{" "}
+                    <a
+                        href="mailto:anders.p.andersson@ntnu.no"
+                        className="underline hover:text-main underline-offset-1"
+                    >
+                        anders.p.andersson@ntnu.no
+                    </a>{" "}
+                    eller{" "}
+                    <a
+                        href="tel:+4748467760"
+                        className="underline hover:text-main underline-offset-1"
+                    >
+                        +47 48467760.
+                    </a>{" "}
+                    Du kan også bruke kartfunksjonen på nettsiden vår for å
+                    finne oss enkelt. Vi ser frem til å ønske deg velkommen til
+                    vår utstilling!
                 </p>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <MapPin size={44} />
@@ -41,17 +54,17 @@ export default function BottomMap() {
                 </div>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <Phone size={44} />
-                    <a href="tel:+4712345678">
+                    <a href="tel:+4748467760">
                         <p className="text-md sm:text-lg font-semibold">
-                            +47 12 345 678
+                            +47 48467760
                         </p>
                     </a>
                 </div>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <At size={44} />
-                    <a href="mailto:kontakt@avgangsutstilling.no">
+                    <a href="mailto:anders.p.andersson@ntnu.no">
                         <p className="text-md sm:text-lg font-semibold">
-                            kontakt@avgangsutstilling.no
+                            anders.p.andersson@ntnu.no
                         </p>
                     </a>
                 </div>

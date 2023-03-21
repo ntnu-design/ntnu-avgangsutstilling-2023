@@ -39,7 +39,7 @@ export default function Navbar() {
                                     ? "text-bmed font-bold"
                                     : "text-black"
                             }`}
-                            href="/bmed"
+                            href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bmed.html" : "/bmed"}
                         >
                             <svg
                                 className="mx-2"
@@ -76,7 +76,7 @@ export default function Navbar() {
                                     ? "text-bixd font-bold"
                                     : "text-black"
                             }`}
-                            href="/bixd"
+                            href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bixd.html" : "/bixd"}
                         >
                             <svg
                                 className="mx-2"
@@ -111,7 +111,7 @@ export default function Navbar() {
                                     ? "text-bwu font-bold"
                                     : "text-black"
                             }`}
-                            href="/bwu"
+                            href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bwu.html" : "/bwu"}
                         >
                             <svg
                                 className="mx-2"
@@ -251,7 +251,7 @@ export default function Navbar() {
                                 ? "text-bmed font-bold"
                                 : "text-black"
                         }`}
-                        href="/bmed"
+                        href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bmed.html" : "/bmed"}
                     >
                         <svg
                             className="mx-2"
@@ -287,7 +287,7 @@ export default function Navbar() {
                                 ? "text-bixd font-bold"
                                 : "text-black"
                         }`}
-                        href="/bixd"
+                        href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bixd.html" : "/bixd"}
                     >
                         <svg
                             className="mx-2"
@@ -321,7 +321,7 @@ export default function Navbar() {
                                 ? "text-bwu font-bold"
                                 : "text-black"
                         }`}
-                        href="/bwu"
+                        href={process.env.NEXT_PUBLIC_ENV === "production" ? "/bwu.html" : "/bwu"}
                     >
                         <svg
                             className="mx-2"
@@ -356,6 +356,3 @@ export default function Navbar() {
         </nav>
     )
 }
-/*              bwu: "#508fce",
-                bmed: "#e45197",
-                bixd: "#5ca545", */

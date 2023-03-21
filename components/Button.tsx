@@ -9,17 +9,35 @@ const Button = ({
     tabIndex,
     children,
 }: Props) => {
-    const baseClasses = `border-2 py-2 px-8 rounded transition ${
-        isActive ? "text-white" : ""
-    }`
+    const baseClassName = `border-2 py-2 px-8 rounded transition`
+    let borderColor, hoverColor
 
-    const borderColorClass = `border-${studyProgramme}`
-    const hoverClass = `hover:text-white hover:bg-${studyProgramme}`
-    const activeClass = isActive ? `bg-${studyProgramme}` : ""
+    switch (studyProgramme) {
+        case "bwu":
+            borderColor = "border-bwu"
+            hoverColor = "hover:bg-bwu hover:text-white"
+            break
+        case "bmed":
+            borderColor = "border-bmed"
+            hoverColor = "hover:bg-bmed hover:text-white"
+            break
+        case "bixd":
+            borderColor = "border-bixd"
+            hoverColor = "hover:bg-bixd hover:text-white"
+            break
+        case "avgang":
+            borderColor = "border-main"
+            hoverColor = "hover:bg-main hover:text-white"
+            break
+    }
+
+    const buttonClassName = `${baseClassName} ${borderColor} ${hoverColor} ${
+        isActive ? `bg-${studyProgramme} text-white` : ""
+    }`
 
     return (
         <button
-            className={`${baseClasses} ${borderColorClass} ${hoverClass} ${activeClass}`}
+            className={buttonClassName}
             style={{ width: "11em" }}
             onClick={onButtonClick}
             disabled={onDisabled}

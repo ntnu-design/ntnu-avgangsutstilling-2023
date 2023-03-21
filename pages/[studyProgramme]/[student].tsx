@@ -19,12 +19,16 @@ import {
 import Link from "next/link"
 import { useEffect, useState } from "react"
 import { sortStudents } from "../../lib/utils"
+import Cookie from "js-cookie"
 
 export default function Student({ student, students }: Props) {
     const [sortedStudents, setSortedStudents] = useState([])
 
     useEffect(() => {
-        const sortOrder = localStorage.getItem("sortOrder") || "random"
+        const sortOrder =
+            typeof window !== "undefined"
+                ? Cookie.get("sortOrder") || "random"
+                : "random"
         setSortedStudents(sortStudents(students, sortOrder))
     }, [students])
 
@@ -267,7 +271,7 @@ export default function Student({ student, students }: Props) {
                                     href={
                                         process.env.NEXT_PUBLIC_ENV ===
                                         "production"
-                                            ? `/${previousStudent.studyProgramme}.index.html`
+                                            ? `/${previousStudent.studyProgramme}.html`
                                             : `/${previousStudent.studyProgramme}`
                                     }
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
@@ -281,7 +285,7 @@ export default function Student({ student, students }: Props) {
                                     href={
                                         process.env.NEXT_PUBLIC_ENV ===
                                         "production"
-                                            ? `/${nextStudent.studyProgramme}.index.html`
+                                            ? `/${nextStudent.studyProgramme}.html`
                                             : `/${nextStudent.studyProgramme}`
                                     }
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
@@ -294,7 +298,7 @@ export default function Student({ student, students }: Props) {
                         {/* <Link
                             href={
                                 process.env.NEXT_PUBLIC_ENV === "production"
-                                    ? `/${student.studyProgram.toLowerCase()}.index.html`
+                                    ? `/${student.studyProgram.toLowerCase()}.html`
                                     : `/${student.studyProgram.toLowerCase()}`
                             }
                             className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}

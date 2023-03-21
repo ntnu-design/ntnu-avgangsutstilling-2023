@@ -5,17 +5,14 @@ const ResponsiveHeroLogo = (props) => {
     const [imageSrc, setImageSrc] = useState(
         `/svg/${props.studyProgram}/heading.svg`
     )
-    const [paddingValue, setPaddingValue] = useState(``)
 
     const updateImageSrc = () => {
         const screenWidth = window.innerWidth
 
-        if (screenWidth <= 460) {
+        if (screenWidth <= 459) {
             setImageSrc(`/svg/${props.studyProgram}/heading-2.svg`)
-            setPaddingValue(`50px`)
         } else {
             setImageSrc(`/svg/${props.studyProgram}/heading.svg`)
-            setPaddingValue(`0px`)
         }
     }
 
@@ -43,9 +40,8 @@ const ResponsiveHeroLogo = (props) => {
                 position: "absolute",
                 width: "auto",
                 height: "auto",
-                paddingBottom: paddingValue,
             }}
-            className="px-10"
+            className="px-10 pb-20 smm:pb-0"
         />
     )
 }

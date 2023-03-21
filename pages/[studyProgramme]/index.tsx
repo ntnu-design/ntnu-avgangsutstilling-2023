@@ -55,8 +55,8 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         </Button>
                     </div>
                     <ul
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                        style={{ maxWidth: "1200px", margin: "0 auto" }}
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+                        style={{ margin: "0 auto" }}
                     >
                         {sortedStudents.map((student, index) => (
                             <li

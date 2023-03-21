@@ -13,6 +13,7 @@ import type {
 } from "../../interfaces/student"
 import Button from "../../components/Button"
 import Cookie from "js-cookie"
+import Link from "next/link"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
@@ -79,7 +80,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <a href={`/${student.studyProgramme}`}>
+                                <Link href={`/${student.studyProgramme}`}>
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}
@@ -127,7 +128,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                     <p className="p-2 font-bold">
                                         {student.title}
                                     </p>
-                                </a>
+                                </Link>
                             </li>
                         ))}
                     </ul>

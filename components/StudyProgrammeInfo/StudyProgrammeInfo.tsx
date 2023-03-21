@@ -3,6 +3,7 @@ import { StudyProgramme } from "../../interfaces/student"
 import { getHeading } from "../../lib/utils"
 import Button from "../Button"
 import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
+import Link from "next/link"
 
 const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
     const heading = getHeading(studyProgramme)
@@ -66,11 +67,11 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 <p className="mb-2">{textContent}</p>
                 <p>{textDescription}</p>
                 <div className="mt-6 flex items-center justify-between">
-                    <a href={`/${studyProgramme}`}>
+                    <Link href={`/${studyProgramme}`}>
                         <Button studyProgramme={studyProgramme} tabIndex={-1}>
                             Vis studenter
                         </Button>
-                    </a>
+                    </Link>
 
                     <div className="flex flex-row space-x-4">
                         <a

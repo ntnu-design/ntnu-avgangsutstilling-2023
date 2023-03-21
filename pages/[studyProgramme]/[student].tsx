@@ -16,7 +16,6 @@ import {
     CaretLeft,
     CaretRight,
 } from "@phosphor-icons/react"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 import { sortStudents } from "../../lib/utils"
 

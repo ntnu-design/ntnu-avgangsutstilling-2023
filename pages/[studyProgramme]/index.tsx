@@ -12,22 +12,19 @@ import type {
     StudyProgrammeParams,
 } from "../../interfaces/student"
 import Button from "../../components/Button"
+import Cookie from "js-cookie"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
+
     const heading = getHeading(studyProgramme)
     const bwuOverlay = "bwu-overlay group-hover:opacity-30"
     const bixdOverlay = "bixd-overlay group-hover:opacity-30"
     const bmedOverlay = "bmed-overlay group-hover:opacity-30"
 
-    const [sortOrder, setSortOrder] = useState(() => {
-        return typeof window !== "undefined"
-            ? localStorage.getItem("sortOrder") || "random"
-            : "random"
-    })
-
+    const [sortOrder, setSortOrder] = useState("random")
     useEffect(() => {
-        localStorage.setItem("sortOrder", sortOrder)
+        setSortOrder(Cookie.get("sortOrder") || "random")
     }, [sortOrder])
 
     const sortedStudents = sortStudents(students, sortOrder)
@@ -46,7 +43,10 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                     >
                         <Button
                             studyProgramme={studyProgramme}
-                            onButtonClick={() => setSortOrder("random")}
+                            onButtonClick={() => (
+                                setSortOrder("random"),
+                                Cookie.set("sortOrder", "random")
+                            )}
                             onDisabled={sortOrder === "random"}
                             isActive={sortOrder === "random"}
                         >
@@ -54,7 +54,10 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         </Button>
                         <Button
                             studyProgramme={studyProgramme}
-                            onButtonClick={() => setSortOrder("alphabetical")}
+                            onButtonClick={() => (
+                                setSortOrder("alphabetical"),
+                                Cookie.set("sortOrder", "alphabetical")
+                            )}
                             onDisabled={sortOrder === "alphabetical"}
                             isActive={sortOrder === "alphabetical"}
                         >

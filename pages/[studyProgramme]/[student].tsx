@@ -18,12 +18,17 @@ import {
 } from "@phosphor-icons/react"
 import { useEffect, useState } from "react"
 import { sortStudents } from "../../lib/utils"
+import Cookie from "js-cookie"
+import Link from "next/link"
 
 export default function Student({ student, students }: Props) {
     const [sortedStudents, setSortedStudents] = useState([])
 
     useEffect(() => {
-        const sortOrder = localStorage.getItem("sortOrder") || "random"
+        const sortOrder =
+            typeof window !== "undefined"
+                ? Cookie.get("sortOrder") || "random"
+                : "random"
         setSortedStudents(sortStudents(students, sortOrder))
     }, [students])
 
@@ -262,28 +267,28 @@ export default function Student({ student, students }: Props) {
                         </section>
                         <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
                             {previousStudent && (
-                                <a
+                                <Link
                                     href={`/${previousStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
                                 >
                                     <CaretLeft size={44} />
                                     {previousStudent.title}
-                                </a>
+                                </Link>
                             )}
                             {nextStudent && (
-                                <a
+                                <Link
                                     href={`/${nextStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
                                 >
                                     {nextStudent.title}
                                     <CaretRight size={44} />
-                                </a>
+                                </Link>
                             )}
                         </div>
                         {/* <a
                             href={
                                 process.env.NEXT_PUBLIC_ENV === "production"
-                                    ? `/${student.studyProgram.toLowerCase()}.index.html`
+                                    ? `/${student.studyProgram.toLowerCase()}.html`
                                     : `/${student.studyProgram.toLowerCase()}`
                             }
                             className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}

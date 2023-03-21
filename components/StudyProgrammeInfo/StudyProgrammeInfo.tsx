@@ -78,7 +78,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                             rel="noopenner norefferer"
                         >
                             <InstagramLogo
-                                size={64}
+                                size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
                         </Link>
@@ -88,7 +88,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                             rel="noopenner norefferer"
                         >
                             <FacebookLogo
-                                size={64}
+                                size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
                         </Link>

@@ -90,7 +90,7 @@ export default function Student({ student }: Props) {
                                                 if (link.name === "email") {
                                                     return (
                                                         <a
-                                                            href={`mailto:${link.url}`}
+                                                            href={`mailto:${link.url}?subject=Avgangsutstilling-2023`}
                                                             key={index}
                                                         >
                                                             <Envelope
@@ -102,7 +102,10 @@ export default function Student({ student }: Props) {
                                                 }
                                                 if (link.name === "portfolio") {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
                                                             <Globe
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -113,7 +116,10 @@ export default function Student({ student }: Props) {
                                                     link.name === "linkedin"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
                                                             <LinkedinLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -124,7 +130,10 @@ export default function Student({ student }: Props) {
                                                     link.name === "behance"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
                                                             <BehanceLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -135,7 +144,10 @@ export default function Student({ student }: Props) {
                                                     link.name === "instagram"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
                                                             <InstagramLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}

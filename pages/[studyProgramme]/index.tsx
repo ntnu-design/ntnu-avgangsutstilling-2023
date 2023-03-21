@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
@@ -14,6 +13,7 @@ import type {
 } from "../../interfaces/student"
 import Button from "../../components/Button"
 import Cookie from "js-cookie"
+import Link from "next/link"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
@@ -80,14 +80,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${student.studyProgramme}.html`
-                                            : `/${student.studyProgramme}`
-                                    }
-                                >
+                                <Link href={`/${student.studyProgramme}`}>
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}

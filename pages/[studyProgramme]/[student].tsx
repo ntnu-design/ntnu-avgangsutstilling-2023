@@ -16,10 +16,10 @@ import {
     CaretLeft,
     CaretRight,
 } from "@phosphor-icons/react"
-import Link from "next/link"
 import { useEffect, useState } from "react"
 import { sortStudents } from "../../lib/utils"
 import Cookie from "js-cookie"
+import Link from "next/link"
 
 export default function Student({ student, students }: Props) {
     const [sortedStudents, setSortedStudents] = useState([])
@@ -268,12 +268,7 @@ export default function Student({ student, students }: Props) {
                         <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
                             {previousStudent && (
                                 <Link
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${previousStudent.studyProgramme}.html`
-                                            : `/${previousStudent.studyProgramme}`
-                                    }
+                                    href={`/${previousStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
                                 >
                                     <CaretLeft size={44} />
@@ -282,12 +277,7 @@ export default function Student({ student, students }: Props) {
                             )}
                             {nextStudent && (
                                 <Link
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${nextStudent.studyProgramme}.html`
-                                            : `/${nextStudent.studyProgramme}`
-                                    }
+                                    href={`/${nextStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
                                 >
                                     {nextStudent.title}
@@ -295,7 +285,7 @@ export default function Student({ student, students }: Props) {
                                 </Link>
                             )}
                         </div>
-                        {/* <Link
+                        {/* <a
                             href={
                                 process.env.NEXT_PUBLIC_ENV === "production"
                                     ? `/${student.studyProgram.toLowerCase()}.html`
@@ -304,7 +294,7 @@ export default function Student({ student, students }: Props) {
                             className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}
                         >
                             Gå tilbake til studieprogram
-                        </Link> */}
+                        </a> */}
                     </>
                 )}
             </Container>

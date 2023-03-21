@@ -1,7 +1,5 @@
-import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import Container from "../layout/container"
 
 export default function Navbar() {
     const router = useRouter()
@@ -22,7 +20,7 @@ export default function Navbar() {
             <div className="w-full hidden md:flex py-5 px-10">
                 <ul className="flex w-full justify-between space-x-10 lg:space-x-20" style={{maxWidth: "1500px", margin: "0 auto"}}>
                     <li>
-                        <Link
+                        <a
                             className={`${
                                 router.asPath == "/"
                                     ? "text-main after:bg-main after:block"
@@ -31,11 +29,11 @@ export default function Navbar() {
                             href="/"
                         >
                             Hjem
-                        </Link>
+                        </a>
                     </li>
                     <ul className="flex space-x-10 lg:space-x-20">
                         <li>
-                            <Link
+                            <a
                                 className={`${
                                     studyProgramme === "bmed"
                                         ? "text-bmed"
@@ -83,10 +81,10 @@ export default function Navbar() {
                                         Grafisk design
                                     </span>
                                 </div>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 className={`${
                                     studyProgramme === "bixd"
                                         ? "text-bixd"
@@ -132,10 +130,10 @@ export default function Navbar() {
                                         Interaksjonsdesign
                                     </span>
                                 </div>
-                            </Link>
+                            </a>
                         </li>
                         <li>
-                            <Link
+                            <a
                                 className={`flex ${
                                     studyProgramme === "bwu"
                                         ? "text-bwu"
@@ -184,7 +182,7 @@ export default function Navbar() {
                                         Webutvikling
                                     </span>
                                 </div>
-                            </Link>
+                            </a>
                         </li>
                     </ul>
                 </ul>
@@ -279,7 +277,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div className="flex flex-col px-10 pt-2 space-y-4 sm:px-3">
-                    <Link
+                    <a
                         className={`mx-2 ${
                             router.asPath == "/"
                                 ? "text-main font-bold"
@@ -288,9 +286,9 @@ export default function Navbar() {
                         href="/"
                     >
                         Hjem
-                    </Link>
+                    </a>
                     <div className="border border-gray"></div>
-                    <Link
+                    <a
                         className={`flex ${
                             studyProgramme === "bmed"
                                 ? "text-bmed font-bold"
@@ -328,9 +326,9 @@ export default function Navbar() {
                             />
                         </svg>
                         Grafisk design
-                    </Link>
+                    </a>
                     <div className="border border-gray"></div>
-                    <Link
+                    <a
                         className={`flex ${
                             studyProgramme === "bixd"
                                 ? "text-bixd font-bold"
@@ -366,9 +364,9 @@ export default function Navbar() {
                             />
                         </svg>
                         Interaksjonsdesign
-                    </Link>
+                    </a>
                     <div className="border border-gray"></div>
-                    <Link
+                    <a
                         className={`flex ${
                             studyProgramme === "bwu"
                                 ? "text-bwu font-bold"
@@ -407,7 +405,7 @@ export default function Navbar() {
                             />
                         </svg>
                         Webutvikling
-                    </Link>
+                    </a>
                 </div>
             </div>
         </nav>

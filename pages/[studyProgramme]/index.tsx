@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import Link from "next/link"
 import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
@@ -77,7 +76,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link
+                                <a
                                     href={
                                         process.env.NEXT_PUBLIC_ENV ===
                                         "production"
@@ -132,7 +131,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                     <p className="p-2 font-bold">
                                         {student.title}
                                     </p>
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>

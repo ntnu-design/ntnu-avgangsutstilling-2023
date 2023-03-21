@@ -263,7 +263,7 @@ export default function Student({ student, students }: Props) {
                         </section>
                         <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
                             {previousStudent && (
-                                <Link
+                                <a
                                     href={
                                         process.env.NEXT_PUBLIC_ENV ===
                                         "production"
@@ -274,10 +274,10 @@ export default function Student({ student, students }: Props) {
                                 >
                                     <CaretLeft size={44} />
                                     {previousStudent.title}
-                                </Link>
+                                </a>
                             )}
                             {nextStudent && (
-                                <Link
+                                <a
                                     href={
                                         process.env.NEXT_PUBLIC_ENV ===
                                         "production"
@@ -288,10 +288,10 @@ export default function Student({ student, students }: Props) {
                                 >
                                     {nextStudent.title}
                                     <CaretRight size={44} />
-                                </Link>
+                                </a>
                             )}
                         </div>
-                        {/* <Link
+                        {/* <a
                             href={
                                 process.env.NEXT_PUBLIC_ENV === "production"
                                     ? `/${student.studyProgram.toLowerCase()}.index.html`
@@ -300,7 +300,7 @@ export default function Student({ student, students }: Props) {
                             className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}
                         >
                             Gå tilbake til studieprogram
-                        </Link> */}
+                        </a> */}
                     </>
                 )}
             </Container>

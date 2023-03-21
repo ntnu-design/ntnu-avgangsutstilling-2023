@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { StudyProgramme } from "../../interfaces/student"
 import { getHeading } from "../../lib/utils"
-import Link from "next/link"
 import Button from "../Button"
 import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
 
@@ -67,7 +66,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 <p className="mb-2">{textContent}</p>
                 <p>{textDescription}</p>
                 <div className="mt-6 flex items-center justify-between">
-                    <Link
+                    <a
                         href={
                             process.env.NEXT_PUBLIC_ENV === "production"
                                 ? `/${studyProgramme}.html`
@@ -77,10 +76,10 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                         <Button studyProgramme={studyProgramme} tabIndex={-1}>
                             Vis studenter
                         </Button>
-                    </Link>
+                    </a>
 
                     <div className="flex flex-row space-x-4">
-                        <Link
+                        <a
                             href={instaPage}
                             target="_blank"
                             rel="noopenner norefferer"
@@ -89,8 +88,8 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                                 size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             href={facebookPage}
                             target="_blank"
                             rel="noopenner norefferer"
@@ -99,7 +98,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                                 size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

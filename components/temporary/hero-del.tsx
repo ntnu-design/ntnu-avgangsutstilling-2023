@@ -1,23 +1,12 @@
-import { useRouter } from "next/router"
 import Image from "next/image"
 import ResponsiveHeroBackground from "./responsiveHeroBackground"
+import ResponsiveHeroLogo from "./responsiveHeroLogo"
 
 function HeroDel(props) {
     return props.studyProgramme == "bixd" ? (
         <div className="flex justify-center items-center">
             <ResponsiveHeroBackground studyProgram="bixd" />
-            <Image
-                src="/svg/bixd/heading-svg.svg"
-                alt="Bachelor i Interaksjonsdesign"
-                width={0}
-                height={0}
-                style={{
-                    position: "absolute",
-                    width: "auto",
-                    height: "auto",
-                }}
-                className="px-10"
-            />
+            <ResponsiveHeroLogo studyProgram="bixd" />
             <p
                 style={{
                     position: "absolute",
@@ -39,7 +28,7 @@ function HeroDel(props) {
         <div className="flex justify-center items-center">
             <ResponsiveHeroBackground studyProgram="bwu" />
             <Image
-                src="/svg/bwu/heading-svg.svg"
+                src="/svg/bwu/heading.svg"
                 alt="Bachelor i Webutvikling"
                 width={0}
                 height={0}
@@ -70,18 +59,7 @@ function HeroDel(props) {
     ) : props.studyProgramme == "bmed" ? (
         <div className="flex justify-center items-center">
             <ResponsiveHeroBackground studyProgram="bmed" />
-            <Image
-                src="/svg/bmed/heading-svg.svg"
-                alt="Bachelor i Grafisk Design"
-                width={0}
-                height={0}
-                style={{
-                    position: "absolute",
-                    width: "auto",
-                    height: "auto",
-                }}
-                className="px-10"
-            />
+            <ResponsiveHeroLogo studyProgram="bmed" />
             <p
                 style={{
                     position: "absolute",
@@ -102,18 +80,7 @@ function HeroDel(props) {
     ) : (
         <div className="flex justify-center items-center">
             <ResponsiveHeroBackground studyProgram="hjem" />
-            <Image
-                src="/svg/hjem/heading-svg.svg"
-                alt="Avgangsutstilling"
-                width={0}
-                height={0}
-                style={{
-                    position: "absolute",
-                    width: "auto",
-                    height: "auto",
-                }}
-                className="px-10"
-            />
+            <ResponsiveHeroLogo studyProgram="hjem" />
             <p
                 style={{
                     position: "absolute",

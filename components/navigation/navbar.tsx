@@ -33,7 +33,7 @@ export default function Navbar() {
                             Hjem
                         </Link>
                     </li>
-                    <div className="flex space-x-10 lg:space-x-20">
+                    <ul className="flex space-x-10 lg:space-x-20">
                         <li>
                             <Link
                                 className={`${
@@ -186,7 +186,7 @@ export default function Navbar() {
                                 </div>
                             </Link>
                         </li>
-                    </div>
+                    </ul>
                 </ul>
             </div>
             <div className="md:hidden flex justify-end">

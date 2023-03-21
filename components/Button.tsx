@@ -6,6 +6,7 @@ const Button = ({
     onButtonClick,
     onDisabled,
     isActive,
+    tabIndex,
     children,
 }: Props) => {
     switch (studyProgramme) {
@@ -18,6 +19,7 @@ const Button = ({
                     style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
+                    tabIndex={tabIndex}
                 >
                     {children}
                 </button>
@@ -31,6 +33,7 @@ const Button = ({
                     style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
+                    tabIndex={tabIndex}
                 >
                     {children}
                 </button>
@@ -44,6 +47,7 @@ const Button = ({
                     style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
+                    tabIndex={tabIndex}
                 >
                     {children}
                 </button>
@@ -56,6 +60,7 @@ const Button = ({
                     }`}
                     onClick={onButtonClick}
                     disabled={onDisabled}
+                    tabIndex={tabIndex}
                 >
                     {children}
                 </button>
@@ -71,4 +76,5 @@ interface Props {
     onButtonClick?: any
     onDisabled?: boolean
     isActive?: boolean
+    tabIndex?: number
 }

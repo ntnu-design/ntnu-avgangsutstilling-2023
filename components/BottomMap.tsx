@@ -18,7 +18,7 @@ export default function BottomMap() {
                     Hvis du har spørsmål eller trenger hjelp med å finne oss,
                     kan du kontakte oss på{" "}
                     <a
-                        href="mailto:anders.p.andersson@ntnu.no"
+                        href="mailto:anders.p.andersson@ntnu.no?subject=Avgangsutstilling-2023"
                         className="underline hover:text-main underline-offset-1"
                     >
                         anders.p.andersson@ntnu.no
@@ -62,7 +62,7 @@ export default function BottomMap() {
                 </div>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <At size={44} />
-                    <a href="mailto:anders.p.andersson@ntnu.no">
+                    <a href="mailto:anders.p.andersson@ntnu.no?subject=Avgangsutstilling-2023">
                         <p className="text-md sm:text-lg font-semibold">
                             anders.p.andersson@ntnu.no
                         </p>

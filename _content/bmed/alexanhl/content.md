@@ -1,0 +1,38 @@
+---
+title: "Alexander Hertzenberg Lybekk"
+student: "Alexander Hertzenberg Lybekk"
+profile_picture: "Alexander Hertzenberg Lybekk_Alexander Hertzenberg Lybekk.jpg"
+bio: "Hei, jeg heter Alexander Lybekk og kommer fra Dal. Jeg har alltid hatt en lidenskap for design, og etter videregående var førstevalget grafisk design på NTNU i Gjøvik. Gjennom studiene har jeg fått en solid forståelse for designprosessen og har utviklet mine ferdigheter og kreativitet. Spesialområdene mine inkluderer typografi, redaksjonelt design og design-systemer, men jeg har også interesse for UX/UI og visuelle identiteter. Jeg har en øye for detaljer, samtidig som jeg alltid har fokus på helheten i prosjekter. Jeg er kjent med en rekke designverktøy og -teknikker og alltid interessert i å lære mer."
+portfolio: "https://www.lybekkdesign.no"
+email: "alexander@lybekkdesign.no"
+linkedin: "https://www.linkedin.com/in/alexanderlybekk"
+twitter: "https://twitter.com/alexanderlybekk"
+facebook: ""
+behance: ""
+instagram: "https://www.instagram.com/alhertzenberg/"
+studyProgram: "BMED"
+p1_headline_1: "Redaksjonelt design av fagbok"
+p1_headline_2: "Emneoverbyggende prosjekt"
+project_image_1: "project_1_Alexander Hertzenberg Lybekk.jpg"
+project_desc_1: "Jeg hadde som mål å designe en fagbok for elever som tar Psykologi 2 som valgfag på videregående skole. Jeg ønsket å skape en designløsning som ville gjøre innholdet mer tilgjengelig og engasjerende for leseren, samtidig som det adresserte de utfordringene en fagbok ofte har. Jeg tok utgangspunkt i Cappelen Damm sin Psykologi 2 fra 2011, og jobbet med eksisterende innhold for å takle reelle designproblemer.
+Lesbarhet og struktur var de største utfordringene, og jeg fokuserte derfor på å skape et tydelig hierarki og en oversiktlig og logisk struktur. For å løse disse utfordringene utviklet jeg en minimalistisk visuell profil med konsekvent og tydelig typografi.
+Jeg utviklet også nye innholdstyper som caseoppgaver, refleksjonspørsmål og dypdykk for å oppfordre elevene til å engasjere seg aktivt med fagstoffet. Det var viktig å sørge for at ulike typer informasjon visuelt hang sammen, samtidig som de kunne skilles fra hverandre, slik at sidene ikke ble for visuelt forstyrrende.
+Målet mitt var å skape en designløsning som fremmer læring og er engasjerende for målgruppen, med fokus på lesbarhet og hierarki."
+p2_headline_1: ""
+p2_headline_2: ""
+project_image_2: "project_2_Alexander Hertzenberg Lybekk.jpg"
+project_desc_2: ""
+p3_headline_1: ""
+p3_headline_2: ""
+project_image_3: "project_3_Alexander Hertzenberg Lybekk.jpg"
+project_desc_3: ""
+p4_headline_1: ""
+p4_headline_2: ""
+project_image_4: "project_4_Alexander Hertzenberg Lybekk.jpg"
+project_desc_4: ""
+p5_headline_1: ""
+p5_headline_2: ""
+project_image_5: "project_5_Alexander Hertzenberg Lybekk.jpg"
+project_desc_5: ""
+---
+

@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 import "../styles/index.css";
 
 const montserrat = Montserrat({
@@ -12,8 +12,8 @@ const montserrat = Montserrat({
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <main className={montserrat.className}>
+    <div className={montserrat.className}>
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 }

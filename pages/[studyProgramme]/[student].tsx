@@ -3,21 +3,26 @@ import Image from "next/image"
 import ErrorPage from "next/error"
 import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
-//import markdownToHtml from "../../lib/markdownToHtml"
 import Layout from "../../components/layout/layout"
-import Navbar from "../../components/navigation/navbar"
 import Container from "../../components/layout/container"
-import PostTitle from "../../components/posts/post-title"
 import type { StudentItem } from "../../interfaces/student"
+import {
+    BehanceLogo,
+    CaretDown,
+    Envelope,
+    Globe,
+    InstagramLogo,
+    LinkedinLogo,
+} from "@phosphor-icons/react"
 
 export default function Student({ student }: Props) {
     const router = useRouter()
-    if (!router.isFallback && !student?.slug) {
+    if (!router.isFallback && !student?.studyProgramme) {
         return <ErrorPage statusCode={404} />
     }
     const socialMediaLinks = [
         { name: "email", url: student.email },
-        { name: "globe", url: student.portfolio },
+        { name: "portfolio", url: student.portfolio },
         { name: "linkedin", url: student.linkedin },
         { name: "behance", url: student.behance },
         { name: "instagram", url: student.instagram },
@@ -54,91 +59,169 @@ export default function Student({ student }: Props) {
             desc: student.project_desc_5,
         },
     ]
-
     return (
         <Layout>
             <Head>
-                <title>{`Avgangsutstilling 2023`}</title>
+                <title>{`Avgangsutstilling 2023 - ${student.title}`}</title>
             </Head>
+
             <Container>
                 {router.isFallback ? (
-                    <PostTitle>Loading…</PostTitle>
+                    <p>Loading…</p>
                 ) : (
                     <>
-                        <Navbar />
-
-                        <article className="mb-32">
-                            <Head>
-                                <title>{student.title}</title>
-                                <meta property="og:image" content="" />
-                            </Head>
-                        </article>
-                        <main className="h-screen">
-                            <div className="flex">
-                                <Image
-                                    src={`/${student.slug}/${student.title}_${student.title}.jpg`}
-                                    alt={student.title}
-                                    width={400}
-                                    height={400}
-                                />
+                        <main>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[6em] md:flex-row">
                                 <div>
-                                    <PostTitle>{student.title}</PostTitle>
-                                    <p>{student.bio}</p>
+                                    <Image
+                                        src={`/${student.studyProgramme}/${student.profile_picture}`}
+                                        alt={student.title}
+                                        width={0}
+                                        height={0}
+                                        style={{
+                                            width: "auto",
+                                            height: "auto",
+                                        }}
+                                        priority
+                                    />
+                                    <div className="flex gap-2 sm:gap-5 mt-4 md:mt-6">
+                                        {socialMediaLinks.map((link, index) => {
+                                            if (link.url !== "") {
+                                                if (link.name === "email") {
+                                                    return (
+                                                        <a
+                                                            href={`mailto:${link.url}?subject=Avgangsutstilling-2023`}
+                                                            key={index}
+                                                        >
+                                                            <Envelope
+                                                                size={44}
+                                                                className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
+                                                            />
+                                                        </a>
+                                                    )
+                                                }
+                                                if (link.name === "portfolio") {
+                                                    return (
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
+                                                            <Globe
+                                                                size={44}
+                                                                className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
+                                                            />
+                                                        </a>
+                                                    )
+                                                } else if (
+                                                    link.name === "linkedin"
+                                                ) {
+                                                    return (
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
+                                                            <LinkedinLogo
+                                                                size={44}
+                                                                className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
+                                                            />
+                                                        </a>
+                                                    )
+                                                } else if (
+                                                    link.name === "behance"
+                                                ) {
+                                                    return (
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
+                                                            <BehanceLogo
+                                                                size={44}
+                                                                className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
+                                                            />
+                                                        </a>
+                                                    )
+                                                } else if (
+                                                    link.name === "instagram"
+                                                ) {
+                                                    return (
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                        >
+                                                            <InstagramLogo
+                                                                size={44}
+                                                                className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
+                                                            />
+                                                        </a>
+                                                    )
+                                                }
+                                            }
+                                        })}
+                                    </div>
+                                </div>
+
+                                <div className="lg:col-span-2">
+                                    <h1
+                                        className={`text-2xl md:text-4xl text-${student.studyProgram.toLowerCase()} font-bold`}
+                                    >
+                                        {student.title}
+                                    </h1>
+                                    <hr className="border-gray-3 my-8 2xl:my-4 " />
+                                    <p
+                                        className="text-md md:text-lg max-w-[75ch]"
+                                        dangerouslySetInnerHTML={{
+                                            __html: student.bio,
+                                        }}
+                                    />
                                 </div>
                             </div>
-                            <div className="flex">
-                                {socialMediaLinks.map((link) => {
-                                    if (link.url !== "") {
-                                        return (
-                                            <a href={link.url}>
-                                                <Image
-                                                    src={
-                                                        "/social-media/" +
-                                                        link.name +
-                                                        ".svg"
-                                                    }
-                                                    alt={link.name + " icon"}
-                                                    width={50}
-                                                    height={50}
-                                                />
-                                            </a>
-                                        )
-                                    }
-                                })}
-                            </div>
-                            <div className="flex justify-center">
-                                <button>
-                                    <a href="#prosjekter">
-                                        <Image
-                                            src={"/scrollarrow.svg"}
-                                            width={50}
-                                            height={50}
+
+                            <div className="flex justify-center invisible object-contain object-bottom md:visible 2xl:visible 2xl:items-center">
+                                <a href="#prosjekter">
+                                    <div className="md:mt-[8em]">
+                                        <CaretDown
+                                            size={44}
+                                            className={`text-${student.studyProgram.toLowerCase()}`}
                                         />
-                                    </a>
-                                </button>
+                                    </div>
+                                </a>
                             </div>
                         </main>
-                        <section id="prosjekter">
-                            <h2>Prosjekter</h2>
-                            {studentProjects.map((project) => {
+                        <section id="prosjekter" className="mb-12">
+                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-24">
+                                Prosjekter
+                            </h2>
+                            {studentProjects.map((project, index) => {
                                 if (project.headline_1 !== "") {
                                     return (
-                                        <div className="flex">
+                                        <div
+                                            className="grid lg:grid-cols-2 border-t border-gray-3"
+                                            key={index}
+                                        >
                                             <Image
-                                                src={
-                                                    "/" +
-                                                    student.slug +
-                                                    "/" +
-                                                    project.image
-                                                }
+                                                className="object-contain object-center my-5 md:my-10 sm:col-span-2 sm:self-center lg:col-span-1"
+                                                src={`/${student.studyProgramme}/${project.image}`}
                                                 width={400}
                                                 height={400}
                                                 alt={project.headline_1}
+                                                style={{ width: "auto" }}
                                             />
-                                            <div>
-                                                <h4>{project.headline_2}</h4>
-                                                <h3>{project.headline_1}</h3>
-                                                <p>{project.desc}</p>
+
+                                            <div className="mx-0 smd:mx-4 2xl:mx-12 mb-5 md:my-10">
+                                                <h4 className="text-xs md:text-sm">
+                                                    {project.headline_2}
+                                                </h4>
+                                                <h3
+                                                    className={`font-bold text-xl md:text-2xl 2xl:text-4xl mb-4 text-${student.studyProgram.toLowerCase()}`}
+                                                >
+                                                    {project.headline_1}
+                                                </h3>
+                                                <p
+                                                    className="text-sm md:text-md m-w-[75ch]"
+                                                    dangerouslySetInnerHTML={{
+                                                        __html: project.desc,
+                                                    }}
+                                                />
                                             </div>
                                         </div>
                                     )
@@ -159,7 +242,7 @@ export async function getStaticProps({ params }: Params) {
     const studentContent = getStudentBySlug(slug, [
         // ! Legg til de feltene man trenger fra content.md
         "title",
-        "slug",
+        "studyProgramme",
         "student",
         "profile_picture",
         "bio",
@@ -203,17 +286,17 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-    const bwu: StudentItem[] = getStudents(["slug"], "bwu")
-    const bixd: StudentItem[] = getStudents(["slug"], "bixd")
-    const bmed: StudentItem[] = getStudents(["slug"], "bmed")
+    const bwu: StudentItem[] = getStudents(["studyProgramme"], "bwu")
+    const bixd: StudentItem[] = getStudents(["studyProgramme"], "bixd")
+    const bmed: StudentItem[] = getStudents(["studyProgramme"], "bmed")
     const students: StudentItem[] = [...bwu, ...bixd, ...bmed]
 
     return {
         paths: students.map((student) => {
             return {
                 params: {
-                    student: `${student.slug.split("/")[1]}`,
-                    studyProgramme: `${student.slug.split("/")[0]}`,
+                    student: `${student.studyProgramme.split("/")[1]}`,
+                    studyProgramme: `${student.studyProgramme.split("/")[0]}`,
                 },
             }
         }),

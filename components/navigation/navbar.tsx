@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import Container from "../layout/container"
 
 export default function Navbar() {
     const router = useRouter()
@@ -18,13 +19,13 @@ export default function Navbar() {
     }
     return (
         <nav className="navbar-z-index">
-            <div className="w-full hidden md:flex py-5 px-10 lg:px-20 xl:px-40 2xl:px-60 ">
-                <ul className="flex space-x-10 lg:space-x-20">
+            <div className="w-full hidden md:flex py-5 px-10 lg:px-20 xl:px-40 2xl:px-60">
+                <ul className="flex w-full justify-between space-x-10 lg:space-x-20">
                     <li>
                         <Link
                             className={
                                 router.asPath == "/"
-                                    ? "text-main font-bold"
+                                    ? "text-main"
                                     : "text-black"
                             }
                             href="/"
@@ -32,116 +33,130 @@ export default function Navbar() {
                             Hjem
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            className={`flex ${
-                                studyProgramme === "bmed"
-                                    ? "text-bmed font-bold"
-                                    : "text-black"
-                            }`}
-                            href="/bmed"
-                        >
-                            <svg
-                                className="mx-2"
-                                width="20"
-                                height="20"
-                                viewBox="-1 -1 22 22"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                    <div className="flex space-x-10 lg:space-x-20">
+                        <li>
+                            <Link
+                                className={`flex ${
+                                    studyProgramme === "bmed"
+                                        ? "text-bmed"
+                                        : "text-black"
+                                }`}
+                                href={
+                                    process.env.NEXT_PUBLIC_ENV === "production"
+                                        ? "/bmed.html"
+                                        : "/bmed"
+                                }
                             >
-                                <circle
-                                    cx="10"
-                                    cy="10"
-                                    r="10"
-                                    stroke={
-                                        studyProgramme === "bmed"
-                                            ? "#e45197"
-                                            : "#000"
-                                    }
-                                    strokeWidth="2"
-                                    fill={
-                                        studyProgramme === "bmed"
-                                            ? "#e45197"
-                                            : "none"
-                                    }
-                                />
-                            </svg>
-                            Grafisk design
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className={`flex ${
-                                studyProgramme === "bixd"
-                                    ? "text-bixd font-bold"
-                                    : "text-black"
-                            }`}
-                            href="/bixd"
-                        >
-                            <svg
-                                className="mx-2"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 22 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                                <svg
+                                    className="mx-2"
+                                    width="20"
+                                    height="20"
+                                    viewBox="-1 -1 22 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="10"
+                                        cy="10"
+                                        r="10"
+                                        stroke={
+                                            studyProgramme === "bmed"
+                                                ? "#e45197"
+                                                : "#000"
+                                        }
+                                        strokeWidth="2"
+                                        fill={
+                                            studyProgramme === "bmed"
+                                                ? "#e45197"
+                                                : "none"
+                                        }
+                                    />
+                                </svg>
+                                Grafisk design
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={`flex ${
+                                    studyProgramme === "bixd"
+                                        ? "text-bixd"
+                                        : "text-black"
+                                }`}
+                                href={
+                                    process.env.NEXT_PUBLIC_ENV === "production"
+                                        ? "/bixd.html"
+                                        : "/bixd"
+                                }
                             >
-                                <path
-                                    d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
-                                    stroke={
-                                        studyProgramme === "bixd"
-                                            ? "#5ca545"
-                                            : "#000"
-                                    }
-                                    strokeWidth="2"
-                                    fill={
-                                        studyProgramme === "bixd"
-                                            ? "#5ca545"
-                                            : "none"
-                                    }
-                                />
-                            </svg>
-                            Interaksjonsdesign
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            className={`flex ${
-                                studyProgramme === "bwu"
-                                    ? "text-bwu font-bold"
-                                    : "text-black"
-                            }`}
-                            href="/bwu"
-                        >
-                            <svg
-                                className="mx-2"
-                                width="20"
-                                height="20"
-                                viewBox="0 0 22 20"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+                                <svg
+                                    className="mx-2"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 22 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
+                                        stroke={
+                                            studyProgramme === "bixd"
+                                                ? "#5ca545"
+                                                : "#000"
+                                        }
+                                        strokeWidth="2"
+                                        fill={
+                                            studyProgramme === "bixd"
+                                                ? "#5ca545"
+                                                : "none"
+                                        }
+                                    />
+                                </svg>
+                                Interaksjonsdesign
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={`flex ${
+                                    studyProgramme === "bwu"
+                                        ? "text-bwu"
+                                        : "text-black"
+                                }`}
+                                href={
+                                    process.env.NEXT_PUBLIC_ENV === "production"
+                                        ? "/bwu.html"
+                                        : "/bwu"
+                                }
                             >
-                                <rect
-                                    x="1"
-                                    y="1.5"
-                                    width="17"
-                                    height="17"
-                                    stroke={
-                                        studyProgramme === "bwu"
-                                            ? "#508fce"
-                                            : "#000"
-                                    }
-                                    strokeWidth="2"
-                                    fill={
-                                        studyProgramme === "bwu"
-                                            ? "#508fce"
-                                            : "none"
-                                    }
-                                />
-                            </svg>
-                            Webutvikling
-                        </Link>
-                    </li>
+                                <svg
+                                    className="mx-2"
+                                    width="20"
+                                    height="20"
+                                    viewBox="0 0 22 20"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="1"
+                                        y="1.5"
+                                        width="17"
+                                        height="17"
+                                        stroke={
+                                            studyProgramme === "bwu"
+                                                ? "#508fce"
+                                                : "#000"
+                                        }
+                                        strokeWidth="2"
+                                        fill={
+                                            studyProgramme === "bwu"
+                                                ? "#508fce"
+                                                : "none"
+                                        }
+                                    />
+                                </svg>
+                                Webutvikling
+                            </Link>
+                        </li>
+                    </div>
                 </ul>
             </div>
             <div className="md:hidden flex justify-end">
@@ -251,7 +266,11 @@ export default function Navbar() {
                                 ? "text-bmed font-bold"
                                 : "text-black"
                         }`}
-                        href="/bmed"
+                        href={
+                            process.env.NEXT_PUBLIC_ENV === "production"
+                                ? "/bmed.html"
+                                : "/bmed"
+                        }
                     >
                         <svg
                             className="mx-2"
@@ -287,7 +306,11 @@ export default function Navbar() {
                                 ? "text-bixd font-bold"
                                 : "text-black"
                         }`}
-                        href="/bixd"
+                        href={
+                            process.env.NEXT_PUBLIC_ENV === "production"
+                                ? "/bixd.html"
+                                : "/bixd"
+                        }
                     >
                         <svg
                             className="mx-2"
@@ -321,7 +344,11 @@ export default function Navbar() {
                                 ? "text-bwu font-bold"
                                 : "text-black"
                         }`}
-                        href="/bwu"
+                        href={
+                            process.env.NEXT_PUBLIC_ENV === "production"
+                                ? "/bwu.html"
+                                : "/bwu"
+                        }
                     >
                         <svg
                             className="mx-2"
@@ -356,6 +383,3 @@ export default function Navbar() {
         </nav>
     )
 }
-/*              bwu: "#508fce",
-                bmed: "#e45197",
-                bixd: "#5ca545", */

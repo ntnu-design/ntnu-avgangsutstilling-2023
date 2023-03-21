@@ -15,6 +15,7 @@ const Button = ({
                     className={`border-2 border-bwu hover:text-white hover:bg-bwu py-2 px-8 rounded transition ${
                         isActive && "bg-bwu text-white"
                     }`}
+                    style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
                 >
@@ -27,6 +28,7 @@ const Button = ({
                     className={`border-2 border-bmed hover:text-white hover:bg-bmed py-2 px-8 rounded transition ${
                         isActive && "bg-bmed text-white"
                     }`}
+                    style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
                 >
@@ -39,6 +41,7 @@ const Button = ({
                     className={`border-2 border-bixd hover:text-white hover:bg-bixd py-2 px-8 rounded transition ${
                         isActive && "bg-bixd text-white"
                     }`}
+                    style={{ width: "11em" }}
                     onClick={onButtonClick}
                     disabled={onDisabled}
                 >

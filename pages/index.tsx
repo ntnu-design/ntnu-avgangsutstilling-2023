@@ -2,7 +2,7 @@ import Container from "../components/layout/container"
 import Layout from "../components/layout/layout"
 import Head from "next/head"
 import BottomMap from "../components/BottomMap"
-import HeroDel from "../components/temporary/hero-del"
+import HeroDel from "../components/HeroSection/HeroSection"
 import StudyProgrammeInfo from "../components/StudyProgrammeInfo/StudyProgrammeInfo"
 
 export default function Index() {

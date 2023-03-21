@@ -6,7 +6,7 @@ import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Container from "../../components/layout/container"
 import type { StudentItem } from "../../interfaces/student"
-import { CaretDown, InstagramLogo } from "@phosphor-icons/react"
+import { BehanceLogo, CaretDown, Envelope, Globe, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react"
 
 export default function Student({ student }: Props) {
     const router = useRouter()
@@ -15,7 +15,7 @@ export default function Student({ student }: Props) {
     }
     const socialMediaLinks = [
         { name: "email", url: student.email },
-        { name: "globe", url: student.portfolio },
+        { name: "portfolio", url: student.portfolio },
         { name: "linkedin", url: student.linkedin },
         { name: "behance", url: student.behance },
         { name: "instagram", url: student.instagram },
@@ -93,36 +93,39 @@ export default function Student({ student }: Props) {
                                     if (link.url !== "") {
                                         if (link.name === "email") {
                                             return (
-                                                <a href={`mailto:${link.url}`} key={index}>
-                                                    <Image
-                                                        src={
-                                                            "/social-media/" +
-                                                            link.name +
-                                                            ".svg"
-                                                        }
-                                                        alt={
-                                                            link.name + " icon"
-                                                        }
-                                                        width={64}
-                                                        height={64}
-                                                    />
+                                                <a
+                                                    href={`mailto:${link.url}`}
+                                                    key={index}
+                                                >
+                                                    <Envelope size={64} className={`hover:text-${student.studyProgram.toLowerCase()} transition`} />
                                                 </a>
                                             )
                                         }
-                                        return (
-                                            <a href={link.url} key={index}>
-                                                <Image
-                                                    src={
-                                                        "/social-media/" +
-                                                        link.name +
-                                                        ".svg"
-                                                    }
-                                                    alt={link.name + " icon"}
-                                                    width={64}
-                                                    height={64}
-                                                />
-                                            </a>
-                                        )
+                                        if (link.name === "portfolio") {
+                                            return (
+                                                <a href={link.url}>
+                                                    <Globe size={64} className={`hover:text-${student.studyProgram.toLowerCase()} transition`} />
+                                                </a>
+                                            )
+                                        } else if (link.name === "linkedin") {
+                                            return (
+                                                <a href={link.url}>
+                                                    <LinkedinLogo size={64} className={`hover:text-${student.studyProgram.toLowerCase()} transition`} />
+                                                </a>
+                                            )
+                                        } else if (link.name === "behance") {
+                                            return (
+                                                <a href={link.url}>
+                                                    <BehanceLogo size={64} className={`hover:text-${student.studyProgram.toLowerCase()} transition`} />
+                                                </a>
+                                            )
+                                        } else if (link.name === "instagram") {
+                                            return (
+                                                <a href={link.url}>
+                                                    <InstagramLogo size={64} className={`hover:text-${student.studyProgram.toLowerCase()} transition`} />
+                                                </a>
+                                            )
+                                        }
                                     }
                                 })}
                             </div>
@@ -154,7 +157,7 @@ export default function Student({ student }: Props) {
                                                 width={400}
                                                 height={400}
                                                 alt={project.headline_1}
-                                                style={{width: "auto"}}
+                                                style={{ width: "auto" }}
                                             />
 
                                             <div className="mx-0 smd:mx-4 2xl:mx-12 mb-5 md:my-10 xl:col-span-2">

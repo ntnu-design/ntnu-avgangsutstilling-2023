@@ -91,6 +91,24 @@ export default function Student({ student }: Props) {
                             <div className="flex gap-5 mt-4 md:mt-6">
                                 {socialMediaLinks.map((link, index) => {
                                     if (link.url !== "") {
+                                        if (link.name === "email") {
+                                            return (
+                                                <a href={`mailto:${link.url}`} key={index}>
+                                                    <Image
+                                                        src={
+                                                            "/social-media/" +
+                                                            link.name +
+                                                            ".svg"
+                                                        }
+                                                        alt={
+                                                            link.name + " icon"
+                                                        }
+                                                        width={64}
+                                                        height={64}
+                                                    />
+                                                </a>
+                                            )
+                                        }
                                         return (
                                             <a href={link.url} key={index}>
                                                 <Image
@@ -136,6 +154,7 @@ export default function Student({ student }: Props) {
                                                 width={400}
                                                 height={400}
                                                 alt={project.headline_1}
+                                                style={{width: "auto"}}
                                             />
 
                                             <div className="mx-0 smd:mx-4 2xl:mx-12 mb-5 md:my-10 xl:col-span-2">

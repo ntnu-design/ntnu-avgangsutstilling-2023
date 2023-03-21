@@ -19,8 +19,8 @@ export default function Navbar() {
     }
     return (
         <nav className="navbar-z-index">
-            <div className="w-full hidden md:flex py-5 px-10 lg:px-20 xl:px-40 2xl:px-60">
-                <ul className="flex w-full justify-between space-x-10 lg:space-x-20">
+            <div className="w-full hidden md:flex py-5 px-10">
+                <ul className="flex w-full justify-between space-x-10 lg:space-x-20" style={{maxWidth: "1500px", margin: "0 auto"}}>
                     <li>
                         <Link
                             className={`${

@@ -9,63 +9,25 @@ const Button = ({
     tabIndex,
     children,
 }: Props) => {
-    switch (studyProgramme) {
-        case "bwu":
-            return (
-                <button
-                    className={`border-2 border-bwu hover:text-white hover:bg-bwu py-2 px-8 rounded transition ${
-                        isActive && "bg-bwu text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                    tabIndex={tabIndex}
-                >
-                    {children}
-                </button>
-            )
-        case "bmed":
-            return (
-                <button
-                    className={`border-2 border-bmed hover:text-white hover:bg-bmed py-2 px-8 rounded transition ${
-                        isActive && "bg-bmed text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                    tabIndex={tabIndex}
-                >
-                    {children}
-                </button>
-            )
-        case "bixd":
-            return (
-                <button
-                    className={`border-2 border-bixd hover:text-white hover:bg-bixd py-2 px-8 rounded transition ${
-                        isActive && "bg-bixd text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                    tabIndex={tabIndex}
-                >
-                    {children}
-                </button>
-            )
-        case "avgang":
-            return (
-                <button
-                    className={`border-2 border-main hover:text-white hover:bg-main py-2 px-8 rounded transition ${
-                        isActive && "bg-avgang text-white"
-                    }`}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                    tabIndex={tabIndex}
-                >
-                    {children}
-                </button>
-            )
-    }
+    const baseClasses = `border-2 py-2 px-8 rounded transition ${
+        isActive ? "text-white" : ""
+    }`
+
+    const borderColorClass = `border-${studyProgramme}`
+    const hoverClass = `hover:text-white hover:bg-${studyProgramme}`
+    const activeClass = isActive ? `bg-${studyProgramme}` : ""
+
+    return (
+        <button
+            className={`${baseClasses} ${borderColorClass} ${hoverClass} ${activeClass}`}
+            style={{ width: "11em" }}
+            onClick={onButtonClick}
+            disabled={onDisabled}
+            tabIndex={tabIndex}
+        >
+            {children}
+        </button>
+    )
 }
 
 export default Button

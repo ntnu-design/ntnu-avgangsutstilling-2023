@@ -84,7 +84,7 @@ export default function Student({ student }: Props) {
                                         }}
                                         priority
                                     />
-                                    <div className="flex gap-5 mt-4 md:mt-6">
+                                    <div className="flex gap-2 sm:gap-5 mt-4 md:mt-6">
                                         {socialMediaLinks.map((link, index) => {
                                             if (link.url !== "") {
                                                 if (link.name === "email") {
@@ -94,7 +94,7 @@ export default function Student({ student }: Props) {
                                                             key={index}
                                                         >
                                                             <Envelope
-                                                                size={64}
+                                                                size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
                                                             />
                                                         </a>
@@ -104,7 +104,7 @@ export default function Student({ student }: Props) {
                                                     return (
                                                         <a href={link.url}>
                                                             <Globe
-                                                                size={64}
+                                                                size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
                                                             />
                                                         </a>
@@ -115,7 +115,7 @@ export default function Student({ student }: Props) {
                                                     return (
                                                         <a href={link.url}>
                                                             <LinkedinLogo
-                                                                size={64}
+                                                                size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
                                                             />
                                                         </a>
@@ -126,7 +126,7 @@ export default function Student({ student }: Props) {
                                                     return (
                                                         <a href={link.url}>
                                                             <BehanceLogo
-                                                                size={64}
+                                                                size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
                                                             />
                                                         </a>
@@ -137,7 +137,7 @@ export default function Student({ student }: Props) {
                                                     return (
                                                         <a href={link.url}>
                                                             <InstagramLogo
-                                                                size={64}
+                                                                size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
                                                             />
                                                         </a>
@@ -156,7 +156,7 @@ export default function Student({ student }: Props) {
                                     </h1>
                                     <hr className="border-gray-3 my-8 2xl:my-4 " />
                                     <p
-                                        className="text-md md:text-lg"
+                                        className="text-md md:text-lg max-w-[75ch]"
                                         dangerouslySetInnerHTML={{
                                             __html: student.bio,
                                         }}
@@ -205,7 +205,7 @@ export default function Student({ student }: Props) {
                                                     {project.headline_1}
                                                 </h3>
                                                 <p
-                                                    className="text-sm md:text-md"
+                                                    className="text-sm md:text-md m-w-[75ch]"
                                                     dangerouslySetInnerHTML={{
                                                         __html: project.desc,
                                                     }}

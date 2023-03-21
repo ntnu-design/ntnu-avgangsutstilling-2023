@@ -19,7 +19,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                29 studenter fra Bachelor interaksjonsdesign ved NTNU i Gjøvik
+                Studenter fra Bachelor interaksjonsdesign ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
                 utvalgte arbeider fra egenportefølje.
             </p>
@@ -51,7 +51,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                18 studenter fra Bachelor i webutvikling ved NTNU i Gjøvik
+                Studenter fra Bachelor i webutvikling ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
                 utvalgte arbeider fra egenportefølje.
             </p>
@@ -72,7 +72,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                27 studenter fra Bachelor i grafisk design ved NTNU i Gjøvik
+                Studenter fra Bachelor i grafisk design ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
                 utvalgte arbeider fra egenportefølje.
             </p>

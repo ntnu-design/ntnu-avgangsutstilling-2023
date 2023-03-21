@@ -117,3 +117,11 @@ html {
     opacity: 1;
     z-index: 100000;
 }
+
+.left-item {
+    @apply w-full text-left md:flex-initial md:w-auto;
+}
+
+.right-item {
+    @apply w-full text-right md:flex-initial md:w-auto md:ml-auto;
+}

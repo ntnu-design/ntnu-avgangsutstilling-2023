@@ -4,7 +4,7 @@ import ResponsiveHeroLogo from "./responsiveHeroLogo"
 
 function HeroDel(props) {
     return props.studyProgramme == "bixd" ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
             <ResponsiveHeroBackground studyProgram="bixd" />
             <ResponsiveHeroLogo studyProgram="bixd" />
             <p
@@ -25,7 +25,7 @@ function HeroDel(props) {
             </p>
         </div>
     ) : props.studyProgramme == "bwu" ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{ maxWidth: "1500px", margin: "0 auto"}}>
             <ResponsiveHeroBackground studyProgram="bwu" />
             <Image
                 src="/svg/bwu/heading.svg"
@@ -57,7 +57,7 @@ function HeroDel(props) {
             </p>
         </div>
     ) : props.studyProgramme == "bmed" ? (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
             <ResponsiveHeroBackground studyProgram="bmed" />
             <ResponsiveHeroLogo studyProgram="bmed" />
             <p
@@ -78,7 +78,7 @@ function HeroDel(props) {
             </p>
         </div>
     ) : (
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
             <ResponsiveHeroBackground studyProgram="hjem" />
             <ResponsiveHeroLogo studyProgram="hjem" />
             <p

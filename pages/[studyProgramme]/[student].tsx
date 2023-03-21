@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Container from "../../components/layout/container"
-import type { StudentItem } from "../../interfaces/student"
+import type { StudentItem, StudyProgramme } from "../../interfaces/student"
 import {
     BehanceLogo,
     CaretDown,
@@ -13,9 +13,32 @@ import {
     Globe,
     InstagramLogo,
     LinkedinLogo,
+    CaretLeft,
+    CaretRight,
 } from "@phosphor-icons/react"
+import Link from "next/link"
+import { useEffect, useState } from "react"
+import { sortStudents } from "../../lib/utils"
 
-export default function Student({ student }: Props) {
+export default function Student({ student, students }: Props) {
+    const [sortedStudents, setSortedStudents] = useState([])
+
+    useEffect(() => {
+        const sortOrder = localStorage.getItem("sortOrder") || "random"
+        setSortedStudents(sortStudents(students, sortOrder))
+    }, [students])
+
+    const currentStudentIndex = sortedStudents.findIndex(
+        (stud) => stud.student === student.student
+    )
+
+    const previousStudent =
+        currentStudentIndex > 0 ? sortedStudents[currentStudentIndex - 1] : null
+    const nextStudent =
+        currentStudentIndex < sortedStudents.length - 1
+            ? sortedStudents[currentStudentIndex + 1]
+            : null
+
     const router = useRouter()
     if (!router.isFallback && !student?.studyProgramme) {
         return <ErrorPage statusCode={404} />
@@ -92,6 +115,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={`mailto:${link.url}?subject=Avgangsutstilling-2023`}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <Envelope
                                                                 size={44}
@@ -105,6 +130,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <Globe
                                                                 size={44}
@@ -119,6 +146,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <LinkedinLogo
                                                                 size={44}
@@ -133,6 +162,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <BehanceLogo
                                                                 size={44}
@@ -147,6 +178,8 @@ export default function Student({ student }: Props) {
                                                         <a
                                                             href={link.url}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <InstagramLogo
                                                                 size={44}
@@ -228,6 +261,46 @@ export default function Student({ student }: Props) {
                                 }
                             })}
                         </section>
+                        <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
+                            {previousStudent && (
+                                <Link
+                                    href={
+                                        process.env.NEXT_PUBLIC_ENV ===
+                                        "production"
+                                            ? `/${previousStudent.studyProgramme}.index.html`
+                                            : `/${previousStudent.studyProgramme}`
+                                    }
+                                    className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
+                                >
+                                    <CaretLeft size={44} />
+                                    {previousStudent.title}
+                                </Link>
+                            )}
+                            {nextStudent && (
+                                <Link
+                                    href={
+                                        process.env.NEXT_PUBLIC_ENV ===
+                                        "production"
+                                            ? `/${nextStudent.studyProgramme}.index.html`
+                                            : `/${nextStudent.studyProgramme}`
+                                    }
+                                    className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
+                                >
+                                    {nextStudent.title}
+                                    <CaretRight size={44} />
+                                </Link>
+                            )}
+                        </div>
+                        {/* <Link
+                            href={
+                                process.env.NEXT_PUBLIC_ENV === "production"
+                                    ? `/${student.studyProgram.toLowerCase()}.index.html`
+                                    : `/${student.studyProgram.toLowerCase()}`
+                            }
+                            className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}
+                        >
+                            Gå tilbake til studieprogram
+                        </Link> */}
                     </>
                 )}
             </Container>
@@ -240,7 +313,6 @@ export async function getStaticProps({ params }: Params) {
     const slug = `${studyProgramme}/${student}/content.md`
 
     const studentContent = getStudentBySlug(slug, [
-        // ! Legg til de feltene man trenger fra content.md
         "title",
         "studyProgramme",
         "student",
@@ -276,11 +348,13 @@ export async function getStaticProps({ params }: Params) {
         "project_desc_5",
     ])
 
-    //const content = await markdownToHtml(post.content || "")
-
     return {
         props: {
             student: studentContent,
+            students: getStudents(
+                ["title", "studyProgramme", "student"],
+                studyProgramme
+            ),
         },
     }
 }
@@ -306,11 +380,13 @@ export async function getStaticPaths() {
 
 interface Props {
     student: StudentItem
+    students: StudentItem[]
 }
 
 interface Params {
     params: {
         student: string
-        studyProgramme: string
+        studyProgramme: StudyProgramme
+        sortOrder: string
     }
 }

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
@@ -21,7 +21,15 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
     const bixdOverlay = "bixd-overlay group-hover:opacity-30"
     const bmedOverlay = "bmed-overlay group-hover:opacity-30"
 
-    const [sortOrder, setSortOrder] = useState("random")
+    const [sortOrder, setSortOrder] = useState(() => {
+        return typeof window !== "undefined"
+            ? localStorage.getItem("sortOrder") || "random"
+            : "random"
+    })
+
+    useEffect(() => {
+        localStorage.setItem("sortOrder", sortOrder)
+    }, [sortOrder])
 
     const sortedStudents = sortStudents(students, sortOrder)
 
@@ -55,8 +63,8 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         </Button>
                     </div>
                     <ul
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                        style={{ maxWidth: "1200px", margin: "0 auto" }}
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+                        style={{ margin: "0 auto" }}
                     >
                         {sortedStudents.map((student, index) => (
                             <li
@@ -69,7 +77,14 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link href={process.env.NEXT_PUBLIC_ENV === "production" ? `/${student.studyProgramme}.html` : `/${student.studyProgramme}`}>
+                                <Link
+                                    href={
+                                        process.env.NEXT_PUBLIC_ENV ===
+                                        "production"
+                                            ? `/${student.studyProgramme}.html`
+                                            : `/${student.studyProgramme}`
+                                    }
+                                >
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}

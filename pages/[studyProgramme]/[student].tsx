@@ -263,12 +263,7 @@ export default function Student({ student, students }: Props) {
                         <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
                             {previousStudent && (
                                 <a
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${previousStudent.studyProgramme}.index.html`
-                                            : `/${previousStudent.studyProgramme}`
-                                    }
+                                    href={`/${previousStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
                                 >
                                     <CaretLeft size={44} />
@@ -277,12 +272,7 @@ export default function Student({ student, students }: Props) {
                             )}
                             {nextStudent && (
                                 <a
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${nextStudent.studyProgramme}.index.html`
-                                            : `/${nextStudent.studyProgramme}`
-                                    }
+                                    href={`/${nextStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
                                 >
                                     {nextStudent.title}

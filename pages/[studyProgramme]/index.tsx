@@ -76,14 +76,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <a
-                                    href={
-                                        process.env.NEXT_PUBLIC_ENV ===
-                                        "production"
-                                            ? `/${student.studyProgramme}.html`
-                                            : `/${student.studyProgramme}`
-                                    }
-                                >
+                                <a href={`/${student.studyProgramme}`}>
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}

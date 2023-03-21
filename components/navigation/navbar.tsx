@@ -18,7 +18,10 @@ export default function Navbar() {
     return (
         <nav className="navbar-z-index">
             <div className="w-full hidden md:flex py-5 px-10">
-                <ul className="flex w-full justify-between space-x-10 lg:space-x-20" style={{maxWidth: "1500px", margin: "0 auto"}}>
+                <ul
+                    className="flex w-full justify-between space-x-10 lg:space-x-20"
+                    style={{ maxWidth: "1500px", margin: "0 auto" }}
+                >
                     <li>
                         <a
                             className={`${
@@ -39,11 +42,7 @@ export default function Navbar() {
                                         ? "text-bmed"
                                         : "text-black"
                                 } hover:after:block`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bmed.html"
-                                        : "/bmed"
-                                }
+                                href="/bmed"
                             >
                                 <div className="flex items-start">
                                     <svg
@@ -90,11 +89,7 @@ export default function Navbar() {
                                         ? "text-bixd"
                                         : "text-black"
                                 }`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bixd.html"
-                                        : "/bixd"
-                                }
+                                href="/bixd"
                             >
                                 <div className="flex items-start">
                                     <svg
@@ -139,11 +134,7 @@ export default function Navbar() {
                                         ? "text-bwu"
                                         : "text-black"
                                 }`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bwu.html"
-                                        : "/bwu"
-                                }
+                                href="/bwu"
                             >
                                 <div className="flex items-start">
                                     <svg
@@ -294,11 +285,7 @@ export default function Navbar() {
                                 ? "text-bmed font-bold"
                                 : "text-black"
                         }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bmed.html"
-                                : "/bmed"
-                        }
+                        href="/bmed"
                     >
                         <svg
                             className="mx-2"
@@ -334,11 +321,7 @@ export default function Navbar() {
                                 ? "text-bixd font-bold"
                                 : "text-black"
                         }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bixd.html"
-                                : "/bixd"
-                        }
+                        href="/bixd"
                     >
                         <svg
                             className="mx-2"
@@ -372,11 +355,7 @@ export default function Navbar() {
                                 ? "text-bwu font-bold"
                                 : "text-black"
                         }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bwu.html"
-                                : "/bwu"
-                        }
+                        href="/bwu"
                     >
                         <svg
                             className="mx-2"

@@ -7,6 +7,7 @@ const nextConfig = {
         loader: "custom",
         loaderFile: "./lib/imageLoader.ts",
     },
+    trailingSlash: true,
 }
 
 module.exports = nextConfig

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .bwu-overlay {
     @apply absolute inset-0 bg-bwu opacity-0 hover:opacity-30;
 }

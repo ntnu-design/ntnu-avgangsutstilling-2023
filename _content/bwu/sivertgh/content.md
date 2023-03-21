@@ -44,25 +44,25 @@ project_desc_1: "<p><a class='font-semibold' href='https://gryt.chat/'><u>gryt.c
 <p>Gryt gir brukerne muligheten til å drifte sine egne servere, slik at de har full kontroll over samtaler og data som deles. Gryt er en sikker og privat kommunikasjonsplattform som gir brukerne mulighet til å kommunisere fritt og samtidig beskytte personvernet sitt.</p>
 <br />
 
-<p>Prosjektet er drevet av meg selv og ligger ute tilgjengelig hos GitHub (https://github.com/Gryt-chat).
+<p>Prosjektet er drevet av meg selv og ligger ute tilgjengelig hos <a target='_blank' href='https://github.com/Gryt-chat'><u>GitHub</u></a>.
 <br />
 Gryt består av en klient, en autentiserings-server og en selv-drevet server.</p>
 <br />
 
-<p>Alle prosjektene til Gryt benytter design systemet kalt Gryt-UI (https://www.npmjs.com/package/@gryt/ui). Dette gir alle applikasjonene identisk utseende og følelse. Gryt-UI er basert på React og benytter Tailwind + DaisyUI.</p>
+<p>Alle prosjektene til Gryt benytter design systemet kalt <a target='_blank' href='https://www.npmjs.com/package/@gryt/ui'><u>Gryt-UI</u></a>. Dette gir alle applikasjonene identisk utseende og følelse. Gryt-UI er basert på React og benytter Tailwind + DaisyUI.</p>
 <br />
 
-<h2>Klienten:</h2>
+<h2 class='font-semibold'>Klienten:</h2>
 <p><strong>Teknologi: Next.js + Electron</strong></p>
 <p>Brukerne kobler seg opp ved bruk av en webapplikasjon, som kan kjøres i nettleser eller som en skrivebords-applikasjon.</p>
 <br />
 
-<h2>Autentisering:</h2>
+<h2 class='font-semibold'>Autentisering:</h2>
 <p><strong>Teknologi: Supabase</strong></p>
 <p>Vi håndterer autentisering slik at brukere kan benytte applikasjonen over flere enheter. På denne måten vil alt være synkronisert mellom enhetene. Våre databaser inneholder kun informasjon om innlogging og hvilke servere man tar del i.</p>
 <br />
 
-<h2>Servere:</h2>
+<h2 class='font-semibold'>Servere:</h2>
 <p><strong>Teknologi: Supabase + Socket.IO (Ubestemt)</strong></p>
 <p>Brukerne har muligheten til å drifte sine egne servere, som andre brukere kan koble seg opp mot. Dette gjør at brukere kan kommunisere seg i mellom. Det er og planlagt muligheten til å opprette flere samfunn innad i en server, slik at man kan eksempelvis ha en plass for vennegjengen og en annen for kollegaer/klassekamerater.</p>
 <br />

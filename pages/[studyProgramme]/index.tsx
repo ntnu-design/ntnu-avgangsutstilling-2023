@@ -4,7 +4,7 @@ import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
 import Layout from "../../components/layout/layout"
-import HeroDel from "../../components/temporary/hero-del"
+import HeroDel from "../../components/HeroSection/HeroSection"
 import Container from "../../components/layout/container"
 import Image from "next/image"
 import { GetStaticPaths, GetStaticPathsResult } from "next"
@@ -69,7 +69,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link href={`${student.studyProgramme}`}>
+                                <Link href={process.env.NEXT_PUBLIC_ENV === "production" ? `/${student.studyProgramme}.html` : `/${student.studyProgramme}`}>
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}

@@ -68,7 +68,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 <p>{textDescription}</p>
                 <div className="mt-6 flex items-center justify-between">
                     <Button studyProgramme={studyProgramme}>
-                        <Link href={`/${studyProgramme}`}>Vis studenter</Link>
+                        <Link href={process.env.NEXT_PUBLIC_ENV === "production" ? `/${studyProgramme}.html` : `/${studyProgramme}`}>Vis studenter</Link>
                     </Button>
 
                     <div className="flex flex-row space-x-4">

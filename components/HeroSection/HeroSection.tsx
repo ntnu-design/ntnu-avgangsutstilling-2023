@@ -22,7 +22,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                Bachelorutstilling i grafisk design, interaksjonsdesign og
+                Bachelorutstilling i interaksjonsdesign, grafisk design og
                 webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
                 studier. Studenter presenterer nøye utvalgte arbeider fra deres
                 porteføljer, med fokus på temaet vekst og utvikling.
@@ -58,7 +58,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                Bachelorutstilling i grafisk design, interaksjonsdesign og
+                Bachelorutstilling i interaksjonsdesign, grafisk design og
                 webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
                 studier. Studenter presenterer nøye utvalgte arbeider fra deres
                 porteføljer, med fokus på temaet vekst og utvikling.
@@ -83,7 +83,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                Bachelorutstilling i grafisk design, interaksjonsdesign og
+                Bachelorutstilling i interaksjonsdesign, grafisk design og
                 webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
                 studier. Studenter presenterer nøye utvalgte arbeider fra deres
                 porteføljer, med fokus på temaet vekst og utvikling.
@@ -108,7 +108,7 @@ function HeroDel(props) {
                 }}
                 className="px-10"
             >
-                Bachelorutstilling i grafisk design, interaksjonsdesign og
+                Bachelorutstilling i interaksjonsdesign, grafisk design og
                 webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
                 studier. Studenter presenterer nøye utvalgte arbeider fra deres
                 porteføljer, med fokus på temaet vekst og utvikling.

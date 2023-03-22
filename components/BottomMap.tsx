@@ -9,29 +9,28 @@ export default function BottomMap() {
                     Her finner du oss!
                 </h2>
                 <p>
-                    Velkommen til vår avgangsutstilling som holdes på Mustad
-                    Næringspark i Gjøvik. Du finner oss på Raufossvegen 40, 2821
-                    Gjøvik. Mustad Næringspark ligger langs E6 mellom Oslo og
-                    Trondheim, og er enkelt tilgjengelig med bil eller offentlig
-                    transport. Det er gratis parkering tilgjengelig på området.
-                    Hvis du har spørsmål eller trenger hjelp med å finne oss,
-                    kan du kontakte oss på{" "}
+                    Vi ønsker deg hjertelig velkommen til avgangsutstillingen
+                    vår, som finner sted på Mustad Næringspark i Gjøvik. Du kan
+                    besøke oss på adressen Raufossvegen 40, 2821 Gjøvik. Mustad
+                    Næringspark er beleilig plassert langs E6 mellom Oslo og
+                    Trondheim, og er lett tilgjengelig både med bil og offentlig
+                    transport. Det er dessuten kostnadsfri parkering
+                    tilgjengelig på stedet. Dersom du har spørsmål eller behøver
+                    assistanse for å finne fram, nøl ikke med å kontakte oss på{" "}
                     <a
                         href="mailto:anders.p.andersson@ntnu.no?subject=Avgangsutstilling-2023"
                         className="underline hover:text-main underline-offset-1"
                     >
                         anders.p.andersson@ntnu.no
                     </a>{" "}
-                    eller{" "}
+                    eller ring{" "}
                     <a
                         href="tel:+4748467760"
                         className="underline hover:text-main underline-offset-1"
                     >
-                        +47 484 67 760.
-                    </a>{" "}
-                    Du kan også bruke kartfunksjonen på nettsiden vår for å
-                    finne oss enkelt. Vi ser frem til å ønske deg velkommen til
-                    vår utstilling!
+                        +47 484 67 760
+                    </a>
+                    . Vi gleder oss til å ønske deg velkommen på utstillingen!
                 </p>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <MapPin size={44} />

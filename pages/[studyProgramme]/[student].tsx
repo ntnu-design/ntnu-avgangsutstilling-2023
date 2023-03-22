@@ -98,7 +98,25 @@ export default function Student({ student, students }: Props) {
                 ) : (
                     <>
                         <main>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[6em] md:flex-row">
+                            <div className="mt-[4em] mb-[1em]">
+                                <Link
+                                    className={`hidden md:flex items-center hover:text-${student.studyProgram.toLowerCase()}`}
+                                    href={`/${student.studyProgram.toLowerCase()}`}
+                                >
+                                    <CaretLeft size={32} />
+                                    {student.studyProgram.toLowerCase() ===
+                                    "bmed"
+                                        ? "Grafisk design"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bixd"
+                                        ? "Interaksjonsdesign"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bwu"
+                                        ? "Webutvikling"
+                                        : ""}
+                                </Link>
+                            </div>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6  md:flex-row">
                                 <div>
                                     <Image
                                         src={`/${student.studyProgramme}/${student.profile_picture}`}
@@ -265,13 +283,16 @@ export default function Student({ student, students }: Props) {
                                 }
                             })}
                         </section>
-                        <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
+                        <div
+                            className="flex flex-col md:flex-row w-full justify-between py-10"
+                            style={{ fontSize: "0.9rem" }}
+                        >
                             {previousStudent && (
                                 <Link
                                     href={`/${previousStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
                                 >
-                                    <CaretLeft size={44} />
+                                    <CaretLeft size={32} />
                                     {previousStudent.title}
                                 </Link>
                             )}
@@ -281,7 +302,7 @@ export default function Student({ student, students }: Props) {
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
                                 >
                                     {nextStudent.title}
-                                    <CaretRight size={44} />
+                                    <CaretRight size={32} />
                                 </Link>
                             )}
                         </div>

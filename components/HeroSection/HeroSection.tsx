@@ -4,7 +4,10 @@ import ResponsiveHeroLogo from "./responsiveHeroLogo"
 
 function HeroDel(props) {
     return props.studyProgramme == "bixd" ? (
-        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
+        <div
+            className="flex justify-center items-center"
+            style={{ maxWidth: "1500px", margin: "0 auto" }}
+        >
             <ResponsiveHeroBackground studyProgram="bixd" />
             <ResponsiveHeroLogo studyProgram="bixd" />
             <p
@@ -21,11 +24,14 @@ function HeroDel(props) {
             >
                 Studenter fra Bachelor interaksjonsdesign ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
-                utvalgte arbeider fra egenportefølje.
+                utvalgte arbeider fra egen portefølje.
             </p>
         </div>
     ) : props.studyProgramme == "bwu" ? (
-        <div className="flex justify-center items-center" style={{ maxWidth: "1500px", margin: "0 auto"}}>
+        <div
+            className="flex justify-center items-center"
+            style={{ maxWidth: "1500px", margin: "0 auto" }}
+        >
             <ResponsiveHeroBackground studyProgram="bwu" />
             <Image
                 src="/svg/bwu/heading.svg"
@@ -53,11 +59,14 @@ function HeroDel(props) {
             >
                 Studenter fra Bachelor i webutvikling ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
-                utvalgte arbeider fra egenportefølje.
+                utvalgte arbeider fra egen portefølje.
             </p>
         </div>
     ) : props.studyProgramme == "bmed" ? (
-        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
+        <div
+            className="flex justify-center items-center"
+            style={{ maxWidth: "1500px", margin: "0 auto" }}
+        >
             <ResponsiveHeroBackground studyProgram="bmed" />
             <ResponsiveHeroLogo studyProgram="bmed" />
             <p
@@ -74,11 +83,14 @@ function HeroDel(props) {
             >
                 Studenter fra Bachelor i grafisk design ved NTNU i Gjøvik
                 avslutter tre års studier med en utstilling. Hver student viser
-                utvalgte arbeider fra egenportefølje.
+                utvalgte arbeider fra egen portefølje.
             </p>
         </div>
     ) : (
-        <div className="flex justify-center items-center" style={{maxWidth: "1500px", margin: "0 auto"}}>
+        <div
+            className="flex justify-center items-center"
+            style={{ maxWidth: "1500px", margin: "0 auto" }}
+        >
             <ResponsiveHeroBackground studyProgram="hjem" />
             <ResponsiveHeroLogo studyProgram="hjem" />
             <p
@@ -95,7 +107,7 @@ function HeroDel(props) {
             >
                 Bachelor i grafisk design, interaksjonsdesign og webutvikling
                 ved NTNU i Gjøvik avslutter tre års studier med en utstilling.
-                Hver student viser utvalgte arbeider fra egenportefølje.
+                Hver student viser utvalgte arbeider fra egen portefølje.
             </p>
         </div>
     )

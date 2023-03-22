@@ -1,6 +1,7 @@
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { CaretLeft } from "@phosphor-icons/react"
 
 export default function Navbar() {
     const router = useRouter()
@@ -8,6 +9,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     const studyProgramme = router.query.studyProgramme
+    const isStudentPage = router.query.student
 
     useEffect(() => {
         setIsOpen(false)
@@ -18,6 +20,20 @@ export default function Navbar() {
     }
     return (
         <nav className="navbar-z-index">
+            <Link
+                className={`md:hidden flex items-center absolute py-5 px-2 hover:text-${studyProgramme}`}
+                href={`/${studyProgramme}`}
+            >
+                {isStudentPage && <CaretLeft size={32} />}
+                {isStudentPage &&
+                    (studyProgramme === "bmed"
+                        ? "Grafisk design"
+                        : studyProgramme === "bixd"
+                        ? "Interaksjonsdesign"
+                        : studyProgramme === "bwu"
+                        ? "Webutvikling"
+                        : "")}
+            </Link>
             <div className="w-full hidden md:flex py-5 px-10">
                 <ul
                     className="flex w-full justify-between space-x-10 lg:space-x-20"
@@ -182,7 +198,7 @@ export default function Navbar() {
             <div className="md:hidden flex justify-end">
                 <button
                     onClick={toggle}
-                    className="p-2 rounded-md text-accent-7"
+                    className="p-2 rounded-md text-accent-7 py-5 px-4"
                     aria-expanded={isOpen ? "true" : "false"}
                 >
                     <span className="sr-only">Open main menu</span>

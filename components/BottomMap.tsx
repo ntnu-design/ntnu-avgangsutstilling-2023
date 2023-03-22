@@ -27,7 +27,7 @@ export default function BottomMap() {
                         href="tel:+4748467760"
                         className="underline hover:text-main underline-offset-1"
                     >
-                        +47 48467760.
+                        +47 484 67 760.
                     </a>{" "}
                     Du kan også bruke kartfunksjonen på nettsiden vår for å
                     finne oss enkelt. Vi ser frem til å ønske deg velkommen til
@@ -55,7 +55,7 @@ export default function BottomMap() {
                     <Phone size={44} />
                     <a href="tel:+4748467760">
                         <p className="text-md sm:text-lg font-semibold">
-                            +47 48467760
+                            +47 484 67 760
                         </p>
                     </a>
                 </div>

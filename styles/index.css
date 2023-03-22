@@ -93,8 +93,10 @@ html {
 }
 
 .navbar-z-index {
+    background-color: white;
+    position: sticky;
+    top: 0;
     z-index: 9999;
-    position: relative;
 }
 
 .skip-to-main-content-link {

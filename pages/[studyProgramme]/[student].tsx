@@ -225,12 +225,11 @@ const PostLayout = ({
                     key={index}
                   >
                     <Image
-                      className="object-contain object-center my-5 md:my-10 sm:col-span-2 sm:self-center lg:col-span-1"
+                      className="object-contain object-center w-full h-auto my-5 md:my-10 sm:col-span-2 sm:self-center lg:col-span-1"
                       src={`/${student.studyProgram}/${student.slug}/${project.image}`}
                       width={400}
                       height={400}
                       alt={project.title}
-                      style={{ width: "auto" }}
                     />
 
                     <div className="mx-0 smd:mx-4 2xl:mx-12 mb-5 md:my-10">

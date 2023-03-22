@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { StudyProgramme } from "../../interfaces/student"
 import { getHeading } from "../../lib/utils"
-import Button from "../Button"
+import Button from "../../components/Button"
 import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
 import Link from "next/link"
 

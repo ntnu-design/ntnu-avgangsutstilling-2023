@@ -11,7 +11,7 @@ I’m a student at NTNU, where I’m honing my skills in Interaction Design and 
 
 So what’s next for me? I’m ready for anything. I’m on the hunt for cool projects and amazing people to work with. And when I’m not working, you’ll find me spending time with my loving family, recharging my batteries and getting ready for the next big adventure.
 So, buckle up and get ready to join me on a wild ride through the world of sound and design. I promise you won’t be disappointed."
-portfolio: "https://friisberg.no"
+portfolio: "www.friisberg.no"
 email: "olav@friisberg.no"
 linkedin: "https://www.linkedin.com/in/olav-friisberg-larssen-2345869a/"
 twitter: ""

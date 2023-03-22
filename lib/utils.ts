@@ -1,3 +1,4 @@
+import { Bio } from "contentlayer/generated"
 import { StudentItem, StudyProgramme } from "../interfaces/student"
 
 /**
@@ -41,7 +42,7 @@ function stringToHash(str: string) {
     return hash
 }
 
-export const sortStudents = (students: StudentItem[], sortOrder: string) => {
+export const sortStudents = (students: Bio[], sortOrder: string) => {
     if (sortOrder === "alphabetical") {
         return [...students].sort((a, b) => a.title.localeCompare(b.title))
     } else if (sortOrder === "random") {
@@ -56,17 +57,18 @@ export const sortStudents = (students: StudentItem[], sortOrder: string) => {
             currentDate.getDate()
         return [...students].sort((a, b) => {
             const randomA = getSeededRandomNumber(
-                seed + stringToHash(a.studyProgramme),
+                seed + stringToHash(`${a.studyProgram}/${a.slug}`),
                 0,
                 1
             )
             const randomB = getSeededRandomNumber(
-                seed + stringToHash(b.studyProgramme),
+                seed + stringToHash(`${b.studyProgram}/${b.slug}`),
                 0,
                 1
             )
             return randomA - randomB
         })
     }
+
     return students
 }

@@ -102,15 +102,30 @@ function HeroDel(props) {
                     paddingTop: "auto",
                 }}
             >
-                <div className="w-[100vw]">
-                    <div className="flex  max-w-[1050px] my-40 justify-between">
-                        <p>Vekst og utvikling</p>
-                        <p>2023</p>
+                <div className="w-[98vw] pt-[13em] sm:pt-[16em] px-10">
+                    <div
+                        className="flex max-w-[1050px] justify-between"
+                        style={{ margin: "0 auto" }}
+                    >
+                        <p className="text-xl font-medium sm:text-2xl">
+                            Vekst og utvikling
+                        </p>
+                        <p className="text-2xl sm:text-4xl font-semibold pl-10">
+                            2023
+                        </p>
+                    </div>
+                    <div
+                        className="max-w-[1050px] font-medium flex justify-end"
+                        style={{ margin: "0 auto" }}
+                    >
+                        <div className="w-[11em] pt-10">
+                            <p>2. juni kl. 11–18</p>
+                            <p>Formell åpning kl. 12</p>
+                            <p>3. juni kl. 12–15</p>
+                            <p>Mustad Næringspark</p>
+                        </div>
                     </div>
                 </div>
-                <p>2. juni kl. 11–18</p>
-                <p>Formell åpning kl. 12</p>
-                <p>3. juni kl. 12–15</p>
             </div>
         </div>
     )

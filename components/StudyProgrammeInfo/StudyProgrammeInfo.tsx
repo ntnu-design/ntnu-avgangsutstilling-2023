@@ -18,7 +18,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/webutvikling.ntnu"
             imageSrc = "/Webutvikling_hovedside.svg"
             textContent =
-                "18 studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
+                "Studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
             textDescription =
                 "Studentene kombinerer brukersentrerte designmetoder og web-teknologier for å løse problemer. Utstillingen inkluderer en rekke ulike arbeider fra idéskaping, konseptualisering og prototyping til utvikling og implementering."
             break
@@ -27,7 +27,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/interaksjonsdesign.ntnu"
             imageSrc = "/Interaksjonsdesign_hovedside.svg"
             textContent =
-                "28 studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
+                "Studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
             textDescription =
                 "Utstillingen inkluderer designarbeider for elektroniske medier, så vel som fysiske prototyper, og viser eksempler på hva studentene har jobbet med i emner som tjenestedesign, informasjonsarkitektur, tingenes web, forretningsdesign, og fysisk prototyping."
             break
@@ -36,7 +36,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/grafiskdesign.ntnu"
             imageSrc = "/GrafiskDesign_hovedside.svg"
             textContent =
-                "27 studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe."
+                "Studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe."
             textDescription =
                 "Utstillingen inkluderer designarbeider for papirbaserte og elektroniske medier, samt skilt og veifinningssystemer. For eks­empel innen bedriftsprofilering, løsninger for web, mobil og nettbrett, bokdesign, tidsskriftdesign, avisdesign, kalligrafi og skriftdesign."
             break

@@ -7,9 +7,9 @@ bio: "Hei! Mitt navn er Eirin Lothe Albriktsen, jeg er 25 år og bor i Gjøvik. 
 I 2019 begynte jeg å følge Snapchat kontoen til Løvemammaene som er en fantastisk plattform der mødre (og fedre) deler hvordan hverdagen deres er med et sykt barn i familien. Gjennom denne kontoen ble jeg for første gang introdusert for universell utforming, noe som gjorde at jeg fattet interesse for brukersentrert design. Jeg er vant med å skape estetiske kreasjoner, men det å designe for andre har vært en ny opplevelse for meg som jeg finner svært givende!
 
 Jeg ønsker at brukerens opplevelse av designet skal spille en større rolle i definisjonen av godt design. Jeg mener design må være intuitivt og brukervennlig for å kunne regnes som godt, og dette er noe jeg vil strebe etter å oppnå"
-portfolio: "https://www.eirinla.com"
+portfolio: "eirinla.com"
 email: "eirinlal@stud.ntnu.no"
-linkedin: "https://linkedin.com/in/eirin-lothe-albriktsen-5aa9b123b"
+linkedin: "linkedin.com/in/eirin-lothe-albriktsen-5aa9b123b"
 twitter: ""
 facebook: ""
 behance: ""

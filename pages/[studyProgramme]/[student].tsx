@@ -233,7 +233,7 @@ export default function Student({ student, students }: Props) {
 
                             <div className="flex justify-center invisible object-contain object-bottom md:visible 2xl:visible 2xl:items-center">
                                 <a href="#prosjekter">
-                                    <div className="md:mt-[8em]">
+                                    <div className="md:mt-[1em] w-[10em] flex justify-center">
                                         <CaretDown
                                             size={44}
                                             className={`text-${student.studyProgram.toLowerCase()}`}
@@ -243,7 +243,7 @@ export default function Student({ student, students }: Props) {
                             </div>
                         </main>
                         <section id="prosjekter" className="mb-12">
-                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-24">
+                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-12">
                                 Prosjekter
                             </h2>
                             {studentProjects.map((project, index) => {

@@ -57,17 +57,18 @@ export const sortStudents = (students: Bio[], sortOrder: string) => {
             currentDate.getDate()
         return [...students].sort((a, b) => {
             const randomA = getSeededRandomNumber(
-                seed + stringToHash(a.studyProgram),
+                seed + stringToHash(`${a.studyProgram}/${a.slug}`),
                 0,
                 1
             )
             const randomB = getSeededRandomNumber(
-                seed + stringToHash(b.studyProgram),
+                seed + stringToHash(`${b.studyProgram}/${b.slug}`),
                 0,
                 1
             )
             return randomA - randomB
         })
     }
+
     return students
 }

@@ -6,61 +6,46 @@ const Button = ({
     onButtonClick,
     onDisabled,
     isActive,
+    tabIndex,
     children,
 }: Props) => {
+    const baseClassName = `border-2 py-2 px-8 rounded transition`
+    let borderColor, hoverColor
+
     switch (studyProgramme) {
         case "bwu":
-            return (
-                <button
-                    className={`border-2 border-bwu hover:text-white hover:bg-bwu py-2 px-8 rounded transition ${
-                        isActive && "bg-bwu text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                >
-                    {children}
-                </button>
-            )
+            borderColor = "border-bwu"
+            hoverColor = "hover:bg-bwu hover:text-white"
+            break
         case "bmed":
-            return (
-                <button
-                    className={`border-2 border-bmed hover:text-white hover:bg-bmed py-2 px-8 rounded transition ${
-                        isActive && "bg-bmed text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                >
-                    {children}
-                </button>
-            )
+            borderColor = "border-bmed"
+            hoverColor = "hover:bg-bmed hover:text-white"
+            break
         case "bixd":
-            return (
-                <button
-                    className={`border-2 border-bixd hover:text-white hover:bg-bixd py-2 px-8 rounded transition ${
-                        isActive && "bg-bixd text-white"
-                    }`}
-                    style={{ width: "11em" }}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                >
-                    {children}
-                </button>
-            )
+            borderColor = "border-bixd"
+            hoverColor = "hover:bg-bixd hover:text-white"
+            break
         case "avgang":
-            return (
-                <button
-                    className={`border-2 border-main hover:text-white hover:bg-main py-2 px-8 rounded transition ${
-                        isActive && "bg-avgang text-white"
-                    }`}
-                    onClick={onButtonClick}
-                    disabled={onDisabled}
-                >
-                    {children}
-                </button>
-            )
+            borderColor = "border-main"
+            hoverColor = "hover:bg-main hover:text-white"
+            break
     }
+
+    const buttonClassName = `${baseClassName} ${borderColor} ${hoverColor} ${
+        isActive ? `bg-${studyProgramme} text-white` : ""
+    }`
+
+    return (
+        <button
+            className={buttonClassName}
+            style={{ width: "11em" }}
+            onClick={onButtonClick}
+            disabled={onDisabled}
+            tabIndex={tabIndex}
+        >
+            {children}
+        </button>
+    )
 }
 
 export default Button
@@ -71,4 +56,5 @@ interface Props {
     onButtonClick?: any
     onDisabled?: boolean
     isActive?: boolean
+    tabIndex?: number
 }

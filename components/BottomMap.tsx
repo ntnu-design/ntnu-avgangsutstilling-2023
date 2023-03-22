@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { At, Phone, MapPin, CarProfile } from "@phosphor-icons/react"
-import Link from "next/link"
 
 export default function BottomMap() {
     return (
@@ -18,7 +17,7 @@ export default function BottomMap() {
                     Hvis du har spørsmål eller trenger hjelp med å finne oss,
                     kan du kontakte oss på{" "}
                     <a
-                        href="mailto:anders.p.andersson@ntnu.no"
+                        href="mailto:anders.p.andersson@ntnu.no?subject=Avgangsutstilling-2023"
                         className="underline hover:text-main underline-offset-1"
                     >
                         anders.p.andersson@ntnu.no
@@ -28,7 +27,7 @@ export default function BottomMap() {
                         href="tel:+4748467760"
                         className="underline hover:text-main underline-offset-1"
                     >
-                        +47 48467760.
+                        +47 484 67 760.
                     </a>{" "}
                     Du kan også bruke kartfunksjonen på nettsiden vår for å
                     finne oss enkelt. Vi ser frem til å ønske deg velkommen til
@@ -36,14 +35,14 @@ export default function BottomMap() {
                 </p>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <MapPin size={44} />
-                    <Link
+                    <a
                         href="https://www.google.com/maps/place/Raufossvegen+40,+2821+Gj%C3%B8vik/@60.7898446,10.6731196,17z/data=!3m1!4b1!4m6!3m5!1s0x4641da1399ad4dfd:0x9267f4261988ae38!8m2!3d60.7898446!4d10.6753083!16s%2Fg%2F11cnddg1_l"
                         target="_blank"
                         rel="noopenner norefferer"
                         className="text-md sm:text-lg font-semibold"
                     >
                         Raufossvegen 40, 2821 Gjøvik
-                    </Link>
+                    </a>
                 </div>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <CarProfile size={44} />
@@ -56,13 +55,13 @@ export default function BottomMap() {
                     <Phone size={44} />
                     <a href="tel:+4748467760">
                         <p className="text-md sm:text-lg font-semibold">
-                            +47 48467760
+                            +47 484 67 760
                         </p>
                     </a>
                 </div>
                 <div className="flex items-center md:flex-row space-x-4 my-6">
                     <At size={44} />
-                    <a href="mailto:anders.p.andersson@ntnu.no">
+                    <a href="mailto:anders.p.andersson@ntnu.no?subject=Avgangsutstilling-2023">
                         <p className="text-md sm:text-lg font-semibold">
                             anders.p.andersson@ntnu.no
                         </p>

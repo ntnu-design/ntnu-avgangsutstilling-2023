@@ -1,5 +1,4 @@
-import { useState } from "react"
-import Link from "next/link"
+import { useEffect, useState } from "react"
 import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
@@ -13,15 +12,21 @@ import type {
     StudyProgrammeParams,
 } from "../../interfaces/student"
 import Button from "../../components/Button"
+import Cookie from "js-cookie"
+import Link from "next/link"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
+
     const heading = getHeading(studyProgramme)
     const bwuOverlay = "bwu-overlay group-hover:opacity-30"
     const bixdOverlay = "bixd-overlay group-hover:opacity-30"
     const bmedOverlay = "bmed-overlay group-hover:opacity-30"
 
     const [sortOrder, setSortOrder] = useState("random")
+    useEffect(() => {
+        setSortOrder(Cookie.get("sortOrder") || "random")
+    }, [sortOrder])
 
     const sortedStudents = sortStudents(students, sortOrder)
 
@@ -39,7 +44,10 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                     >
                         <Button
                             studyProgramme={studyProgramme}
-                            onButtonClick={() => setSortOrder("random")}
+                            onButtonClick={() => (
+                                setSortOrder("random"),
+                                Cookie.set("sortOrder", "random")
+                            )}
                             onDisabled={sortOrder === "random"}
                             isActive={sortOrder === "random"}
                         >
@@ -47,7 +55,10 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         </Button>
                         <Button
                             studyProgramme={studyProgramme}
-                            onButtonClick={() => setSortOrder("alphabetical")}
+                            onButtonClick={() => (
+                                setSortOrder("alphabetical"),
+                                Cookie.set("sortOrder", "alphabetical")
+                            )}
                             onDisabled={sortOrder === "alphabetical"}
                             isActive={sortOrder === "alphabetical"}
                         >
@@ -55,8 +66,8 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         </Button>
                     </div>
                     <ul
-                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
-                        style={{ maxWidth: "1200px", margin: "0 auto" }}
+                        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+                        style={{ margin: "0 auto" }}
                     >
                         {sortedStudents.map((student, index) => (
                             <li
@@ -69,7 +80,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link href={process.env.NEXT_PUBLIC_ENV === "production" ? `/${student.studyProgramme}.html` : `/${student.studyProgramme}`}>
+                                <Link href={`/${student.studyProgramme}`}>
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgramme}/${student.profile_picture}`}

@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import { getStudentBySlug, getStudents } from "../../lib/api"
 import Layout from "../../components/layout/layout"
 import Container from "../../components/layout/container"
-import type { StudentItem } from "../../interfaces/student"
+import type { StudentItem, StudyProgramme } from "../../interfaces/student"
 import {
     BehanceLogo,
     CaretDown,
@@ -13,9 +13,36 @@ import {
     Globe,
     InstagramLogo,
     LinkedinLogo,
+    CaretLeft,
+    CaretRight,
 } from "@phosphor-icons/react"
+import { useEffect, useState } from "react"
+import { sortStudents } from "../../lib/utils"
+import Cookie from "js-cookie"
+import Link from "next/link"
 
-export default function Student({ student }: Props) {
+export default function Student({ student, students }: Props) {
+    const [sortedStudents, setSortedStudents] = useState([])
+
+    useEffect(() => {
+        const sortOrder =
+            typeof window !== "undefined"
+                ? Cookie.get("sortOrder") || "random"
+                : "random"
+        setSortedStudents(sortStudents(students, sortOrder))
+    }, [students])
+
+    const currentStudentIndex = sortedStudents.findIndex(
+        (stud) => stud.student === student.student
+    )
+
+    const previousStudent =
+        currentStudentIndex > 0 ? sortedStudents[currentStudentIndex - 1] : null
+    const nextStudent =
+        currentStudentIndex < sortedStudents.length - 1
+            ? sortedStudents[currentStudentIndex + 1]
+            : null
+
     const router = useRouter()
     if (!router.isFallback && !student?.studyProgramme) {
         return <ErrorPage statusCode={404} />
@@ -71,7 +98,25 @@ export default function Student({ student }: Props) {
                 ) : (
                     <>
                         <main>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[6em] md:flex-row">
+                            <div className="mt-[4em] mb-[1em]">
+                                <Link
+                                    className={`hidden md:flex items-center hover:text-${student.studyProgram.toLowerCase()}`}
+                                    href={`/${student.studyProgram.toLowerCase()}`}
+                                >
+                                    <CaretLeft size={32} />
+                                    {student.studyProgram.toLowerCase() ===
+                                    "bmed"
+                                        ? "Grafisk design"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bixd"
+                                        ? "Interaksjonsdesign"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bwu"
+                                        ? "Webutvikling"
+                                        : ""}
+                                </Link>
+                            </div>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6  md:flex-row">
                                 <div>
                                     <Image
                                         src={`/${student.studyProgramme}/${student.profile_picture}`}
@@ -90,8 +135,10 @@ export default function Student({ student }: Props) {
                                                 if (link.name === "email") {
                                                     return (
                                                         <a
-                                                            href={`mailto:${link.url}`}
+                                                            href={`mailto:${link.url}?subject=Avgangsutstilling-2023`}
                                                             key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
                                                         >
                                                             <Envelope
                                                                 size={44}
@@ -102,7 +149,12 @@ export default function Student({ student }: Props) {
                                                 }
                                                 if (link.name === "portfolio") {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
+                                                        >
                                                             <Globe
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -113,7 +165,12 @@ export default function Student({ student }: Props) {
                                                     link.name === "linkedin"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
+                                                        >
                                                             <LinkedinLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -124,7 +181,12 @@ export default function Student({ student }: Props) {
                                                     link.name === "behance"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
+                                                        >
                                                             <BehanceLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -135,7 +197,12 @@ export default function Student({ student }: Props) {
                                                     link.name === "instagram"
                                                 ) {
                                                     return (
-                                                        <a href={link.url}>
+                                                        <a
+                                                            href={link.url}
+                                                            key={index}
+                                                            target="_blank"
+                                                            rel="noopenner norefferer"
+                                                        >
                                                             <InstagramLogo
                                                                 size={44}
                                                                 className={`hover:text-${student.studyProgram.toLowerCase()} transition`}
@@ -166,7 +233,7 @@ export default function Student({ student }: Props) {
 
                             <div className="flex justify-center invisible object-contain object-bottom md:visible 2xl:visible 2xl:items-center">
                                 <a href="#prosjekter">
-                                    <div className="md:mt-[8em]">
+                                    <div className="md:mt-[1em] w-[10em] flex justify-center">
                                         <CaretDown
                                             size={44}
                                             className={`text-${student.studyProgram.toLowerCase()}`}
@@ -176,7 +243,7 @@ export default function Student({ student }: Props) {
                             </div>
                         </main>
                         <section id="prosjekter" className="mb-12">
-                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-24">
+                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-12">
                                 Prosjekter
                             </h2>
                             {studentProjects.map((project, index) => {
@@ -216,6 +283,29 @@ export default function Student({ student }: Props) {
                                 }
                             })}
                         </section>
+                        <div
+                            className="flex flex-col md:flex-row w-full justify-between py-10"
+                            style={{ fontSize: "0.9rem" }}
+                        >
+                            {previousStudent && (
+                                <Link
+                                    href={`/${previousStudent.studyProgramme}`}
+                                    className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
+                                >
+                                    <CaretLeft size={32} />
+                                    {previousStudent.title}
+                                </Link>
+                            )}
+                            {nextStudent && (
+                                <Link
+                                    href={`/${nextStudent.studyProgramme}`}
+                                    className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
+                                >
+                                    {nextStudent.title}
+                                    <CaretRight size={32} />
+                                </Link>
+                            )}
+                        </div>
                     </>
                 )}
             </Container>
@@ -228,7 +318,6 @@ export async function getStaticProps({ params }: Params) {
     const slug = `${studyProgramme}/${student}/content.md`
 
     const studentContent = getStudentBySlug(slug, [
-        // ! Legg til de feltene man trenger fra content.md
         "title",
         "studyProgramme",
         "student",
@@ -264,11 +353,13 @@ export async function getStaticProps({ params }: Params) {
         "project_desc_5",
     ])
 
-    //const content = await markdownToHtml(post.content || "")
-
     return {
         props: {
             student: studentContent,
+            students: getStudents(
+                ["title", "studyProgramme", "student"],
+                studyProgramme
+            ),
         },
     }
 }
@@ -294,11 +385,13 @@ export async function getStaticPaths() {
 
 interface Props {
     student: StudentItem
+    students: StudentItem[]
 }
 
 interface Params {
     params: {
         student: string
-        studyProgramme: string
+        studyProgramme: StudyProgramme
+        sortOrder: string
     }
 }

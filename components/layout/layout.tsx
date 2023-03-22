@@ -10,9 +10,12 @@ type Props = {
 const Layout = ({ children }: Props) => {
     return (
         <>
+            <a href="#main" className="skip-to-main-content-link">
+                Hopp til hovedinnhold
+            </a>
             <Meta />
             <Navbar />
-            <div>{children}</div>
+            <div id="main">{children}</div>
             <Footer />
         </>
     )

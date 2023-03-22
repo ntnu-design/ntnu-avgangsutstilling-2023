@@ -20,7 +20,7 @@ bio: "<h2 class='font-bold text-2xl'>Heisann! 👋</h2>
 <h3 class='font-semibold text-xl'>Når jeg ikke er på jobb</h3>
 <p>elsker jeg å bruke fritiden min til å jobbe med spillutvikling. Jeg er en stor fan av spillmotorene Unity, Unreal Engine og Roblox, og har jobbet med disse motorene siden 2015.</p>
 <br />
-<p>Nylig har jeg utforsket AI-teknologi og har jobbet sammen med en venn, <a target='_blank' href='olahul.html'><u>Ola Hulleberg</u></a>, for å trene en gjennkjennings-modell, som gjenkjenner skapninger i et videospill. Vi planlegger å bruke modellen til å lage en automatisert `shiny-fanger` som vil både trene våre egne skapninger og fange alle sjeldne skapninger den møter på. Det har vært et spennende prosjekt og jeg gleder meg til å se hvor det tar oss.</p>
+<p>Nylig har jeg utforsket AI-teknologi og har jobbet sammen med en venn, <a target='_blank' href='olahul'><u>Ola Hulleberg</u></a>, for å trene en gjennkjennings-modell, som gjenkjenner skapninger i et videospill. Vi planlegger å bruke modellen til å lage en automatisert `shiny-fanger` som vil både trene våre egne skapninger og fange alle sjeldne skapninger den møter på. Det har vært et spennende prosjekt og jeg gleder meg til å se hvor det tar oss.</p>
 <br />
 <p>Alt i alt er jeg en lidenskapelig utvikler med et bredt spekter av interesser. Jeg er opptatt av kvalitet i alt jeg gjør, og jeg gleder meg til å se hvor karrieren min tar meg. 😊</p>
 <br />

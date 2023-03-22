@@ -5,7 +5,10 @@ const Meta = () => {
         <Head>
             <meta
                 name="description"
-                content="27 studenter fra Bachelor i grafisk design, 29 studenter fra Bachelor interaksjonsdesign og 18 studenter fra Bachelor i webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser utvalgte arbeider fra egenportefølje."
+                content="Bachelorutstilling i grafisk design, interaksjonsdesign og
+                webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
+                studier. Studenter presenterer nøye utvalgte arbeider fra deres
+                porteføljer, med fokus på temaet vekst og utvikling."
             />
 
             <link

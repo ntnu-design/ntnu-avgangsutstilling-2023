@@ -98,7 +98,25 @@ export default function Student({ student, students }: Props) {
                 ) : (
                     <>
                         <main>
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-[6em] md:flex-row">
+                            <div className="mt-[4em] mb-[1em]">
+                                <Link
+                                    className={`hidden md:flex items-center hover:text-${student.studyProgram.toLowerCase()}`}
+                                    href={`/${student.studyProgram.toLowerCase()}`}
+                                >
+                                    <CaretLeft size={32} />
+                                    {student.studyProgram.toLowerCase() ===
+                                    "bmed"
+                                        ? "Grafisk design"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bixd"
+                                        ? "Interaksjonsdesign"
+                                        : student.studyProgram.toLowerCase() ===
+                                          "bwu"
+                                        ? "Webutvikling"
+                                        : ""}
+                                </Link>
+                            </div>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6  md:flex-row">
                                 <div>
                                     <Image
                                         src={`/${student.studyProgramme}/${student.profile_picture}`}
@@ -215,7 +233,7 @@ export default function Student({ student, students }: Props) {
 
                             <div className="flex justify-center invisible object-contain object-bottom md:visible 2xl:visible 2xl:items-center">
                                 <a href="#prosjekter">
-                                    <div className="md:mt-[8em]">
+                                    <div className="md:mt-[1em] w-[10em] flex justify-center">
                                         <CaretDown
                                             size={44}
                                             className={`text-${student.studyProgram.toLowerCase()}`}
@@ -225,7 +243,7 @@ export default function Student({ student, students }: Props) {
                             </div>
                         </main>
                         <section id="prosjekter" className="mb-12">
-                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-24">
+                            <h2 className="text-xl font-bold mb-1 sm:mt-16 md:mt-12">
                                 Prosjekter
                             </h2>
                             {studentProjects.map((project, index) => {
@@ -265,13 +283,16 @@ export default function Student({ student, students }: Props) {
                                 }
                             })}
                         </section>
-                        <div className="flex flex-col md:flex-row w-full justify-between py-10 font-bold">
+                        <div
+                            className="flex flex-col md:flex-row w-full justify-between py-10"
+                            style={{ fontSize: "0.9rem" }}
+                        >
                             {previousStudent && (
                                 <Link
                                     href={`/${previousStudent.studyProgramme}`}
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 items-center left-item mt-4`}
                                 >
-                                    <CaretLeft size={44} />
+                                    <CaretLeft size={32} />
                                     {previousStudent.title}
                                 </Link>
                             )}
@@ -281,20 +302,10 @@ export default function Student({ student, students }: Props) {
                                     className={`hover:text-${student.studyProgram.toLowerCase()} transition flex gap-2 justify-end items-center right-item mt-4`}
                                 >
                                     {nextStudent.title}
-                                    <CaretRight size={44} />
+                                    <CaretRight size={32} />
                                 </Link>
                             )}
                         </div>
-                        {/* <a
-                            href={
-                                process.env.NEXT_PUBLIC_ENV === "production"
-                                    ? `/${student.studyProgram.toLowerCase()}.html`
-                                    : `/${student.studyProgram.toLowerCase()}`
-                            }
-                            className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}
-                        >
-                            Gå tilbake til studieprogram
-                        </a> */}
                     </>
                 )}
             </Container>

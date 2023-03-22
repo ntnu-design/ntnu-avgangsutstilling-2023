@@ -22,17 +22,17 @@ export default function Navbar() {
         <nav className="navbar-z-index">
             <Link
                 className={`md:hidden flex items-center absolute py-5 px-2 hover:text-${studyProgramme}`}
-                href={`/${studyProgramme}`}
+                href={`/${isStudentPage ? studyProgramme : ""}`}
             >
-                {isStudentPage && <CaretLeft size={32} />}
-                {isStudentPage &&
-                    (studyProgramme === "bmed"
+                {(isStudentPage || studyProgramme) && <CaretLeft size={32} />}
+                {(isStudentPage || studyProgramme) &&
+                    (studyProgramme === "bmed" && isStudentPage
                         ? "Grafisk design"
-                        : studyProgramme === "bixd"
+                        : studyProgramme === "bixd" && isStudentPage
                         ? "Interaksjonsdesign"
-                        : studyProgramme === "bwu"
+                        : studyProgramme === "bwu" && isStudentPage
                         ? "Webutvikling"
-                        : "")}
+                        : "Hjem")}
             </Link>
             <div className="w-full hidden md:flex py-5 px-10">
                 <ul

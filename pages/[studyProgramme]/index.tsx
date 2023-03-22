@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react"
-import { getStudents } from "../../lib/api"
 import { getHeading, sortStudents } from "../../lib/utils"
 import Head from "next/head"
 import Layout from "../../components/layout/layout"
@@ -14,6 +13,7 @@ import type {
 import Button from "../../components/Button"
 import Cookie from "js-cookie"
 import Link from "next/link"
+import { allBios, Bio } from "contentlayer/generated"
 
 export default function StudyProgrammeIndex({ students, params }: Props) {
     const { studyProgramme } = params
@@ -72,42 +72,39 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                         {sortedStudents.map((student, index) => (
                             <li
                                 className={`p-5 group ${
-                                    student.studyProgram === "BWU"
+                                    student.studyProgram === "bwu"
                                         ? "hover:text-bwu"
-                                        : student.studyProgram === "BIXD"
+                                        : student.studyProgram === "bixd"
                                         ? "hover:text-bixd"
                                         : "hover:text-bmed"
                                 } `}
                                 key={index}
                             >
-                                <Link href={`/${student.studyProgramme}`}>
+                                <Link href={`/${student.studyProgram}/${student.slug}`}>
                                     <div className="relative">
                                         <Image
-                                            src={`/${student.studyProgramme}/${student.profile_picture}`}
+                                            src={`/${student.studyProgram}/${student.slug}/${student.profile_picture}`}
                                             alt={student.title}
-                                            width={0}
-                                            height={0}
-                                            style={{
-                                                width: "auto",
-                                                height: "auto",
-                                            }}
+                                            width={512}
+                                            height={512}
+                                            className='w-full h-auto'
                                         />
                                         <div
                                             className={
-                                                student.studyProgram === "BWU"
+                                                student.studyProgram === "bwu"
                                                     ? bwuOverlay
                                                     : student.studyProgram ===
-                                                      "BIXD"
+                                                      "bixd"
                                                     ? bixdOverlay
                                                     : bmedOverlay
                                             }
                                         ></div>
                                         <div
                                             className={
-                                                student.studyProgram === "BWU"
+                                                student.studyProgram === "bwu"
                                                     ? "bwu-square"
                                                     : student.studyProgram ===
-                                                      "BIXD"
+                                                      "bixd"
                                                     ? "bixd-triangle"
                                                     : "bmed-circle"
                                             }
@@ -115,7 +112,7 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                             <span
                                                 className={
                                                     student.studyProgram ===
-                                                    "BIXD"
+                                                    "bixd"
                                                         ? "text-white text-sm pt-12"
                                                         : "text-white text-sm"
                                                 }
@@ -144,12 +141,8 @@ export const getStaticProps = async ({
     params: StudyProgrammeParams
 }) => {
     const { studyProgramme } = params
-    const students = getStudents(
-        // ! Her legger man til de feltene man trenger fra content.md filen
-        ["title", "studyProgramme", "profile_picture", "studyProgram"],
-        studyProgramme
-    )
 
+    const students = allBios.filter(obj => obj.studyProgram === studyProgramme);
     return {
         props: { students, params },
     }
@@ -168,6 +161,6 @@ export const getStaticPaths: GetStaticPaths =
     }
 
 interface Props {
-    students: StudentItem[]
+    students: Bio[]
     params: StudyProgrammeParams
 }

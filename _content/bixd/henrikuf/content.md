@@ -13,7 +13,7 @@ instagram: ""
 studyProgram: "BIXD"
 p1_headline_1: "Gjøbby"
 p1_headline_2: "Design og prototyping av digitale løsninger"
-project_image_1: "project_1_Henrik Ulstad Fossum.jpg"
+project_image_1: "Project 1_Henrik Ulstad Fossum.jpg"
 project_desc_1: "Dette var et skoleprosjekt hvor vi fikk i oppgave å hjelpe millennials og Gen Z med å finne hobbyer. For å tilspisse oppgaven avgrenset vi brukergruppen til millennials og Gen Z som studerer og bor i Gjøvik. Resultatet er en app som skal hjelpe studenter og beboere i Gjøvik, med å finne seg en ny hobby eller finne tilbake til en gammel.
 "
 p2_headline_1: ""

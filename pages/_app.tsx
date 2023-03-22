@@ -1,6 +1,5 @@
-import { AppProps } from "next/app";
-import { Montserrat } from "next/font/google";
-import "../styles/index.css";
+import { Montserrat } from "next/font/google"
+import '../styles/globals.css'
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -10,10 +9,13 @@ const montserrat = Montserrat({
   fallback: ["system-ui", "arial"],
 });
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+// This default export is required in a new `pages/_app.js` file.
+export default function MyApp({ Component, pageProps }) {
   return (
-    <div className={montserrat.className}>
-      <Component {...pageProps} />
-    </div>
-  );
+    <>
+      <div  className={montserrat.className}>
+        <Component {...pageProps} />
+      </div>
+    </>
+  )
 }

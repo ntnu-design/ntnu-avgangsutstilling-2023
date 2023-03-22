@@ -118,9 +118,15 @@ function HeroDel(props) {
                         className="max-w-[1050px] font-medium flex justify-end"
                         style={{ margin: "0 auto" }}
                     >
-                        <div className="w-[11em] pt-10">
+                        {/* <div className="w-[11em] pt-10">
                             <p>2. juni kl. 11–18</p>
                             <p>Formell åpning kl. 12</p>
+                            <p>3. juni kl. 12–15</p>
+                            <p>Mustad Næringspark</p>
+                        </div> */}
+
+                        <div className="w-[18em] pt-10">
+                            <p>2. juni kl. 11–18, formell åpning kl. 12</p>
                             <p>3. juni kl. 12–15</p>
                             <p>Mustad Næringspark</p>
                         </div>

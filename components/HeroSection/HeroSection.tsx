@@ -102,8 +102,8 @@ function HeroDel(props) {
                     paddingTop: "auto",
                 }}
             >
-                <div className="w-full">
-                    <div className="flex w-[60vw] justify-between">
+                <div className="w-[100vw]">
+                    <div className="flex  max-w-[1050px] my-40 justify-between">
                         <p>Vekst og utvikling</p>
                         <p>2023</p>
                     </div>

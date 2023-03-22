@@ -96,23 +96,22 @@ function HeroDel(props) {
         >
             <ResponsiveHeroBackground studyProgram="hjem" />
             <ResponsiveHeroLogo studyProgram="hjem" />
-            <p
+            <div
                 style={{
                     position: "absolute",
-                    width: "auto",
-                    maxWidth: "800px",
-                    height: "auto",
-                    textAlign: "center",
-                    paddingTop: "200px",
-                    fontSize: "0.9em",
+                    paddingTop: "auto",
                 }}
-                className="px-10"
             >
-                Bachelorutstilling i interaksjonsdesign, grafisk design og
-                webutvikling ved NTNU Gjøvik markerer avslutningen på tre års
-                studier. Studenter presenterer nøye utvalgte arbeider fra deres
-                porteføljer, med fokus på temaet vekst og utvikling.
-            </p>
+                <div className="w-full">
+                    <div className="flex w-[60vw] justify-between">
+                        <p>Vekst og utvikling</p>
+                        <p>2023</p>
+                    </div>
+                </div>
+                <p>2. juni kl. 11–18</p>
+                <p>Formell åpning kl. 12</p>
+                <p>3. juni kl. 12–15</p>
+            </div>
         </div>
     )
 }

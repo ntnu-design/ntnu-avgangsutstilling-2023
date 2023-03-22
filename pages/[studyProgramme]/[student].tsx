@@ -306,16 +306,6 @@ export default function Student({ student, students }: Props) {
                                 </Link>
                             )}
                         </div>
-                        {/* <a
-                            href={
-                                process.env.NEXT_PUBLIC_ENV === "production"
-                                    ? `/${student.studyProgram.toLowerCase()}.html`
-                                    : `/${student.studyProgram.toLowerCase()}`
-                            }
-                            className={`hover:text-${student.studyProgram.toLowerCase()} font-bold transition flex gap-2 justify-center items-center pb-10`}
-                        >
-                            Gå tilbake til studieprogram
-                        </a> */}
                     </>
                 )}
             </Container>

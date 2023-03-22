@@ -1,3 +1,12 @@
 const { withContentlayer } = require("next-contentlayer");
 
-module.exports = withContentlayer({});
+const nextConfig = {
+    images: {
+        unoptimized: true,
+        loader: "custom",
+        loaderFile: "./lib/imageLoader.ts",
+    },
+    trailingSlash: true,
+}
+
+module.exports = withContentlayer(nextConfig);

@@ -108,7 +108,7 @@ function HeroDel(props) {
                         style={{ margin: "0 auto" }}
                     >
                         <p className="text-xl font-medium sm:text-2xl">
-                            Vekst og utvikling
+                            VEKST OG UTVIKLING
                         </p>
                         <p className="text-2xl sm:text-4xl font-semibold pl-10">
                             2023
@@ -118,15 +118,13 @@ function HeroDel(props) {
                         className="max-w-[1050px] font-medium flex justify-end"
                         style={{ margin: "0 auto" }}
                     >
-                        {/* <div className="w-[11em] pt-10">
-                            <p>2. juni kl. 11–18</p>
-                            <p>Formell åpning kl. 12</p>
-                            <p>3. juni kl. 12–15</p>
-                            <p>Mustad Næringspark</p>
-                        </div> */}
-
                         <div className="w-[18em] pt-10">
-                            <p>2. juni kl. 11–18, formell åpning kl. 12</p>
+                            <p>
+                                2. juni kl. 11–18,{" "}
+                                <span className="block sm:inline">
+                                    formell åpning kl. 12
+                                </span>
+                            </p>
                             <p>3. juni kl. 12–15</p>
                             <p>Mustad Næringspark</p>
                         </div>

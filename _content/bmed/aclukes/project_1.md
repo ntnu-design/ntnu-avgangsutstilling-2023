@@ -1,7 +1,7 @@
 ---
 title: "Redesign av vitenskapelig tidsskrift"
 heading: "IDG2014 – Redaksjonell design 1 (Høst 2021)"
-image: "project_1_Charlotte Fure Lukes.jpg"
+image: "project_1_Charlotte Fure Lukes.webp"
 ---
 
 Vi fikk i oppgave å redesigne et valgfritt vitenskapelig tidsskrift i henhold til internasjonale sjangerkonvensjoner. Det nye designet skulle ha et tidsriktig og tiltalende formspråk som signaliserer at det aktuelle tidsskriftet er et veletablert og anerkjent akademisk tidsskrift.

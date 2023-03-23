@@ -1,7 +1,7 @@
 ---
 title: "Visuell identitet - BorroMe"
 heading: "Emneoverbyggende prosjekt"
-image: "project_1_Pia Sophie Thorshaug.jpg"
+image: "project_1_Pia Sophie Thorshaug.webp"
 ---
 
 I dette prosjektet utviklet jeg – i samarbeid med selskapet Borro AS – en visuell identitet for en konsulenttjeneste de ønsker å tilby i framtiden. Gjennom tett samarbeid med selskapet utviklet jeg en designløsning som var i tråd med deres verdier, visjon og misjon.

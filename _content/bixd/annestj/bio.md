@@ -1,6 +1,6 @@
 ---
 title: "Anne Sophie Tjøm"
-profile_picture: "Anne Sophie Tjøm_Anne Sophie Tjøm.jpg"
+profile_picture: "Anne Sophie Tjøm_Anne Sophie Tjøm.webp"
 portfolio: "https://sophh.myportfolio.com/"
 email: "annestj@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/anne-sophie-tj%C3%B8m-771986115/"

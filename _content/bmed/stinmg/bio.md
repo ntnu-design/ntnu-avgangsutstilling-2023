@@ -1,6 +1,6 @@
 ---
 title: "Stine Marie Grønsveen"
-profile_picture: "Stine Marie Grønsveen_Stine Marie Grønsveen.jpg"
+profile_picture: "Stine Marie Grønsveen_Stine Marie Grønsveen.webp"
 portfolio: "https://www.stinmg.myportfolio.com/"
 email: "stinegronsveen@gmail.com"
 linkedin: "https://www.linkedin.com/in/stinegronsveen"

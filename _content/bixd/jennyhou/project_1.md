@@ -1,7 +1,7 @@
 ---
 title: "Spareappen Gryn"
 heading: "Design og prototyping for digitale produkter"
-image: "project_1_Jenny Heimdal Oulie.jpg"
+image: "project_1_Jenny Heimdal Oulie.webp"
 ---
 
 I faget Design og prototyping for digitale produkter fikk vi i oppgave å designe en opplevelse som appellerer til gen z eller millenials, som vil sette til side penger for sitt neste store eventyr eller investering.

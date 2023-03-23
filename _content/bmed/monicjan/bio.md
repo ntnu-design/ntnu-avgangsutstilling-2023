@@ -1,6 +1,6 @@
 ---
 title: "Monica Jankila"
-profile_picture: "Monica Jankila_Monica Jankila.jpg"
+profile_picture: "Monica Jankila_Monica Jankila.webp"
 portfolio: ""
 email: "monicjan@stud.ntnu.no"
 linkedin: ""

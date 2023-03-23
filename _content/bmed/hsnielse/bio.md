@@ -1,6 +1,6 @@
 ---
 title: "Hanna Sofie Haga Nielsen"
-profile_picture: "Hanna Sofie Haga Nielsen_Hanna Sofie Haga Nielsen.jpg"
+profile_picture: "Hanna Sofie Haga Nielsen_Hanna Sofie Haga Nielsen.webp"
 portfolio: ""
 email: "hannie-sofha@hotmail.com"
 linkedin: "https://www.linkedin.com/in/hanna-sofie-haga-nielsen-a3715257/"

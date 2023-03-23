@@ -1,6 +1,6 @@
 ---
 title: "Kristine Meek Strand"
-profile_picture: "Kristine Meek Strand_Kristine Meek Strand.jpg"
+profile_picture: "Kristine Meek Strand_Kristine Meek Strand.webp"
 portfolio: "https://krismstr.myportfolio.com/"
 email: "kristinemst@gmail.com"
 linkedin: "https://www.linkedin.com/in/kristine-meek-strand-326b6525b"

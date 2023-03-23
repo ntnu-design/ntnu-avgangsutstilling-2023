@@ -1,6 +1,6 @@
 ---
 title: "Simen Munch Wahl"
-profile_picture: "Simen Munch Wahl_Simen Munch Wahl.jpg"
+profile_picture: "Simen Munch Wahl_Simen Munch Wahl.webp"
 portfolio: "https://simenmunchwahl.netlify.app/"
 email: "simen.wahl@me.com"
 linkedin: "https://www.linkedin.com/in/simen-munch-wahl-6ab039140/"

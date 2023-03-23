@@ -1,7 +1,7 @@
 ---
 title: "Lysbryter-utfordringen"
 heading: "Skoleprosjekt i emnet sensorisk og berøringsvennlig interaksjonsdesign"
-image: "project_1_Jonette-Vaagland.JPG"
+image: "project_1_Jonette-Vaagland.webp"
 ---
 
 Bakgrunn for arbeidet:

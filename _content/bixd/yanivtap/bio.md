@@ -1,6 +1,6 @@
 ---
 title: "Yaniv-Tamer Pries"
-profile_picture: "Yaniv-Tamer Pries_Yaniv-Tamer Pries.jpg"
+profile_picture: "Yaniv-Tamer Pries_Yaniv-Tamer Pries.webp"
 portfolio: "https://www.behance.net/beynbio"
 email: "yanivpries@gmail.com"
 linkedin: "https://www.linkedin.com/in/yaniv-tamer-pries-4012071a3/"

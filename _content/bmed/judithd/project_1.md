@@ -1,7 +1,7 @@
 ---
 title: "Omslagsdesign for barnebokserie"
 heading: "Redesign av barnebokserien 10:12 Ønskereprise"
-image: "project_1_Judith Dyngeland.jpg"
+image: "project_1_Judith Dyngeland.webp"
 ---
 
 10:12 Ønskereprise inneheldt bøker 

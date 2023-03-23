@@ -1,6 +1,6 @@
 ---
 title: "Henriette Greve Schjelderup"
-profile_picture: "Henriette Greve Schjelderup_Henriette Greve Schjelderup.jpg"
+profile_picture: "Henriette Greve Schjelderup_Henriette Greve Schjelderup.webp"
 portfolio: "https://desemberdesign.com/"
 email: "henriegs@stud.ntnu.no"
 linkedin: ""

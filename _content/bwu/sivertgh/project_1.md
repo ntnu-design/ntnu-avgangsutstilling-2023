@@ -1,7 +1,7 @@
 ---
 title: "Gryt"
 heading: "Åpen kildekodebasert tekst-, tale- og videochat-plattform"
-image: "project_1_Sivert Gullberg Hansen.jpg"
+image: "project_1_Sivert Gullberg Hansen.webp"
 ---
 
 <a target='_blank' href='https://gryt.chat/'>gryt.chat</a>

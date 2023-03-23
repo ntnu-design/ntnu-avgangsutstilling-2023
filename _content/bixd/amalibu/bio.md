@@ -1,6 +1,6 @@
 ---
 title: "Amalie Buvarp"
-profile_picture: "Amalie Buvarp_Amalie Buvarp.jpg"
+profile_picture: "Amalie Buvarp_Amalie Buvarp.webp"
 portfolio: "https://amalanda18.wixsite.com/portefolje"
 email: "amalanda18@hotmail.com"
 linkedin: "https://www.linkedin.com/in/amalie-buvarp-067923234/"

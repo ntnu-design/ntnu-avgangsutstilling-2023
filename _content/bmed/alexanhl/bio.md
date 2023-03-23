@@ -1,6 +1,6 @@
 ---
 title: "Alexander Hertzenberg Lybekk"
-profile_picture: "Alexander Hertzenberg Lybekk_Alexander Hertzenberg Lybekk.jpg"
+profile_picture: "Alexander Hertzenberg Lybekk_Alexander Hertzenberg Lybekk.webp"
 portfolio: "https://www.lybekkdesign.no"
 email: "alexander@lybekkdesign.no"
 linkedin: "https://www.linkedin.com/in/alexanderlybekk"

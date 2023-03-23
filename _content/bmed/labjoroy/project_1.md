@@ -1,7 +1,7 @@
 ---
 title: "Visuell identitet for utstilling"
 heading: "Emneoverbyggende prosjekt"
-image: "project_1_Leon Bjorøy.jpg"
+image: "project_1_Leon Bjorøy.webp"
 ---
 
 Drøymeoppgåva gav oss moglegheita til å utvikle og gjennomføre ei eiga oppgåve som skulle brukast i presentasjonsmappa vår. Vi fekk skrive vår eiga problemstilling og designbrief som skulle vise våre beste eigenskapar og ferdigheiter som designar.

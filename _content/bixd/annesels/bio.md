@@ -1,6 +1,6 @@
 ---
 title: "Anne Selseng"
-profile_picture: "Anne Selseng_Anne Selseng.jpg"
+profile_picture: "Anne Selseng_Anne Selseng.webp"
 portfolio: "https://annesels.myportfolio.com/"
 email: "annesels@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/anne-selseng/"

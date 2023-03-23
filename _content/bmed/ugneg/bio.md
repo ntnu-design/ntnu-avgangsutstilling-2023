@@ -1,6 +1,6 @@
 ---
 title: "Ugne Gedvilaite"
-profile_picture: "Ugne Gedvilaite_Ugne Gedvilaite.jpg"
+profile_picture: "Ugne Gedvilaite_Ugne Gedvilaite.webp"
 portfolio: "https://ugneg.myportfolio.com/"
 email: "ogenune@gmail.com"
 linkedin: ""

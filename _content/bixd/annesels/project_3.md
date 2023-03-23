@@ -1,7 +1,7 @@
 ---
 title: "Easypark - Smart parking"
 heading: "Web of Things"
-image: "project_3_Anne Selseng.jpg"
+image: "project_3_Anne Selseng.webp"
 ---
 
 I forbindelse med emnet IDG3006 Web of Things utviklet jeg og min gruppe en løsning som var med på å forhindre stress ved parkering, nemlig smart parkering. Sammen gikk vi løs på hvordan vi skulle effektivisere parkering for bilister. Gjøre parkering og parkeringshus smartere ved å koble dem til IoT-verden. Vårt mål var å lage noe som dempet stress ved parkering. Parkering er stressende for mange bilister, enten det er å finne ledig parkering, finne nærmeste parkering i forhold til hvor man skal eller finne parkering for brukerens behov (handicap, elbil osv). Slik frustrasjon kan være farlig i trafikken da det kan føre til ulykker. Vårt hovedfokus var å minimere stressnivået ved å gi dem mulighet til å planlegge enten før eller etter avreise. Lage noe som øker brukeropplevelsen og brukertilfredsheten ved parkering i parkeringshus, ved bruk av sensorer og app. Fokuset var også å lage noe som kunne redusere mye kjøretid og drivstoff. Vi bygget videre på EasyPark, og la til funksjoner som muligheten til å se informasjon om tilgjengelige parkeringsplasser (Feks: hvor mange ledige elbil plasser i et p-hus), se på et kart hvor det er tilgjengelige parkeringsplasser. Se en prediksjon av når parkeringsplassen er mest opptatt i løpet av dagen. Vi lagde en mobil app, i tillegg til en Apple Carplay applikasjon slik at brukerne kan bruke EasyPark handsfree og fullt integrert med bilen sin.​​​​​​​

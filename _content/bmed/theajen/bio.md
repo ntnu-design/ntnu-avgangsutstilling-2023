@@ -1,6 +1,6 @@
 ---
 title: "Thea Jenssen"
-profile_picture: "Thea Jenssen_Thea Jenssen.jpg"
+profile_picture: "Thea Jenssen_Thea Jenssen.webp"
 portfolio: "https://www.theajen.myportfolio.com/"
 email: "theajen@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/thea-jenssen-3146a91b8/"

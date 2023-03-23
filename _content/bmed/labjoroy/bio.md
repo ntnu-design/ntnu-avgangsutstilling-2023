@@ -1,6 +1,6 @@
 ---
 title: "Leon Bjorøy"
-profile_picture: "Leon Bjorøy_Leon Bjorøy.jpg"
+profile_picture: "Leon Bjorøy_Leon Bjorøy.webp"
 portfolio: "http://www.leonbjoroy.com/"
 email: "leon.bjoroy@gmail.com"
 linkedin: "https://www.linkedin.com/in/leon-bjoroy/"

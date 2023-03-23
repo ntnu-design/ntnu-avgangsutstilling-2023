@@ -1,6 +1,6 @@
 ---
 title: "Martine Landmark"
-profile_picture: "Martine Landmark_Martine Landmark.jpg"
+profile_picture: "Martine Landmark_Martine Landmark.webp"
 portfolio: ""
 email: "martine.landmark@gmail.com"
 linkedin: "https://www.linkedin.com/in/martine-landmark-10985b236/?trk=public_profile_browsemap&originalSubdomain=no"

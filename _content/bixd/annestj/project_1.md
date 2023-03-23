@@ -1,7 +1,7 @@
 ---
 title: "Et smartespeil"
 heading: "Når det analoge og teknologiske møtes gjennom WoT, Web of Things"
-image: "project_1_Anne Sophie Tjøm.jpg"
+image: "project_1_Anne Sophie Tjøm.webp"
 ---
 
 Alle har et speil i hjemmet og bruker det daglig, så hvorfor ikke kombinere det med flere praktiske formål?!

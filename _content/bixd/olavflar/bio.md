@@ -1,6 +1,6 @@
 ---
 title: "Olav Friisberg Larssen"
-profile_picture: "Olav Friisberg Larssen_Olav Friisberg Larssen.jpg"
+profile_picture: "Olav Friisberg Larssen_Olav Friisberg Larssen.webp"
 portfolio: "www.friisberg.no"
 email: "olav@friisberg.no"
 linkedin: "https://www.linkedin.com/in/olav-friisberg-larssen-2345869a/"

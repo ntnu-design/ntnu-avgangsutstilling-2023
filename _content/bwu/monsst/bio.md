@@ -1,6 +1,6 @@
 ---
 title: "Mons Stenbråten"
-profile_picture: "Mons Stenbråten_Mons Stenbråten.jpg"
+profile_picture: "Mons Stenbråten_Mons Stenbråten.webp"
 portfolio: "https://www.monsstenbråten.com/"
 email: "mons.stenbraaten@hotmail.com"
 linkedin: "https://www.linkedin.com/in/mons-stenbr%C3%A5ten-375685265/"

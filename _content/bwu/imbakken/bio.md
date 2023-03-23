@@ -1,6 +1,6 @@
 ---
 title: "Ida Marie Joakimsen Bakken"
-profile_picture: "Ida Marie Joakimsen Bakken_Ida Marie Joakimsen.jpg"
+profile_picture: "Ida Marie Joakimsen Bakken_Ida Marie Joakimsen.webp"
 portfolio: "https://idabakken.com/"
 email: "ida.bakken@hotmail.com"
 linkedin: "https://www.linkedin.com/in/idamariebakken/"

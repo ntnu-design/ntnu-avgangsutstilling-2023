@@ -1,6 +1,6 @@
 ---
 title: "Ida Norevik"
-profile_picture: "Ida Norevik_Ida Norevik.jpg"
+profile_picture: "Ida Norevik_Ida Norevik.webp"
 portfolio: "https://idanore.myportfolio.com/work"
 email: "idanorevik1@hotmail.com"
 linkedin: "https://www.linkedin.com/in/ida-norevik-062725252/"

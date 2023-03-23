@@ -1,6 +1,6 @@
 ---
 title: "Frode Lien"
-profile_picture: "Frode Lien_Frode Lien.jpg"
+profile_picture: "Frode Lien_Frode Lien.webp"
 portfolio: "https://www.vg.no"
 email: "frode.lien@gmail.com"
 linkedin: ""

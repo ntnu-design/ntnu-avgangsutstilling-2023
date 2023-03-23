@@ -1,6 +1,6 @@
 ---
 title: "Andrea Røgeberg"
-profile_picture: "Andrea Røgeberg_Andrea Røgeberg.jpg"
+profile_picture: "Andrea Røgeberg_Andrea Røgeberg.webp"
 portfolio: "https://xd.adobe.com/view/b604b9cb-da9f-4379-b2e4-919952bca417-e357/?fullscreen"
 email: "androg@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/andrea-r%C3%B8geberg-9585051b2/"

@@ -1,6 +1,6 @@
 ---
 title: "Maria Sæther"
-profile_picture: "Maria Sæther_Maria Sæther.jpg"
+profile_picture: "Maria Sæther_Maria Sæther.webp"
 portfolio: "https://www.msuix.com/"
 email: "Maria98.saether@gmail.com"
 linkedin: "https://www.linkedin.com/in/maria-s%C3%A6ther-92418a1b7/"

@@ -1,7 +1,7 @@
 ---
 title: "HobbyLobby'n"
 heading: "Design og prototyping av digitale produkter"
-image: "project_1_Amalie Buvarp.jpg"
+image: "project_1_Amalie Buvarp.webp"
 ---
 
 Dette er et gruppeprosjekt fra våren 2022. Problemet vi skulle løse var å gi studenter en samlet plattform for hobby-tilbud i Gjøvik. Samtidig, et sted å finne inspirasjon til å lære noe nytt på egen hånd, for å kompensere med det begrensede tilbudet. Prosessen innebar intervjuer, prototyping i Balsamiq og Figma, og brukertesting. Vi gikk gjennom tre iterasjoner med prototyping etter funn og tilbakemeldinger fra testingen med studenter. 

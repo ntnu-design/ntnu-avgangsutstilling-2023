@@ -1,6 +1,6 @@
 ---
 title: "Ola Hulleberg"
-profile_picture: "Ola Hulleberg_Ola Hulleberg.jpg"
+profile_picture: "Ola Hulleberg_Ola Hulleberg.webp"
 portfolio: "https://www.hulleberg.net"
 email: "ola@hulleberg.net"
 linkedin: "https://www.linkedin.com/in/ola-hulleberg"

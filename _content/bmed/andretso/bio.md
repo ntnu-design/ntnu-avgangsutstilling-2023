@@ -1,6 +1,6 @@
 ---
 title: "Andrea Thuv Solhaug"
-profile_picture: "Andrea Thuv Solhaug_Andrea Thuv Solhaug.jpg"
+profile_picture: "Andrea Thuv Solhaug_Andrea Thuv Solhaug.webp"
 portfolio: ""
 email: "andreathuvsol@hotmail.com"
 linkedin: ""

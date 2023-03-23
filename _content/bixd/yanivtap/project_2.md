@@ -1,7 +1,7 @@
 ---
 title: "Project PreVis"
 heading: "Design for Safety Critical Systems - HDO (Helsetjenestens driftsorganisasjon for nødnett)"
-image: "project_2_Yaniv-Tamer Pries.jpg"
+image: "project_2_Yaniv-Tamer Pries.webp"
 ---
 
 The Norwegian Ambulance system and HDO has in the past few years cooperating with new and innovative tech which alleviates the tasks of paramedics in the field by helping the communicate effectively with specialists in hospitals. 

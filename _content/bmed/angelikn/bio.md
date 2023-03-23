@@ -1,6 +1,6 @@
 ---
 title: "Angelika Anna Westby"
-profile_picture: "Angelika Westby_Angelika Anna Westby.jpg"
+profile_picture: "Angelika Westby_Angelika Anna Westby.webp"
 portfolio: "https://angelikawestbydesign.tumblr.com"
 email: "angelikn@stud.ntnu.no"
 linkedin: ""

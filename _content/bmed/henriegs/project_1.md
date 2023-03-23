@@ -1,7 +1,7 @@
 ---
 title: "Crescent Moon Skincare; Visuell identitet og emballasjedesign"
 heading: "IDG3014 Emneoverbyggende prosjekt"
-image: "project_1_Henriette Greve Schjelderup.jpg"
+image: "project_1_Henriette Greve Schjelderup.webp"
 ---
 
 Dette prosjektet er en selvvalgt oppgave i faget IDG3014 Emneoverbyggende prosjekt som består av visuell identitet og emballasjedesign for et fiktivt hudpleie/ansiktspleie merke ved navn Crescent Moon Skincare. De ønsket et moderne og elegant design som kunne appellerer til unge jenter i aldersgruppe 16 til 27 år da produktene deres er spesielt egnet for yngre hud og dens utfordringer. 

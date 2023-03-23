@@ -1,6 +1,6 @@
 ---
 title: "Pia Sophie Thorshaug"
-profile_picture: "Pia Sophie Thorshaug_Pia Sophie Thorshaug.jpg"
+profile_picture: "Pia Sophie Thorshaug_Pia Sophie Thorshaug.webp"
 portfolio: "http://piathorshaug.no/"
 email: "pithosa.design@gmail.com"
 linkedin: "https://no.linkedin.com/in/pia-thorshaug-b393b41b7?original_referer=https%3A%2F%2Fwww.google.com%2F"

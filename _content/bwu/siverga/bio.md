@@ -1,6 +1,6 @@
 ---
 title: "Sivert Grønli Amundsen"
-profile_picture: "Sivert Grønli Amundsen_Sivert Grønli Amundsen.jpg"
+profile_picture: "Sivert Grønli Amundsen_Sivert Grønli Amundsen.webp"
 portfolio: "https://www.sivertamundsen.com"
 email: "sivertga@gmail.com"
 linkedin: "https://www.linkedin.com/in/sivert-amundsen-151572265/"

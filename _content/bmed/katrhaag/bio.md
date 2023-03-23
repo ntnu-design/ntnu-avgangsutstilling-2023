@@ -1,6 +1,6 @@
 ---
 title: "Katrine Hågbo"
-profile_picture: "Katrine Hågbo_Katrine Hågbo.jpg"
+profile_picture: "Katrine Hågbo_Katrine Hågbo.webp"
 portfolio: "https://katrinehagbo.myportfolio.com/"
 email: "katrine.hagbo@gmail.com"
 linkedin: "https://www.linkedin.com/in/katrine-h-6351a8152/"

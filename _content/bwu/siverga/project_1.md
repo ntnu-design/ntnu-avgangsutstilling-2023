@@ -1,7 +1,7 @@
 ---
 title: "Smart Fridge"
 heading: "IDG3006 - Web of Things"
-image: "project_1_Sivert Grønli Amundsen.jpg"
+image: "project_1_Sivert Grønli Amundsen.webp"
 ---
 
 Smart Fridge startet som et gruppeprosjekt i faget Web of Things. Hensikten med dette prosjektet var at brukeren av webappen skulle få en bedre oversikt over hva som fantes i kjøleskapet sitt, og dermed redusere matsvinn. 

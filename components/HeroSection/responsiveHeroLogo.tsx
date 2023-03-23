@@ -9,7 +9,7 @@ const ResponsiveHeroLogo = (props) => {
     const updateImageSrc = () => {
         const screenWidth = window.innerWidth
 
-        if (screenWidth <= 490) {
+        if (screenWidth <= 489) {
             setImageSrc(`/svg/${props.studyProgram}/heading-2.svg`)
         } else {
             setImageSrc(`/svg/${props.studyProgram}/heading.svg`)

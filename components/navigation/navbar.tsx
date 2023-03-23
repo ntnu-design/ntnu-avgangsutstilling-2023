@@ -55,6 +55,51 @@ export default function Navbar() {
                         <li>
                             <Link
                                 className={`${
+                                    studyProgramme === "bixd"
+                                        ? "text-bixd"
+                                        : "text-black"
+                                }`}
+                                href="/bixd"
+                            >
+                                <div className="flex items-start">
+                                    <svg
+                                        className="mx-2 hover:stroke-bixd"
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 22 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
+                                            stroke={
+                                                studyProgramme === "bixd"
+                                                    ? "#5ca545"
+                                                    : "#000"
+                                            }
+                                            strokeWidth="2"
+                                            fill={
+                                                studyProgramme === "bixd"
+                                                    ? "#5ca545"
+                                                    : "none"
+                                            }
+                                        />
+                                    </svg>
+                                    <span
+                                        className={`${
+                                            studyProgramme === "bixd"
+                                                ? "after:bg-bixd after:block"
+                                                : "after:bg-black"
+                                        } after:content-[""] hover:after:block after:w-full after:h-[2px] after:mt-1`}
+                                    >
+                                        Interaksjonsdesign
+                                    </span>
+                                </div>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={`${
                                     studyProgramme === "bmed"
                                         ? "text-bmed"
                                         : "text-black"
@@ -99,51 +144,7 @@ export default function Navbar() {
                                 </div>
                             </Link>
                         </li>
-                        <li>
-                            <Link
-                                className={`${
-                                    studyProgramme === "bixd"
-                                        ? "text-bixd"
-                                        : "text-black"
-                                }`}
-                                href="/bixd"
-                            >
-                                <div className="flex items-start">
-                                    <svg
-                                        className="mx-2 hover:stroke-bixd"
-                                        width="20"
-                                        height="20"
-                                        viewBox="0 0 22 20"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path
-                                            d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
-                                            stroke={
-                                                studyProgramme === "bixd"
-                                                    ? "#5ca545"
-                                                    : "#000"
-                                            }
-                                            strokeWidth="2"
-                                            fill={
-                                                studyProgramme === "bixd"
-                                                    ? "#5ca545"
-                                                    : "none"
-                                            }
-                                        />
-                                    </svg>
-                                    <span
-                                        className={`${
-                                            studyProgramme === "bixd"
-                                                ? "after:bg-bixd after:block"
-                                                : "after:bg-black"
-                                        } after:content-[""] hover:after:block after:w-full after:h-[2px] after:mt-1`}
-                                    >
-                                        Interaksjonsdesign
-                                    </span>
-                                </div>
-                            </Link>
-                        </li>
+
                         <li>
                             <Link
                                 className={`flex ${
@@ -295,6 +296,41 @@ export default function Navbar() {
                     >
                         Hjem
                     </Link>
+
+                    <div className="border border-gray"></div>
+                    <Link
+                        className={`flex ${
+                            studyProgramme === "bixd"
+                                ? "text-bixd font-bold"
+                                : "text-black"
+                        }`}
+                        href="/bixd"
+                    >
+                        <svg
+                            className="mx-2"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 22 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
+                                stroke={
+                                    studyProgramme === "bixd"
+                                        ? "#5ca545"
+                                        : "#000"
+                                }
+                                strokeWidth="2"
+                                fill={
+                                    studyProgramme === "bixd"
+                                        ? "#5ca545"
+                                        : "none"
+                                }
+                            />
+                        </svg>
+                        Interaksjonsdesign
+                    </Link>
                     <div className="border border-gray"></div>
                     <Link
                         className={`flex ${
@@ -330,40 +366,6 @@ export default function Navbar() {
                             />
                         </svg>
                         Grafisk design
-                    </Link>
-                    <div className="border border-gray"></div>
-                    <Link
-                        className={`flex ${
-                            studyProgramme === "bixd"
-                                ? "text-bixd font-bold"
-                                : "text-black"
-                        }`}
-                        href="/bixd"
-                    >
-                        <svg
-                            className="mx-2"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 22 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
-                                stroke={
-                                    studyProgramme === "bixd"
-                                        ? "#5ca545"
-                                        : "#000"
-                                }
-                                strokeWidth="2"
-                                fill={
-                                    studyProgramme === "bixd"
-                                        ? "#5ca545"
-                                        : "none"
-                                }
-                            />
-                        </svg>
-                        Interaksjonsdesign
                     </Link>
                     <div className="border border-gray"></div>
                     <Link

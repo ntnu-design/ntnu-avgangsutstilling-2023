@@ -37,9 +37,9 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
             </Head>
             <HeroDel studyProgramme={studyProgramme} />
             <Container>
-                <div>
+                <div className="mb-[5em]">
                     <div
-                        className="text-center flex row justify-center"
+                        className="text-center flex row justify-center mb-[1em]"
                         style={{ gap: "15px" }}
                     >
                         <Button

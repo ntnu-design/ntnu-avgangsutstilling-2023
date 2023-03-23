@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import Image from "next/image"
 
 const ResponsiveHeroBackground = (props) => {
     const [imageSrc, setImageSrc] = useState(
@@ -31,15 +30,13 @@ const ResponsiveHeroBackground = (props) => {
     }, [props.studyProgram])
 
     return (
-        <Image
+        <img
             src={imageSrc}
             alt="Background image"
-            width={0}
-            height={0}
-            object-fit="contain"
             style={{
                 width: "auto",
                 height: "60vh",
+                objectFit: "contain",
             }}
             sizes="(max-width: 480px) 100vw,
              (max-width: 768px) 100vw,

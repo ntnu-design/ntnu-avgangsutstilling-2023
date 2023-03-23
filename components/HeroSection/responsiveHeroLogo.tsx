@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react"
-import Image from "next/image"
 
 const ResponsiveHeroLogo = (props) => {
     const [imageSrc, setImageSrc] = useState(
@@ -24,8 +23,9 @@ const ResponsiveHeroLogo = (props) => {
             window.removeEventListener("resize", updateImageSrc)
         }
     }, [props.studyProgram])
+
     return (
-        <Image
+        <img
             src={imageSrc}
             alt={
                 props.studyProgram === "bixd"
@@ -34,8 +34,6 @@ const ResponsiveHeroLogo = (props) => {
                     ? "Bachelor i Grafisk design"
                     : "Avgangsutstilling"
             }
-            width={0}
-            height={0}
             style={{
                 position: "absolute",
                 width: "auto",

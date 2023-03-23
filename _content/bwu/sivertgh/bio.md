@@ -26,7 +26,7 @@ Til høsten har jeg arbeidet profesjonelt med fullstack-utvikling i 2 år.
 
 elsker jeg å bruke fritiden min til å jobbe med spillutvikling. Jeg er en stor fan av spillmotorene Unity, Unreal Engine og Roblox, og har jobbet med disse motorene siden 2015.
 
-Nylig har jeg utforsket AI-teknologi og har jobbet sammen med en venn, <a target='_blank' href='olahul'>Ola Hulleberg</a>, for å trene en gjennkjennings-modell, som gjenkjenner skapninger i et videospill. Vi planlegger å bruke modellen til å lage en automatisert `shiny-fanger` som vil både trene våre egne skapninger og fange alle sjeldne skapninger den møter på. Det har vært et spennende prosjekt og jeg gleder meg til å se hvor det tar oss.
+Nylig har jeg utforsket AI-teknologi og har jobbet sammen med en venn, <a target='_blank' href='/bwu/olahul'>Ola Hulleberg</a>, for å trene en gjennkjennings-modell, som gjenkjenner skapninger i et videospill. Vi planlegger å bruke modellen til å lage en automatisert `shiny-fanger` som vil både trene våre egne skapninger og fange alle sjeldne skapninger den møter på. Det har vært et spennende prosjekt og jeg gleder meg til å se hvor det tar oss.
 
 Alt i alt er jeg en lidenskapelig utvikler med et bredt spekter av interesser. Jeg er opptatt av kvalitet i alt jeg gjør, og jeg gleder meg til å se hvor karrieren min tar meg. 😊
 

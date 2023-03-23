@@ -1,12 +1,12 @@
-/**
- * @type {import('next').NextConfig}
- */
+const { withContentlayer } = require("next-contentlayer");
+
 const nextConfig = {
     images: {
         unoptimized: true,
         loader: "custom",
         loaderFile: "./lib/imageLoader.ts",
     },
+    trailingSlash: true,
 }
 
-module.exports = nextConfig
+module.exports = withContentlayer(nextConfig);

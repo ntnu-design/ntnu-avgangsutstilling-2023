@@ -1,7 +1,7 @@
-import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
-import Container from "../layout/container"
+import Link from "next/link"
+import { CaretLeft } from "@phosphor-icons/react"
 
 export default function Navbar() {
     const router = useRouter()
@@ -9,6 +9,7 @@ export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     const studyProgramme = router.query.studyProgramme
+    const isStudentPage = router.query.student
 
     useEffect(() => {
         setIsOpen(false)
@@ -19,8 +20,25 @@ export default function Navbar() {
     }
     return (
         <nav className="navbar-z-index">
+            <Link
+                className={`md:hidden flex items-center absolute py-5 px-2 hover:text-${studyProgramme}`}
+                href={`/${isStudentPage ? studyProgramme : ""}`}
+            >
+                {(isStudentPage || studyProgramme) && <CaretLeft size={32} />}
+                {(isStudentPage || studyProgramme) &&
+                    (studyProgramme === "bmed" && isStudentPage
+                        ? "Grafisk design"
+                        : studyProgramme === "bixd" && isStudentPage
+                        ? "Interaksjonsdesign"
+                        : studyProgramme === "bwu" && isStudentPage
+                        ? "Webutvikling"
+                        : "Hjem")}
+            </Link>
             <div className="w-full hidden md:flex py-5 px-10">
-                <ul className="flex w-full justify-between space-x-10 lg:space-x-20" style={{maxWidth: "1500px", margin: "0 auto"}}>
+                <ul
+                    className="flex w-full justify-between space-x-10 lg:space-x-20"
+                    style={{ maxWidth: "1500px", margin: "0 auto" }}
+                >
                     <li>
                         <Link
                             className={`${
@@ -37,66 +55,11 @@ export default function Navbar() {
                         <li>
                             <Link
                                 className={`${
-                                    studyProgramme === "bmed"
-                                        ? "text-bmed"
-                                        : "text-black"
-                                } hover:after:block`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bmed.html"
-                                        : "/bmed"
-                                }
-                            >
-                                <div className="flex items-start">
-                                    <svg
-                                        className="mx-2"
-                                        width="20"
-                                        height="20"
-                                        viewBox="-1 -1 22 22"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <circle
-                                            cx="10"
-                                            cy="10"
-                                            r="10"
-                                            stroke={
-                                                studyProgramme === "bmed"
-                                                    ? "#e45197"
-                                                    : "#000"
-                                            }
-                                            strokeWidth="2"
-                                            fill={
-                                                studyProgramme === "bmed"
-                                                    ? "#e45197"
-                                                    : "none"
-                                            }
-                                        />
-                                    </svg>
-                                    <span
-                                        className={`${
-                                            studyProgramme === "bmed"
-                                                ? "after:bg-bmed after:block"
-                                                : "after:bg-black"
-                                        } after:content-[""] hover:after:block after:w-full after:h-[2px] after:mt-1`}
-                                    >
-                                        Grafisk design
-                                    </span>
-                                </div>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                className={`${
                                     studyProgramme === "bixd"
                                         ? "text-bixd"
                                         : "text-black"
                                 }`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bixd.html"
-                                        : "/bixd"
-                                }
+                                href="/bixd"
                             >
                                 <div className="flex items-start">
                                     <svg
@@ -136,16 +99,60 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
+                                className={`${
+                                    studyProgramme === "bmed"
+                                        ? "text-bmed"
+                                        : "text-black"
+                                } hover:after:block`}
+                                href="/bmed"
+                            >
+                                <div className="flex items-start">
+                                    <svg
+                                        className="mx-2"
+                                        width="20"
+                                        height="20"
+                                        viewBox="-1 -1 22 22"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <circle
+                                            cx="10"
+                                            cy="10"
+                                            r="10"
+                                            stroke={
+                                                studyProgramme === "bmed"
+                                                    ? "#e45197"
+                                                    : "#000"
+                                            }
+                                            strokeWidth="2"
+                                            fill={
+                                                studyProgramme === "bmed"
+                                                    ? "#e45197"
+                                                    : "none"
+                                            }
+                                        />
+                                    </svg>
+                                    <span
+                                        className={`${
+                                            studyProgramme === "bmed"
+                                                ? "after:bg-bmed after:block"
+                                                : "after:bg-black"
+                                        } after:content-[""] hover:after:block after:w-full after:h-[2px] after:mt-1`}
+                                    >
+                                        Grafisk design
+                                    </span>
+                                </div>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
                                 className={`flex ${
                                     studyProgramme === "bwu"
                                         ? "text-bwu"
                                         : "text-black"
                                 }`}
-                                href={
-                                    process.env.NEXT_PUBLIC_ENV === "production"
-                                        ? "/bwu.html"
-                                        : "/bwu"
-                                }
+                                href="/bwu"
                             >
                                 <div className="flex items-start">
                                     <svg
@@ -192,7 +199,7 @@ export default function Navbar() {
             <div className="md:hidden flex justify-end">
                 <button
                     onClick={toggle}
-                    className="p-2 rounded-md text-accent-7"
+                    className="p-2 rounded-md text-accent-7 py-5 px-4"
                     aria-expanded={isOpen ? "true" : "false"}
                 >
                     <span className="sr-only">Open main menu</span>
@@ -289,6 +296,41 @@ export default function Navbar() {
                     >
                         Hjem
                     </Link>
+
+                    <div className="border border-gray"></div>
+                    <Link
+                        className={`flex ${
+                            studyProgramme === "bixd"
+                                ? "text-bixd font-bold"
+                                : "text-black"
+                        }`}
+                        href="/bixd"
+                    >
+                        <svg
+                            className="mx-2"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 22 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
+                                stroke={
+                                    studyProgramme === "bixd"
+                                        ? "#5ca545"
+                                        : "#000"
+                                }
+                                strokeWidth="2"
+                                fill={
+                                    studyProgramme === "bixd"
+                                        ? "#5ca545"
+                                        : "none"
+                                }
+                            />
+                        </svg>
+                        Interaksjonsdesign
+                    </Link>
                     <div className="border border-gray"></div>
                     <Link
                         className={`flex ${
@@ -296,11 +338,7 @@ export default function Navbar() {
                                 ? "text-bmed font-bold"
                                 : "text-black"
                         }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bmed.html"
-                                : "/bmed"
-                        }
+                        href="/bmed"
                     >
                         <svg
                             className="mx-2"
@@ -332,53 +370,11 @@ export default function Navbar() {
                     <div className="border border-gray"></div>
                     <Link
                         className={`flex ${
-                            studyProgramme === "bixd"
-                                ? "text-bixd font-bold"
-                                : "text-black"
-                        }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bixd.html"
-                                : "/bixd"
-                        }
-                    >
-                        <svg
-                            className="mx-2"
-                            width="20"
-                            height="20"
-                            viewBox="0 0 22 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                d="M1.73205 18.5L10.9697 2.5L20.2073 18.5H1.73205Z"
-                                stroke={
-                                    studyProgramme === "bixd"
-                                        ? "#5ca545"
-                                        : "#000"
-                                }
-                                strokeWidth="2"
-                                fill={
-                                    studyProgramme === "bixd"
-                                        ? "#5ca545"
-                                        : "none"
-                                }
-                            />
-                        </svg>
-                        Interaksjonsdesign
-                    </Link>
-                    <div className="border border-gray"></div>
-                    <Link
-                        className={`flex ${
                             studyProgramme === "bwu"
                                 ? "text-bwu font-bold"
                                 : "text-black"
                         }`}
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? "/bwu.html"
-                                : "/bwu"
-                        }
+                        href="/bwu"
                     >
                         <svg
                             className="mx-2"

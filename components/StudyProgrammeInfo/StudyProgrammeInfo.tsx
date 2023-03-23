@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { StudyProgramme } from "../../interfaces/student"
 import { getHeading } from "../../lib/utils"
-import Link from "next/link"
-import Button from "../Button"
+import Button from "../../components/Button"
 import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react"
+import Link from "next/link"
 
 const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
     const heading = getHeading(studyProgramme)
@@ -18,7 +18,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/webutvikling.ntnu"
             imageSrc = "/Webutvikling_hovedside.svg"
             textContent =
-                "18 studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
+                "Studenter fra Bachelor i Webutvikling ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser et sammendrag av sine prosjekter her. Studentene har også laget en personlig nettportefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
             textDescription =
                 "Studentene kombinerer brukersentrerte designmetoder og web-teknologier for å løse problemer. Utstillingen inkluderer en rekke ulike arbeider fra idéskaping, konseptualisering og prototyping til utvikling og implementering."
             break
@@ -27,7 +27,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/interaksjonsdesign.ntnu"
             imageSrc = "/Interaksjonsdesign_hovedside.svg"
             textContent =
-                "28 studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
+                "Studenter fra Bachelor i interaksjonsdesign ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Studentene har også laget en egen digital portefølje for å introdusere seg selv og reflektere over læringsutbyttet i ulike emner og prosjekter."
             textDescription =
                 "Utstillingen inkluderer designarbeider for elektroniske medier, så vel som fysiske prototyper, og viser eksempler på hva studentene har jobbet med i emner som tjenestedesign, informasjonsarkitektur, tingenes web, forretningsdesign, og fysisk prototyping."
             break
@@ -36,7 +36,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
             facebookPage = "https://www.facebook.com/grafiskdesign.ntnu"
             imageSrc = "/GrafiskDesign_hovedside.svg"
             textContent =
-                "27 studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe."
+                "Studenter fra Bachelor i grafisk design ved NTNU i Gjøvik avslutter tre års studier med en utstilling. Hver student viser ti utvalgte designarbeider fra egen mappe."
             textDescription =
                 "Utstillingen inkluderer designarbeider for papirbaserte og elektroniske medier, samt skilt og veifinningssystemer. For eks­empel innen bedriftsprofilering, løsninger for web, mobil og nettbrett, bokdesign, tidsskriftdesign, avisdesign, kalligrafi og skriftdesign."
             break
@@ -67,20 +67,14 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 <p className="mb-2">{textContent}</p>
                 <p>{textDescription}</p>
                 <div className="mt-6 flex items-center justify-between">
-                    <Link
-                        href={
-                            process.env.NEXT_PUBLIC_ENV === "production"
-                                ? `/${studyProgramme}.html`
-                                : `/${studyProgramme}`
-                        }
-                    >
+                    <Link href={`/${studyProgramme}`}>
                         <Button studyProgramme={studyProgramme} tabIndex={-1}>
                             Vis studenter
                         </Button>
                     </Link>
 
                     <div className="flex flex-row space-x-4">
-                        <Link
+                        <a
                             href={instaPage}
                             target="_blank"
                             rel="noopenner norefferer"
@@ -89,8 +83,8 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                                 size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
-                        </Link>
-                        <Link
+                        </a>
+                        <a
                             href={facebookPage}
                             target="_blank"
                             rel="noopenner norefferer"
@@ -99,7 +93,7 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                                 size={44}
                                 className={`hover:text-${studyProgramme} transition`}
                             />
-                        </Link>
+                        </a>
                     </div>
                 </div>
             </div>

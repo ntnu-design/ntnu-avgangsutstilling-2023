@@ -276,7 +276,7 @@ const PostLayout = ({
                                             alt={project.title}
                                         />
 
-                                        <div className="mx-0 smd:mx-4 2xl:mx-12 mb-5 md:my-10">
+                                        <div className="mx-0 lg:mx-12 2xl:mx-12 mb-5 md:my-10">
                                             <h4 className="text-xs md:text-sm">
                                                 {project.heading}
                                             </h4>

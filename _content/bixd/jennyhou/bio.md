@@ -1,6 +1,6 @@
 ---
 title: "Jenny Heimdal Oulie"
-profile_picture: "Jenny Heimdal Oulie_Jenny Heimdal Oulie.jpg"
+profile_picture: "Jenny Heimdal Oulie_Jenny Heimdal Oulie.webp"
 portfolio: "https://xd.adobe.com/view/ce4b26c7-1eeb-4ce4-92e0-5de55c6d8728-9b18/?fullscreen"
 email: "jennyhou@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/jenny-heimdal-oulie-212a54256"

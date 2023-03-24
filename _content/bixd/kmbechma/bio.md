@@ -1,6 +1,6 @@
 ---
 title: "Karen-Marie Bechmann-Pedersen"
-profile_picture: "Karen-Marie Bechmann-Pedersen_Karen-Marie Bechmann-Pedersen.jpg"
+profile_picture: "Karen-Marie Bechmann-Pedersen_Karen-Marie Bechmann-Pedersen.webp"
 portfolio: "https://karenbechmann99.wixsite.com/karen-mariebechmann-"
 email: "karen.bechmann.99@gmail.com"
 linkedin: "https://www.linkedin.com/in/karen-marie-bechmann-pedersen-1124a0234/"

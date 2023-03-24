@@ -1,6 +1,7 @@
-const { withContentlayer } = require("next-contentlayer");
+const { withContentlayer } = require("next-contentlayer")
 
 const nextConfig = {
+    compress: true,
     images: {
         unoptimized: true,
         loader: "custom",
@@ -9,4 +10,4 @@ const nextConfig = {
     trailingSlash: true,
 }
 
-module.exports = withContentlayer(nextConfig);
+module.exports = withContentlayer(nextConfig)

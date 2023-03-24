@@ -1,6 +1,6 @@
 ---
 title: "Ole Ragnar Randen"
-profile_picture: "Ole Ragnar Randen_Ole Ragnar Randen.jpg"
+profile_picture: "Ole Ragnar Randen_Ole Ragnar Randen.webp"
 portfolio: "https://www.randenweb.com/"
 email: "or.randen@gmail.com"
 linkedin: "https://www.linkedin.com/in/or-randen/"

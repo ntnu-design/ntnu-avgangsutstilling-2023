@@ -1,6 +1,6 @@
 ---
 title: "Theresa Tran"
-profile_picture: "Theresa Tran_Theresa Tran.jpg"
+profile_picture: "Theresa Tran_Theresa Tran.webp"
 portfolio: "https://theresatran.myportfolio.com/"
 email: "Theresa.tran.2001@hotmail.com"
 linkedin: "https://www.linkedin.com/in/theresatraan"

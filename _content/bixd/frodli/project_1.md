@@ -1,7 +1,7 @@
 ---
 title: "Hvordan gjøre handleopplevelse i butikk bedre for personer med svekket syn?"
 heading: "Tjenestedesign"
-image: "project_1_Frode Lien.jpg"
+image: "project_1_Frode Lien.webp"
 ---
 
 Hva var bra?

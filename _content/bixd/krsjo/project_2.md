@@ -1,7 +1,7 @@
 ---
 title: "Smart Fridge"
 heading: "Web of things"
-image: "project_2_Kristoffer Sinkaberg.jpg"
+image: "project_2_Kristoffer Sinkaberg.webp"
 ---
 
 Throughout autumn 2022, our group has worked on the Smart Fridge project connected to the IDG3006 Web of things course. Our goals with the smart fridge were:

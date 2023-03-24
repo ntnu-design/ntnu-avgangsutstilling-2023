@@ -1,6 +1,6 @@
 ---
 title: "Ellen Rikke Teigen"
-profile_picture: "Ellen Rikke Teigen_Ellen Rikke Teigen.jpg"
+profile_picture: "Ellen Rikke Teigen_Ellen Rikke Teigen.webp"
 portfolio: "https://erteigen.myportfolio.com/work"
 email: "ellenr.skole@gmail.com"
 linkedin: "https://www.linkedin.com/in/ellen-rikke-teigen-45ba93224/"

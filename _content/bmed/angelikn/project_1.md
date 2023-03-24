@@ -1,7 +1,7 @@
 ---
 title: "Branding for et fiktivt bryllup"
 heading: "Emneoverbyggende prosjekt, også kalt 'Drømmeprosjektet'"
-image: "project_1_Angelika Anna Westby.jpg"
+image: "project_1_Angelika Anna Westby.webp"
 ---
 
 Dette er en profileringsoppgave som handler om å bli kjent med kundene, og lage et visuelt kommunikativt utrykk som er tilpasset deres behov og visjon. 

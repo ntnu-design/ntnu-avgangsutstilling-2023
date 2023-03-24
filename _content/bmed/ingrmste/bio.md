@@ -1,6 +1,6 @@
 ---
 title: "Ingrid Malene Steinsland"
-profile_picture: "Ingrid Malene Steinsland_Ingrid Malene Steinsland.jpg"
+profile_picture: "Ingrid Malene Steinsland_Ingrid Malene Steinsland.webp"
 portfolio: "https://www.ingridsteinsland.no"
 email: "ingrid.m.steinsland@gmail.com"
 linkedin: "https://www.linkedin.com/in/ingrid-malene-steinsland-a44185258/"

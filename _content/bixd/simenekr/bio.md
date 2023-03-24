@@ -1,6 +1,6 @@
 ---
 title: "Simen Enok Krøgenes"
-profile_picture: "Simen Enok Krøgenes_Simen Enok Krøgenes.jpg"
+profile_picture: "Simen Enok Krøgenes_Simen Enok Krøgenes.webp"
 portfolio: "https://simen-enoks-cool-place-9624638fae5c4feb.webflow.io/"
 email: "simenekr@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/simen-enok-kr%C3%B8genes-598b55258/"

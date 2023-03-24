@@ -1,6 +1,6 @@
 ---
 title: "Erik Skjeie"
-profile_picture: "Erik Skjeie_Erik Skjeie.jpg"
+profile_picture: "Erik Skjeie_Erik Skjeie.webp"
 portfolio: "https://erikskjeie.myportfolio.com/hjem"
 email: "eriskjei@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/erik-skjeie-271805231/"

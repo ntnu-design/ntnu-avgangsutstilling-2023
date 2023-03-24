@@ -1,6 +1,6 @@
 ---
 title: "Toril Hokseggen"
-profile_picture: "Toril Hokseggen_Toril Hokseggen.jpg"
+profile_picture: "Toril Hokseggen_Toril Hokseggen.webp"
 portfolio: "https://www.figma.com/community/file/1218531472389313097"
 email: "hokseggentoril@hotmail.com"
 linkedin: "https://www.linkedin.com/in/toril-hokseggen/"

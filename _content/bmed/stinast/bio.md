@@ -1,6 +1,6 @@
 ---
 title: "Stina Stemnes"
-profile_picture: "Stina Stemnes_Stina Stemnes.jpg"
+profile_picture: "Stina Stemnes_Stina Stemnes.webp"
 portfolio: "https://www.behance.net/stinastemnes"
 email: "stinastemnes@gmail.com"
 linkedin: "https://www.linkedin.com/in/stina-stemnes/"

@@ -1,6 +1,6 @@
 ---
 title: "Rikke Slåttsveen"
-profile_picture: "Rikke Slåttsveen_Rikke Slåttsveen.jpg"
+profile_picture: "Rikke Slåttsveen_Rikke Slåttsveen.webp"
 portfolio: "https://xd.adobe.com/view/9dda4522-0891-4956-b0cc-8721bf933b42-c889/?fullscreen"
 email: "rikke.slaattsveen@gmail.com"
 linkedin: "https://www.linkedin.com/in/rikke-slaattsveen"

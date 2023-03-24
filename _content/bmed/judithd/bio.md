@@ -1,6 +1,6 @@
 ---
 title: "Judith Dyngeland"
-profile_picture: "Judith Dyngeland_Judith Dyngeland.jpg"
+profile_picture: "Judith Dyngeland_Judith Dyngeland.webp"
 portfolio: ""
 email: "judithd@stud.ntnu.no"
 linkedin: ""

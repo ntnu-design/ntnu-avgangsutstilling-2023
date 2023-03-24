@@ -1,7 +1,7 @@
 ---
 title: "Bsafer"
 heading: "Web of Things"
-image: "project_2_Kristian Wobbes.jpg"
+image: "project_2_Kristian Wobbes.webp"
 ---
 
 Hensikten med dette prosjektet var å utvikle en webbasert løsning som kommuniserer med et fysisk objekt. Prosjektet vårt består av et bilsete som oppdager om et barn er glemt igjen i en farlig varm bil, og deretter varsler eieren via en SMS for å forhindre heteslag blant barn 

@@ -1,6 +1,6 @@
 ---
 title: "Kristoffer Sinkaberg Johansen"
-profile_picture: "Kristoffer_Sinkaberg_Johansen_Kristoffer Sinkaberg.jpg"
+profile_picture: "Kristoffer_Sinkaberg_Johansen_Kristoffer Sinkaberg.webp"
 portfolio: "https://www.sinka.no"
 email: "kristofferjohansen18@gmail.com"
 linkedin: "https://www.linkedin.com/in/kristoffer-sinkaberg-johansen-b12414199/"

@@ -1,6 +1,6 @@
 ---
 title: "Gina Bjorøy Naley"
-profile_picture: "Gina Bjorøy Naley_Gina Bjorøy Naley.jpg"
+profile_picture: "Gina Bjorøy Naley_Gina Bjorøy Naley.webp"
 portfolio: "https://ginabn.myportfolio.com/work"
 email: "ginabn@hotmail.no"
 linkedin: "https://www.linkedin.com/in/gina-naley-357ab9254/"

@@ -1,6 +1,6 @@
 ---
 title: "Maja Hansen Moe"
-profile_picture: "Maja Hansen Moe_Maja Hansen Moe.jpg"
+profile_picture: "Maja Hansen Moe_Maja Hansen Moe.webp"
 portfolio: "https://majahm.myportfolio.com/"
 email: "majahansenmoe@ymail.com"
 linkedin: "https://www.linkedin.com/in/maja-hansen-moe-a653a51b6/"

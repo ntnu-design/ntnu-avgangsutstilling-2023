@@ -1,6 +1,6 @@
 ---
 title: "Veronica Sæther"
-profile_picture: "Veronica Sæther_Veronica Sæther.jpg"
+profile_picture: "Veronica Sæther_Veronica Sæther.webp"
 portfolio: "https://www.veronsae.myportfolio.com"
 email: "veronica.seather@gmail.com"
 linkedin: "https://www.linkedin.com/in/veronica-sæther-1499a2104/"

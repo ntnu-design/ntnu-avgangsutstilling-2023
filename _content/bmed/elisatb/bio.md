@@ -1,6 +1,6 @@
 ---
 title: "Elisabet Tuft Botnen"
-profile_picture: "Elisabet Tuft Botnen_Elisabet Tuft Botnen.jpg"
+profile_picture: "Elisabet Tuft Botnen_Elisabet Tuft Botnen.webp"
 portfolio: "https://elisatba27b.myportfolio.com/"
 email: "elisatb@stud.ntnu.no"
 linkedin: "https://linkedin.com/in/elisabet-tuft-botnen-b44565251"

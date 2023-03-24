@@ -1,6 +1,6 @@
 ---
 title: "Maren Javenes"
-profile_picture: "Maren Javenes_Maren Javenes.jpg"
+profile_picture: "Maren Javenes_Maren Javenes.webp"
 portfolio: "https://maren.javenes.no"
 email: "maren.javenes@gmail.com"
 linkedin: "https://www.linkedin.com/in/maren-javenes"

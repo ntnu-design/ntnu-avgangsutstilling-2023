@@ -1,7 +1,7 @@
 ---
 title: "Emballasje for Apollo Glutenfri"
 heading: "Drømmeprosjekt"
-image: "project_1_Stina Stemnes.jpg"
+image: "project_1_Stina Stemnes.webp"
 ---
 
 I dette emnet skulle vi gjøre et selvvalgt prosjekt. Jeg valgte å designe logo og emballasje for det fiktive merket Apollo Glutenfri, som er en produsent av glutenfrie og veganske snackprodukter. Løsningen er inspirert av emballasje fra sent 60-tall, og særlig kjeden Sainsbury sine design fra denne tiden.

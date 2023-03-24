@@ -1,6 +1,6 @@
 ---
 title: "Jonette Vaagland"
-profile_picture: "Jonette Vaagland_Jonette Vaagland.jpg"
+profile_picture: "Jonette Vaagland_Jonette Vaagland.webp"
 portfolio: "https://folk.ntnu.no/jonettv/Portfolio%20Jonette%20Vaagland.pdf"
 email: "jonettev@hotmail.com"
 linkedin: "https://www.linkedin.com/in/jonette-vaagland/"

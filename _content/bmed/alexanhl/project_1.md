@@ -1,7 +1,7 @@
 ---
 title: "Redaksjonelt design av fagbok"
 heading: "Emneoverbyggende prosjekt"
-image: "project_1_Alexander Hertzenberg Lybekk.jpg"
+image: "project_1_Alexander Hertzenberg Lybekk.webp"
 ---
 
 Jeg hadde som mål å designe en fagbok for elever som tar Psykologi 2 som valgfag på videregående skole. Jeg ønsket å skape en designløsning som ville gjøre innholdet mer tilgjengelig og engasjerende for leseren, samtidig som det adresserte de utfordringene en fagbok ofte har. Jeg tok utgangspunkt i Cappelen Damm sin Psykologi 2 fra 2011, og jobbet med eksisterende innhold for å takle reelle designproblemer.

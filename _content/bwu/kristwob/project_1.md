@@ -1,7 +1,7 @@
 ---
 title: "HELPLY"
 heading: "Webprosjekt"
-image: "project_1_Kristian Wobbes.jpg"
+image: "project_1_Kristian Wobbes.webp"
 ---
 
 HELPLY var en del av vår løsning for å hjelpe professorer ved NTNU å samarbeide om eksamenssensur. Som en del av en ny lov må eksamenssensorene ha en ekstern uavhengig gjennomganger for å hjelpe med sensureringen av eksamener.

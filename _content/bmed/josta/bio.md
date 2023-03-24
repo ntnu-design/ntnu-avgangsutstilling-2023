@@ -1,6 +1,6 @@
 ---
 title: "Jostein Aasbø"
-profile_picture: "Jostein Aasbø_Jostein Aasbø.jpg"
+profile_picture: "Jostein Aasbø_Jostein Aasbø.webp"
 portfolio: "https://aasboe.design/work"
 email: "aasboee@gmail.com"
 linkedin: ""

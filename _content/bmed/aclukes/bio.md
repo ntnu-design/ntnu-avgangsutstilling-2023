@@ -1,6 +1,6 @@
 ---
 title: "Charlotte Fure Lukes"
-profile_picture: "Charlotte Fure Lukes_Charlotte Fure Lukes.jpg"
+profile_picture: "Charlotte Fure Lukes_Charlotte Fure Lukes.webp"
 portfolio: "https://aclukes.myportfolio.com/"
 email: "aclukes@stud.ntnu.no"
 linkedin: ""

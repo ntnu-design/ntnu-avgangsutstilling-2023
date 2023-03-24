@@ -1,6 +1,6 @@
 ---
 title: "Henrik Ulstad Fossum"
-profile_picture: "Henrik Ulstad Fossum_Henrik Ulstad Fossum.jpg"
+profile_picture: "Henrik Ulstad Fossum_Henrik Ulstad Fossum.webp"
 portfolio: "https://henrikfossum.myportfolio.com/work"
 email: "Henrikfossum99@gmail.com"
 linkedin: "https://www.linkedin.com/in/henrik-fossum-915590231/"

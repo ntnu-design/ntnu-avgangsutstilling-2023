@@ -1,6 +1,6 @@
 ---
 title: "Roy Arild Hagalid"
-profile_picture: "Roy Arild Hagalid_Roy Arild Hagalid.jpg"
+profile_picture: "Roy Arild Hagalid_Roy Arild Hagalid.webp"
 portfolio: ""
 email: "royhagalid@gmail.com"
 linkedin: "https://www.linkedin.com/in/royhagalid/"

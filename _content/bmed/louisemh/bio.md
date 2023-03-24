@@ -1,6 +1,6 @@
 ---
 title: "Louise Marie Hansen"
-profile_picture: "Louise Marie Hansen_Louise Marie Hansen.jpg"
+profile_picture: "Louise Marie Hansen_Louise Marie Hansen.webp"
 portfolio: ""
 email: "losse@hotmail.no"
 linkedin: ""

@@ -1,6 +1,6 @@
 ---
 title: "Lene Leikvold"
-profile_picture: "Lene Leikvold_Lene Leikvold.jpg"
+profile_picture: "Lene Leikvold_Lene Leikvold.webp"
 portfolio: "https://www.leneleikvold.com"
 email: "lenelei@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/lene-leikvold-9b6063232"

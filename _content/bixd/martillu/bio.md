@@ -1,6 +1,6 @@
 ---
 title: "Martine Langgård Lund"
-profile_picture: "Martine Langgård Lund_Martine Langgård Lund.jpg"
+profile_picture: "Martine Langgård Lund_Martine Langgård Lund.webp"
 portfolio: "https://www.martinelanggardlund.com/"
 email: "martillu@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/martinelanggardlund/"

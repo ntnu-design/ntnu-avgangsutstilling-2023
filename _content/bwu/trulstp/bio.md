@@ -1,6 +1,6 @@
 ---
 title: "Truls Teige Pettersen"
-profile_picture: "Truls Teige Pettersen_Truls Teige Pettersen.jpg"
+profile_picture: "Truls Teige Pettersen_Truls Teige Pettersen.webp"
 portfolio: "https://www.trulspettersen.no"
 email: "trulsgonzo@gmail.com"
 linkedin: "https://www.linkedin.com/in/trulspettersen"

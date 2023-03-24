@@ -1,6 +1,6 @@
 ---
 title: "Eirik Thørud Granmorken"
-profile_picture: "Eirik Thørud Granmorken_Eirik Thørud Granmorken.jpg"
+profile_picture: "Eirik Thørud Granmorken_Eirik Thørud Granmorken.webp"
 portfolio: "https://eiriktg.myportfolio.com/"
 email: "granmorken@gmail.com"
 linkedin: "https://www.linkedin.com/in/eirik-granmorken-b9583a26a/"

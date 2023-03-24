@@ -1,6 +1,6 @@
 ---
 title: "Sivert Gullberg Hansen"
-profile_picture: "Sivert.jpg"
+profile_picture: "Sivert.webp"
 portfolio: "https://www.sivert.io/"
 email: "sivertgullberg@gmail.com"
 linkedin: "https://www.linkedin.com/in/sivertgullberghansen/"

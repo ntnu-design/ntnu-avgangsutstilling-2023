@@ -1,7 +1,7 @@
 ---
 title: "HobbyLobby`n"
 heading: "Design og prototyping for digitale produkter"
-image: "project_1_Anine Martinsen.jpg"
+image: "project_1_Anine Martinsen.webp"
 ---
 
 HobbyLobby`n er en enkel og oversiktlig app, med muligheter for å finne seg en ny hobby, nye venner med samme interesser, eller hjelp til å skaffe seg inspirasjon. 

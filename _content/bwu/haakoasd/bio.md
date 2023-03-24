@@ -1,6 +1,6 @@
 ---
 title: "Håkon Asdøl"
-profile_picture: "placeholder.jpg"
+profile_picture: "placeholder.webp"
 portfolio: "https://www.comingsoon.com"
 email: "haakoasd@stud.ntnu.no"
 linkedin: ""

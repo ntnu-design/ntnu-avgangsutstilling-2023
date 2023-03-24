@@ -1,6 +1,6 @@
 ---
 title: "Malin Andersen"
-profile_picture: "Malin Andersen_Malin Andersen.jpg"
+profile_picture: "Malin Andersen_Malin Andersen.webp"
 portfolio: "https://xd.adobe.com/view/4a51c9e0-e0a6-41e2-88b2-17c5ad1385e1-1f02/?fullscreen"
 email: "malinand9@gmail.com"
 linkedin: "https://www.linkedin.com/in/malin-andersen-73335a26a/"

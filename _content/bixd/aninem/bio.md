@@ -1,6 +1,6 @@
 ---
 title: "Anine Martinsen"
-profile_picture: "Anine Martinsen_Anine Martinsen.jpg"
+profile_picture: "Anine Martinsen_Anine Martinsen.webp"
 portfolio: "https://aninem.myportfolio.com"
 email: "Animart81@icloud.com"
 linkedin: "https://www.linkedin.com/in/anine-martinsen-93247b234/"

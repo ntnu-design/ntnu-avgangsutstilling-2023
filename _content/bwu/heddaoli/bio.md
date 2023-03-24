@@ -1,6 +1,6 @@
 ---
 title: "Hedda Olimb"
-profile_picture: "Hedda Olimb_Hedda Olimb.jpg"
+profile_picture: "Hedda Olimb_Hedda Olimb.webp"
 portfolio: "www.heddaolimb.com"
 email: "holimb99@hotmail.com"
 linkedin: "https://www.linkedin.com/in/heddaolimb/"

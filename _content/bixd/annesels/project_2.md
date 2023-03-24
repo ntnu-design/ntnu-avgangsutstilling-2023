@@ -1,7 +1,7 @@
 ---
 title: "Arrangementkalender til Visit Oslo"
 heading: "Designpraksis i bedrift"
-image: "project_2_Anne Selseng.jpg"
+image: "project_2_Anne Selseng.webp"
 ---
 
 I høstsemesteret 2022 ble 270 timer brukt på konsulentselskapet Inmeta sitt kontor i Hamar, som en del av min design praksisperiode som Interaksjonsdesign student på NTNU. Gjennom månedene på Hamar kontoret samarbeidet vi med Visit Oslo. De hadde et ønske om å re-lansere nettsiden sin som blir brukt hver dag av både av utenlandske og norske turister. Hovedprosjektet vårt var å forbedre deres arrangementskalender som tilbyr brukerne en oversikt over arrangementene i Oslo området. Denne ble laget for 30 år siden, og hadde et behov for å bli oppdatert. Vi gjorde et grundig forarbeid med mye research på lignende løsninger. Vi brukertestet og observerte hvordan brukere samhandlet med arrangementkalenderen. Vi brukte også HotJar som viste heatsmaps og opptak av hvor brukere trykket og beveget musen. Vi analyserte dette og kom frem noe vi mente vil hjelpe brukerne enten om det er turister eller beboere i Oslo med å finne arrangementer tilpasset deres behov bedre og enklere. En kalender som gjør det lettere for brukeren å tilpasse innholdet i kalenderen til deres behov, og som er med på å hjelpe dem med å planlegge eller veilede dem til noe de er interessert i. Gjennom enklere navigasjon gjennom arrangementene, og en enkel tilgang til filtrering samtidig som de blar gjennom utvalget. Som også gir rom for flere funksjoner, som gjør at brukeren kan tilpasse innholdet etter deres behov.

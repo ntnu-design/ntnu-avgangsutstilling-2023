@@ -1,7 +1,7 @@
 ---
 title: "Gjøvik By"
 heading: "Informasjonsarkitektur"
-image: "project_1_Eirik Thørud Granmorken.jpg"
+image: "project_1_Eirik Thørud Granmorken.webp"
 ---
 
 I denne oppgaven utviklet vi en portal der kulturlivet til Gjøvik settes i system, og som kan bidra til økt turisme og aktivitet i regionen. Vi har utviklet en løsning der enkeltpersoner og foreninger enkelt kan opprette ulike aktiviteter, kurs, arrangementer, konserter etc.

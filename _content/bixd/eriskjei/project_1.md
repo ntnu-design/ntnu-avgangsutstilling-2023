@@ -1,7 +1,7 @@
 ---
 title: "Gjøbby - Hobby i Gjøvik"
 heading: "Design og prototyping for digitale produkter"
-image: "project_1_Erik Skjeie.jpeg"
+image: "project_1_Erik Skjeie.webp"
 ---
 
 Oppgaven  var: `Design en opplevelse som appellerer til gen z eller millennials, som gjør det enkelt å finne en ny tilfredsstillende hobby i Gjøvik. Design opplevelsen fra perspektivet til noen som ønsker å lære en ny ferdighet.`

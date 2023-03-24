@@ -1,6 +1,6 @@
 ---
 title: "Adrian Nysted Riise"
-profile_picture: "Adrian Nysted Riise_Adrian Nysted Riise.jpg"
+profile_picture: "Adrian Nysted Riise_Adrian Nysted Riise.webp"
 portfolio: "https://adriannr.com/"
 email: "adriannr@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/adrianriise/"

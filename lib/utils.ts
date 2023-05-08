@@ -1,5 +1,5 @@
 import { Bio } from "contentlayer/generated"
-import { StudentItem, StudyProgramme } from "../interfaces/student"
+import { StudyProgramme } from "../interfaces/student"
 
 /**
  * Returns a heading based on the input study programme.

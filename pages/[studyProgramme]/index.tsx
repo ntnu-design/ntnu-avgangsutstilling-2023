@@ -6,10 +6,7 @@ import HeroDel from "../../components/HeroSection/HeroSection"
 import Container from "../../components/layout/container"
 import Image from "next/image"
 import { GetStaticPaths, GetStaticPathsResult } from "next"
-import type {
-    StudentItem,
-    StudyProgrammeParams,
-} from "../../interfaces/student"
+import type { StudyProgrammeParams } from "../../interfaces/student"
 import Button from "../../components/Button"
 import Cookie from "js-cookie"
 import Link from "next/link"
@@ -80,14 +77,16 @@ export default function StudyProgrammeIndex({ students, params }: Props) {
                                 } `}
                                 key={index}
                             >
-                                <Link href={`/${student.studyProgram}/${student.slug}`}>
+                                <Link
+                                    href={`/${student.studyProgram}/${student.slug}`}
+                                >
                                     <div className="relative">
                                         <Image
                                             src={`/${student.studyProgram}/${student.slug}/${student.profile_picture}`}
                                             alt={student.title}
                                             width={512}
                                             height={512}
-                                            className='w-full h-auto'
+                                            className="w-full h-auto"
                                         />
                                         <div
                                             className={
@@ -142,7 +141,9 @@ export const getStaticProps = async ({
 }) => {
     const { studyProgramme } = params
 
-    const students = allBios.filter(obj => obj.studyProgram === studyProgramme);
+    const students = allBios.filter(
+        (obj) => obj.studyProgram === studyProgramme
+    )
     return {
         props: { students, params },
     }

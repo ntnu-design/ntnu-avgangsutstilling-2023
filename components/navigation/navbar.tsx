@@ -2,7 +2,6 @@ import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { CaretLeft } from "@phosphor-icons/react"
-import StudyProgrammeIcon from "components/StudyProgrammeIcon"
 import NavLink from "./NavLink"
 import { studyProgrammeLinks } from "helpers/studyProgrammeLinks"
 import MobileMenuButton from "./MobileMenuButton"
@@ -14,8 +13,7 @@ export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false)
 
-    const studyProgramme: StudyProgramme = router.query
-        .studyProgramme as StudyProgramme
+    const studyProgramme = router.query.studyProgramme as StudyProgramme
     const isStudentPage = router.query.student
 
     useEffect(() => {
@@ -23,10 +21,10 @@ export default function Navbar() {
     }, [studyProgramme])
 
     function toggle() {
-        setIsOpen(!isOpen)
+        setIsOpen((prev) => !prev)
     }
 
-    const getTitle = (studyProgramme, isStudentPage) => {
+    const getTitle = (studyProgramme: StudyProgramme, isStudentPage: string | string[]) => {
         if (studyProgramme === "bmed" && isStudentPage) return "Grafisk design"
         if (studyProgramme === "bixd" && isStudentPage)
             return "Interaksjonsdesign"
@@ -54,9 +52,9 @@ export default function Navbar() {
                         <Link
                             className={`${
                                 router.asPath === "/"
-                                    ? "text-main after:bg-main after:block"
+                                    ? "text-main after:bg-main underline underline-offset-8"
                                     : "text-black after:bg-black"
-                            } after:content-[""] relative after:h-[2px] `}
+                            } hover:underline underline-offset-8`}
                             href="/"
                         >
                             Hjem

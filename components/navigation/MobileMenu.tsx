@@ -48,24 +48,21 @@ const MobileMenu: FC<MobileMenuProps> = ({
                     </svg>
                 </button>
             </div>
-            <div className="flex flex-col px-10 pt-2 space-y-4 sm:px-3">
+            <div className="flex flex-col px-10 sm:px-3">
                 <Link
-                    className={`mx-2 ${
-                        router.asPath === "/"
-                            ? "text-main font-bold"
-                            : "text-black"
+                    className={`mx-2 my-4 ${
+                        router.asPath === "/" ? "text-main" : "text-black"
                     }`}
                     href="/"
                 >
                     Hjem
                 </Link>
-                {studyProgrammeLinks.map((prog) => (
-                    <>
-                        <div className="border border-gray"></div>
+                {studyProgrammeLinks.map((prog, index) => (
+                    <div key={index}>
                         <Link
-                            className={`flex ${
+                            className={`flex items-center border-t py-5 ${
                                 studyProgramme === prog.studyProgramme
-                                    ? `text-${prog.studyProgramme} font-bold`
+                                    ? `text-${prog.studyProgramme}`
                                     : "text-black"
                             }`}
                             href={`/${prog.studyProgramme}`}
@@ -80,7 +77,7 @@ const MobileMenu: FC<MobileMenuProps> = ({
                                 ? "Grafisk design"
                                 : "Webutvikling"}
                         </Link>
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

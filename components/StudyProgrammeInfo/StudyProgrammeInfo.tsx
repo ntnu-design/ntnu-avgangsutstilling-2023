@@ -64,8 +64,10 @@ const StudyProgrammeInfo = ({ studyProgramme, reverse }: Props) => {
                 >
                     {heading}
                 </h2>
-                <p className="mb-2">{textContent}</p>
-                <p>{textDescription}</p>
+                <div className="prose lg:prose-lg m-w-[75ch]">
+                    <p className="mb-2">{textContent}</p>
+                    <p>{textDescription}</p>
+                </div>
                 <div className="mt-6 flex items-center justify-between">
                     <Link href={`/${studyProgramme}`}>
                         <Button studyProgramme={studyProgramme} tabIndex={-1}>

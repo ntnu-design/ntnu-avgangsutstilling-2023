@@ -1,6 +1,7 @@
 import Container from "./layout/container"
 import { useRouter } from "next/router"
 import { InstagramLogo } from "@phosphor-icons/react"
+import Link from "next/link"
 
 function Footer() {
     const mainBg = "bg-main"
@@ -24,9 +25,9 @@ function Footer() {
         >
             <Container>
                 <div className="py-20 flex flex-col items-center justify-center text-white">
-                    <h1 className="md:text-lg sm:text-md font-bold">
+                    <p className="md:text-lg sm:text-md font-bold">
                         Følg oss på våre sosiale medier!
-                    </h1>
+                    </p>
                     <div className="flex justify-center text-lg gap-7 py-5 mb-5">
                         <a
                             href="https://www.instagram.com/avgangsutstilling_ntnu/"
@@ -37,6 +38,14 @@ function Footer() {
                             <InstagramLogo size={64} className="mx-auto" />
                             <span className="underline">Avgangsutstilling</span>
                         </a>
+                    </div>
+                    <div className="mb-5">
+                        <p>
+                            Les mer om nettsiden{" "}
+                            <Link className="underline" href="/om-nettsiden">
+                                her.
+                            </Link>
+                        </p>
                     </div>
                     <div
                         className="flex flex-col md:flex-row text-center md:text-left align-between justify-between w-full items-center gap-12"

@@ -15,8 +15,16 @@ const NavLink: FC<NavLinkProps> = ({ studyProgramme, active }) => {
         <>
             <Link
                 className={`${
-                    active ? `text-${studyProgramme}` : "text-black"
-                } hover:after:block`}
+                    active
+                        ? studyProgramme === "bwu"
+                            ? "text-bwu"
+                            : studyProgramme === "bixd"
+                            ? "text-bixd"
+                            : studyProgramme === "bmed"
+                            ? "text-bmed"
+                            : "text-black"
+                        : "text-black"
+                }`}
                 href={`/${studyProgramme}`}
             >
                 <div className="flex items-start">
@@ -26,10 +34,8 @@ const NavLink: FC<NavLinkProps> = ({ studyProgramme, active }) => {
                     />
                     <span
                         className={`${
-                            active
-                                ? `after:bg-${studyProgramme} after:block`
-                                : "after:bg-black"
-                        } after:content-[""] hover:after:block after:w-full after:h-[2px] after:mt-1`}
+                            active ? "underline underline-offset-8" : ""
+                        } hover:underline underline-offset-8`}
                     >
                         {heading}
                     </span>

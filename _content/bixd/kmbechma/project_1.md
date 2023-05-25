@@ -1,5 +1,5 @@
 ---
-title: "Hobby Lobby´n"
+title: "Hobby Lobby'n"
 heading: "Digital Prototyping"
 image: "project_1_Karen-Marie Bechmann-Pedersen.webp"
 ---

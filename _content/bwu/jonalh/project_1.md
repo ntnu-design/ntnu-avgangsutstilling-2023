@@ -1,7 +1,7 @@
 ---
-title: "Helply"
-heading: "Gruppeprosjekt i faget Webprosjekt"
+title: "Bacheloroppgave"
+heading: "En nettbasert løsning for å støtte foreldre til premature barn"
 image: "project_1_Jonas Lillebø Haugen.webp"
 ---
 
-Helply er et prosjekt jeg og tre andre studenter utviklet i faget Webprosjekt. Plattformen skal hjelpe ansatte på universiteter å finne en eksaminator nummer to fra et annet universitet. Prosjektet er utviklet i MERN-stacken, alstså MongoDB, Express, React og Node. Mitt bidrag til prosjektet var i hovedsak React i Frontend.
+Dette er vårt største og siste prosjekt så langt i studieløpet. Med Oslo Universitetssykehus som kunde utviklet bachelorgruppen vår en nettbasert løsning for å formidle informasjon og støtte til foreldre med premature barn. Løsningen består av en backend, en frontend, og en egenutviklet innholdsbehandler (CMS) for publisering og redigering av innhold. Frontend og backend er utviklet i MERN-stacken, mens innholdsbehandleren er kodet i Vue. Mitt hovedbidrag til prosjektet var på frontend med React og SCSS, samt prototyping og design av nettsiden.

@@ -1,9 +1,7 @@
 ---
-title: "Project FIKL"
-heading: "En modulær, smart fidget kube"
-image: "project_1_Roy Arild Hagalid.webp"
+title: "POG"
+heading: "Pharmaceutical Organization Guard"
+image: "project_1_Roy Hagalid.webp"
 ---
 
-Du har kanskje hørt om fidgetspinners og andre stressleker som kan brukes i undervisningssammenheng framfor å sitte på telefonen. Men hva om de var knyttet opp mot internett? I dette prosjektet utforsket vi muligheten for å ha en fidget-kube som var knyttet opp mot en server via bluetooth på telefonen. Vi vurderte hvorvidt dette kunne la seg gjøre, hvilke funksjoner denne kuben kunne ha og hvilke input kuben registrerte og hvordan data kunne brukes og vises for å fremme bruk. 
-
-Resultatet ble en konseptuell 3D-printet kube, hvor man kan bytte ut funksjoner ved hjelp av magneter.
+I dette bachelorprosjektet samarbeidet vi med veterinærklinikk AniCura Gjøvik for å utforske, definere og løse utfordringer innen vareflyt og varetelling av medisiner. Løsningen er en digital tavle som skaper oversikt over hvilke medisiner klinikken trenger, hvor sluttbruker raskt og enkelt kan registrere ønskede medisin. Løsningen gir og en detaljert oversikt over lagerbeholdning ved hjelp av registrering av uttak og oversiktlig liste for varetelling.

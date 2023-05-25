@@ -1,9 +1,14 @@
 ---
 title: "Smart Fridge"
-heading: "Web of things"
-image: "project_2_Kristoffer Sinkaberg.webp"
+heading: "IDG3006 - Web of things"
+image: "project_2_Kristoffer Sinkaberg Johansen.webp"
 ---
 
-Throughout autumn 2022, our group has worked on the Smart Fridge project connected to the IDG3006 Web of things course. Our goals with the smart fridge were:
-A structured overview of the fridge inventory
-Automatic notification on expiring products
+Gjennom høsten 2022 har gruppen vår jobbet med Smart Fridge-prosjektet knyttet til IDG3006 Web of things. Våre mål med det smarte kjøleskapet var:
+En strukturert oversikt over inventar og automatisk varsling om produkter som utløper.
+
+Gruppemedlemmer:
+Maria Sæther
+Mons Stenbråten
+Ole Ragnar Randen
+Sivert Grønli Amundsen

@@ -1,7 +1,7 @@
 ---
-title: "Visuell identitet for Hynibakern"
-heading: "Drømmeprosjekt"
+title: "Redesign av bokserie"
+heading: "Redaksjonell design"
 image: "project_1_Thea Jenssen.webp"
 ---
 
-I dette faget fikk vi lov til å velge egen oppgave og jeg valgte å lage en visuell identitet til et donutbakeri i Skien. Dette er en fiktiv oppgave selv om bakeriet eksisterer. Jeg ville at identiteten skulle formidle «donuts» heller enn «bakeri», slik den visuelle identiteten originalt ser ut. Jeg har laget ny logo, fargepalett og valgt ny typografi. Alt dette har jeg implementert slik det ville sett ut på sosiale medier og takeaway emballasje.
+Dette prosjektet går ut på å redesigne en bokserie fra en valgfri forfatter. Jeg valgte en serie fra islandske forfatter Jón Kalman Stefánsson. Bøkene heter Himmelrike og helvete, Englenes sorg og Men­neskets hjerte og i serien følger vi Gutten. Stefánsson skriver på en lyrisk og sterk måte og løsningen reflekterer godt handlingen i bøkene samtidig som de setter stemningen for innholdet og skrive­måten til Jón Kalman Stefánsson. Jeg har laget designløsningen på smussomslag, bokperm og for- og baksats på alle tre bøkene.

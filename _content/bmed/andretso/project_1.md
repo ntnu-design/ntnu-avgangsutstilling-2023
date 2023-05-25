@@ -1,7 +1,7 @@
 ---
-title: "Drømmeprosjekt"
-heading: "Visuell identitet for fiktiv musikkfestival"
+title: "Veifinning for Gjøvik VGS"
+heading: "Veifinningssystemer"
 image: "project_1_Andrea Thuv Solhaug.webp"
 ---
 
-I dette prosjektet laget jeg en visuell identitet for en fiktiv musikkfestival på Kjerringøy med hovedfokus på den åpne naturen og rolige musikken. Prosjektet er delt inn i 4 ulike faser – definisjon, innsikt, utvikling og klargjøring. Etter å ha definert en designbrief så jeg nærmere på lignende identiteter både norske og internasjonale, og gjorde en spørreundersøkelse. Her kom jeg frem til problemstillingen «Hvordan kan man skape en festivalopplevelse som gjenspeiler den rolige atmosfæren i naturen uten at det går på bekostning av samholdet og festfølelsen». Videre startet skissearbeid og utvikling av identiteten. Til slutt endte identiteten opp med en plakatserie, festivlarmbånd og t-skjorter. Gjennom en rekke veiledning i mindre grupper og videreutvikling av skisser har prosjektet vært svært lærerikt og spennende.
+Oppgaven gikk ut på å analysere dagens veifinningssytem, og deretter designe et helhetlig veifinnings- og skiltsystem på aktuelle flater og formater. På bakgrunn av innsikt fra både elever og ansatte valgte vi å gå for et design basert på det periodiske system. De ulike fløyene har grunnstoffer som navn, og skiltene har samme formspråk som utformingen til periodesystemet. Vi designet også egne piktogrammer som egner seg til typografien og det helhetlige utseendet.

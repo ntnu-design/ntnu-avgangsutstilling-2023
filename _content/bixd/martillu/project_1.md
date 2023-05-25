@@ -1,5 +1,5 @@
 ---
-title: "PreViS"
+title: "PreVis"
 heading: "Design av sikkerhetskritiske systemer"
 image: "project_1_Martine Langgård Lund.webp"
 ---

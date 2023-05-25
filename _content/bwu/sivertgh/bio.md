@@ -1,6 +1,6 @@
 ---
 title: "Sivert Gullberg Hansen"
-profile_picture: "Sivert.webp"
+profile_picture: "Sivert Gullberg Hansen_Sivert Gullberg Hansen.webp"
 portfolio: "https://www.sivert.io/"
 email: "sivertgullberg@gmail.com"
 linkedin: "https://www.linkedin.com/in/sivertgullberghansen/"
@@ -14,20 +14,12 @@ slug: "sivertgh"
 
 ## Heisann! 👋
 
-### Mitt navn er Sivert
+**Mitt navn er Sivert, og koding har vært min lidenskap helt siden barndommen.** Jeg begynte å eksperimentere med koding i en ung alder, og siden den gang har jeg vært hekta. Med rundt 7 års kodeerfaring har jeg opparbeidet en solid kompetanse.
 
-og jeg har vært en kodeentusiast helt siden jeg var liten.
+**De siste 2 årene har jeg arbeidet profesjonelt som fullstack-utvikler i team.** Denne erfaringen har gitt meg verdifull innsikt i å jobbe effektivt og samarbeide sømløst med andre.
 
-Jeg begynte å eksperimentere med koding i en ung alder og har siden den gang vært hekta. For øyeblikket har jeg opparbeidet ca. 7 år med kodeerfaring.
+**Når jeg ikke er på jobb, bruker jeg gjerne fritiden min på spillutvikling.** Jeg er en stor tilhenger av spillmotorene Unity, Unreal Engine og Roblox og har jobbet med dem siden omtrent 2015. Dette er en lidenskap jeg virkelig nyter og alltid har gleden av å drive med.
 
-Til høsten har jeg arbeidet profesjonelt med fullstack-utvikling i 2 år.
+Nylig har jeg hatt muligheten til å utforske AI-teknologi sammen med <a target='_blank' href='/bwu/olahul'>Ola Hulleberg</a>. Vi har trent opp en gjenkjenningsmodell som kan identifisere skapninger i et videospill. Målet er å la modellen lese skjermbilder fra spillet og ta valg basert på konteksten. Dette spennende prosjektet har gitt meg en ny horisont å utforske, og jeg ser frem til hvor det kan føre oss.
 
-### Når jeg ikke er på jobb
-
-elsker jeg å bruke fritiden min til å jobbe med spillutvikling. Jeg er en stor fan av spillmotorene Unity, Unreal Engine og Roblox, og har jobbet med disse motorene siden 2015.
-
-Nylig har jeg utforsket AI-teknologi og har jobbet sammen med en venn, <a target='_blank' href='/bwu/olahul'>Ola Hulleberg</a>, for å trene en gjennkjennings-modell, som gjenkjenner skapninger i et videospill. Vi planlegger å bruke modellen til å lage en automatisert `shiny-fanger` som vil både trene våre egne skapninger og fange alle sjeldne skapninger den møter på. Det har vært et spennende prosjekt og jeg gleder meg til å se hvor det tar oss.
-
-Alt i alt er jeg en lidenskapelig utvikler med et bredt spekter av interesser. Jeg er opptatt av kvalitet i alt jeg gjør, og jeg gleder meg til å se hvor karrieren min tar meg. 😊
-
-👈 Sjekk ut hjemmesiden min for å lære mer om meg og mine prosjekter
+**Alt i alt er jeg en engasjert utvikler med et bredt spekter av interesser. Kvalitet er viktig for meg i alt jeg gjør, og jeg ser frem til å se hvor karrieren min tar meg. Hvis du vil lære mer om meg og mine interesser, kan du sjekke ut <a target='_blank' href='https://sivert.io/'>hjemmesiden min</a>.**

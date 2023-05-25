@@ -1,7 +1,7 @@
 ---
-title: "Queen Sonja Opera Contest"
-heading: "Strategisk Design"
+title: "Bokdesign"
+heading: "Emneoverbyggende prosjekt |"
 image: "project_1_Louise Marie Hansen.webp"
 ---
 
-Prosjektet var av en ny grafisk profil for Queen Sonja International Music Competition. Hvor vi i en gruppe på to redesignet elementer som for eksempel logo, Instagram-annonse, nettside, og noen egenvalgte flater (e.g. billetter).
+For dette prosjektet så kunne vi selv velge hva vi ville designe. Her laget jeg meg en egen brief, som forklarte litt om hva forlaget (da fiktiv oppgave) ønsket. De ønsket seg et redesign av

@@ -1,8 +1,7 @@
 ---
-title: "Gjøvik By"
-heading: "Informasjonsarkitektur"
+title: "POG - Pharmaceutical Organization Guard"
+heading: "Bachelorppgave i interaksjonsdesign 2023"
 image: "project_1_Eirik Thørud Granmorken.webp"
 ---
 
-I denne oppgaven utviklet vi en portal der kulturlivet til Gjøvik settes i system, og som kan bidra til økt turisme og aktivitet i regionen. Vi har utviklet en løsning der enkeltpersoner og foreninger enkelt kan opprette ulike aktiviteter, kurs, arrangementer, konserter etc.
-Samtidig kan enkeltpersoner få oversikt og søke seg frem til en begivenhet og/eller aktivitet de gjerne kunne tenkt seg å delta på.
+I dette prosjektet samarbeidet vi med veterinærklinikk AniCura Gjøvik for å utforske, definere og løse utfordringer innen vareflyt og varetelling av medisiner. Løsningen er en digital tavle som skaper oversikt over hvilke medisiner klinikken trenger, hvor sluttbruker raskt og enkelt kan registrere ønskede medisin. Løsningen gir og en detaljert oversikt over lagerbeholdning ved hjelp av registrering av uttak og oversiktlig liste for varetelling.

@@ -1,13 +1,13 @@
 ---
 title: "Katrine Hågbo"
 profile_picture: "Katrine Hågbo_Katrine Hågbo.webp"
-portfolio: "https://katrinehagbo.myportfolio.com/"
+portfolio: "https://katrinehagbo.myportfolio.com"
 email: "katrine.hagbo@gmail.com"
-linkedin: "https://www.linkedin.com/in/katrine-h-6351a8152/"
+linkedin: "https://www.linkedin.com/in/katrine-h-6351a8152"
 twitter: ""
 facebook: ""
 behance: ""
-instagram: ""
+instagram: "https://www.instagram.com/haag_visuals"
 studyProgram: "bmed"
 slug: "katrhaag"
 ---

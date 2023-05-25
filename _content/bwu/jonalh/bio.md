@@ -1,7 +1,7 @@
 ---
 title: "Jonas Lillebø Haugen"
-profile_picture: "Jonas Lillebø Haugen_Jonas Lillebø Haugen.webp"
-portfolio: "https://www.jonashaugen.com/"
+profile_picture: "Jonas Haugen_Jonas Lillebø Haugen.jpg"
+portfolio: "https://jonashaugen.com/"
 email: "lillebohaugen@gmail.com"
 linkedin: "https://www.linkedin.com/in/jonas-lilleb%C3%B8-haugen-6a442222a/"
 twitter: ""

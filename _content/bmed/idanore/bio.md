@@ -1,13 +1,13 @@
 ---
 title: "Ida Norevik"
 profile_picture: "Ida Norevik_Ida Norevik.webp"
-portfolio: "https://idanore.myportfolio.com/work"
+portfolio: ""
 email: "idanorevik1@hotmail.com"
 linkedin: "https://www.linkedin.com/in/ida-norevik-062725252/"
 twitter: ""
 facebook: ""
 behance: ""
-instagram: "https://instagram.com/norevikdesign?igshid=YmMyMTA2M2Y="
+instagram: "https://www.instagram.com/norevikdesign/?igshid=YmMyMTA2M2Y%3D"
 studyProgram: "bmed"
 slug: "idanore"
 ---

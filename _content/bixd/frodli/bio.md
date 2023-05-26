@@ -1,21 +1,21 @@
 ---
 title: "Frode Lien"
 profile_picture: "Frode Lien_Frode Lien.webp"
-portfolio: "https://www.vg.no"
+portfolio: "https://frodli312b.myportfolio.com/"
 email: "frode.lien@gmail.com"
 linkedin: ""
 twitter: ""
-facebook: ""
+facebook: "https://www.facebook.com/frode.lien.39"
 behance: ""
 instagram: ""
 studyProgram: "bixd"
 slug: "frodli"
 ---
 
-Jeg er en trønder som utdannet til meg typograf og mediegrafiker på 90-tallet. Jeg gjorde en karrieredreining da nesten alle avishusene kvittet seg med grafikerne. Jeg er nå ferdig utdannet interaksjonsdesigner ved NTNU Gjøvik.
+Jeg tar en bachelor i interaksjonsdesign på NTNU Gjøvik
 
-Oppvokst i Trondheim og har bodd lenge i Oslo, og har en allsidig grafisk bakgrunn med fagbrev som typograf og mesterbrev som grafiker. Jeg har 20 års grafisk arbeidserfaring, fra mange avisdesker og reklamebyrå.
+Jeg er opptatt av brukerinvolvering, innsiktsarbeid og brukeropplevelser. Favorittemner innen interaksjonsdesign er tjenestedesign og universell utforming. Tjenestedesign handler om å ta utgangspunkt i mennesker og deres behov, og skape løsninger gjennom nysgjerrighet, kreativitet og design. Universell utforming handler om å gjøre samfunnet enklere å orientere seg i for flest mulig. Jeg er interessert i AR-teknologi (Augmented Reality), og skriver en bachelor om AR i læring/opplæring i skole og bedrift. 
+Tre stikkord om meg: Engasjert, nysgjerrig og lærevillig. 
+Trives i et arbeidsmiljø med utfordrende oppgaver der viljen til å skape noe sammen er stor og tonen er uformell.  
 
-Har en lang karriere som grafiker innen avisbransjen, med layout, sideproduksjon og annonse-produksjon som hovedoppgaver. En av mine fremste styrker har vært stadig søken etter faglig utvikling. Det har ført til at jeg har vært heldig og fått jobbet i de største avishusene som VG, Dagbladet, Aftenposten, Dagens Næringsliv, Finansavisen og Nationen. I tillegg har jeg jobbet i avisene Drammens Tidende, Romerikes Blad, Eidsvold Blad og Varingen.
-
-Mine tre hovedinteresser innen interaksjonsdesign er tjenestedesign og bruk av universell utforming av IKT-systemer. I tillegg har jeg stor interesse for bruk av AR-teknologi i læring, som jeg valgte som bacheloroppgave.
+Oppvokst i Trondheim og har grafisk bakgrunn med fagbrev som typograf og mesterbrev som grafiker, med 20 år i faget. Har bakgrunn som grafiker/typograf i desken i Aftenposten, VG, Dagens Næringsliv og Dagbladet samt grafisk designer i reklamebyrå.

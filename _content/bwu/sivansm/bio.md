@@ -1,7 +1,7 @@
 ---
 title: "Sivan Sabir Mahmud"
 profile_picture: "Sivan Sabir Mahmud_Sivan Sabir Mahmud.webp"
-portfolio: "https://www.sivanmahmud.no"
+portfolio: "https://sivanm.com/"
 email: "sivanmahmud@gmail.com"
 linkedin: "https://www.linkedin.com/in/sivan-mahmud-661b10194/"
 twitter: ""

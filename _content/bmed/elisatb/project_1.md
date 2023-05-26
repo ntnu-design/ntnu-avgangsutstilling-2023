@@ -1,7 +1,7 @@
 ---
-title: "Visuell identitet for artist"
-heading: "Drømmeprosjekt"
+title: "Reiseguidebøker"
+heading: "Redaksjonell design 2"
 image: "project_1_Elisabet Tuft Botnen.webp"
 ---
 
-Jeg har designet et album dedikert til en fiktiv artist ved navn Kristoff Hansen, som er en gitarist og vokalist som nylig har startet sin solokarriere. Albumets musikkstil er inspirert av Postgirobyggets sommer- og nashsanger, og dette er visuelt reflektert gjennom designet. Jeg har lagt vekt på å gjøre albumet visuelt tiltalende slik at det vil skille seg ut og fange oppmerksomheten til kunder som ser det i butikkhyllen.
+Jeg har valgt å redesigne en bokserie kalt «100 unike opplevelser» med byene Roma, Oslo og New York. Jeg ønsket å lage bøker som man kan ha stående i hylla, gi som gave eller kjøpe som suvenir. De skal være fine og elegante. Jeg skisset først på smussomslag, deretter perm, og til slutt forsats og baksats. Jeg lagde egne illustrasjoner på Photoshop, og jobbet mye med kjennetegnene til de ulike byene. Her ser man framsiden på smuss-omslag og bindet for den ene boken jeg lagde.

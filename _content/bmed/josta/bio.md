@@ -7,7 +7,7 @@ linkedin: ""
 twitter: ""
 facebook: ""
 behance: ""
-instagram: ""
+instagram: "https://www.instagram.com/aasboedesign/?hl=nb"
 studyProgram: "bmed"
 slug: "josta"
 ---

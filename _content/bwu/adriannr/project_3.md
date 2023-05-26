@@ -1,6 +1,6 @@
 ---
 title: "Smart barnesete"
-heading: "IDG3006 Tingenes web (høst 2022)"
+heading: "IDG3006 Tingenes web (2022 høst)"
 image: "project_3_Adrian Nysted Riise.webp"
 ---
 

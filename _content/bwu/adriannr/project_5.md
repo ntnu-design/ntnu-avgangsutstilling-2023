@@ -1,6 +1,6 @@
 ---
 title: "CoffeeMaker"
-heading: "IDG2100 Webkoding (2020 høst)"
+heading: "IDG2100 Webkoding (2022 vår)"
 image: "project_5_Adrian Nysted Riise.webp"
 ---
 

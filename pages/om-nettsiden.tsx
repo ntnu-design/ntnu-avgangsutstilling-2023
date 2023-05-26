@@ -129,7 +129,7 @@ const About = () => {
                             </Link>
                         </li>
                         <li>
-                            <Link className="underline" href="/bwu/piasth">
+                            <Link className="underline" href="/bmed/piasth">
                                 Pia Thorshaug
                             </Link>
                         </li>

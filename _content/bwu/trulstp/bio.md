@@ -1,9 +1,9 @@
 ---
 title: "Truls Teige Pettersen"
 profile_picture: "Truls Teige Pettersen_Truls Teige Pettersen.webp"
-portfolio: "https://www.trulspettersen.no"
+portfolio: "https://trulspettersen.netlify.app/"
 email: "trulsgonzo@gmail.com"
-linkedin: "https://www.linkedin.com/in/trulspettersen"
+linkedin: "https://www.linkedin.com/in/trulspettersen1/"
 twitter: ""
 facebook: ""
 behance: ""
@@ -12,4 +12,4 @@ studyProgram: "bwu"
 slug: "trulstp"
 ---
 
-Hei, jeg er Truls Teige Pettersen og er 31 år og er fra Mjøndalen. Har lenge hatt en interesse for data og teknologi. og valgte endelig og ta en utdannelse i webutvikling. Gjennom studiene har jeg fått godt kjennskap til ulike design-metoder og har innom både back-end og front-end utvikling, samt vært med på og skape flere full-stack prosjekter sammen med andre webutviklere og designere. Jeg har hatt 3 flotte år ved NTNU og gleder meg til og komme meg ut i arbeidsmarkedet igjen.
+Hei, jeg er Truls Teige Pettersen, en 31 år gammel webutvikler fra Mjøndalen. Jeg har hatt en brennende interesse for data og teknologi i lang tid og har endelig bestemt meg for å utdanne meg innen webutvikling. Gjennom studiene ved NTNU har jeg fått grundig kjennskap til ulike designmetoder og utviklet ferdigheter både innen back-end og front-end utvikling. Jeg har også samarbeidet med andre utviklere og designere på flere full-stack prosjekter. Etter tre fantastiske år ved NTNU ser jeg nå frem til å komme tilbake til arbeidsmarkedet igjen!

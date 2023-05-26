@@ -1,7 +1,7 @@
 ---
 title: "Henrik Landgraff Granum"
 profile_picture: "Henrik Landgraff Granum_Henrik Landgraff Granum.webp"
-portfolio: "https://www.henriklg.myportfolio.com"
+portfolio: "https://henrikntnu.myportfolio.com/"
 email: "hgranum@me.com"
 linkedin: "https://www.linkedin.com/in/henrik-landgraff-granum-01471926a/"
 twitter: ""

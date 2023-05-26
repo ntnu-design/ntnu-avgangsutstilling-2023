@@ -1,6 +1,6 @@
 ---
-title: "Drømmeprosjektet"
-heading: "Visuell identitet for ein fiktiv neglesalong"
+title: "Visuell identitet for fiktiv neglesalong"
+heading: "Drømmeprosjektet"
 image: "project_1_Ida Norevik.webp"
 ---
 

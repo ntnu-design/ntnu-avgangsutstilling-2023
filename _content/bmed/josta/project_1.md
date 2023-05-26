@@ -1,6 +1,6 @@
 ---
 title: "Medusa Display"
-heading: "Skriftdesign"
+heading: "Drømmeprosjekt"
 image: "project_1_Jostein Aasbø.webp"
 ---
 

@@ -46,6 +46,7 @@ export async function getStaticProps({ params }) {
             student: post,
             projects,
         },
+        revalidate: 1,
     }
 }
 

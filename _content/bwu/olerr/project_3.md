@@ -4,4 +4,9 @@ heading: "Bacheloroppgave"
 image: "project_3_Ole Ragnar Randen.webp"
 ---
 
-I bacheloroppgaven utviklet gruppa mi og jeg Yggdrasil-prosjektet, som hadde som mål å øke interessen for pilegrimsreiser og lokalhistorie i Gjøvik. Løsningen vår inkluderte en informativ nettside med interessante opplysninger om pilegrimsreiser i Norge, samt et interaktivt kart. Kartet inneholdt narrativer fra rurAllure og andre
+I bacheloroppgaven utviklet gruppa mi og jeg Yggdrasil-prosjektet, som hadde som mål å øke interessen for pilegrimsreiser og lokalhistorie i Gjøvik. Løsningen vår inkluderte en informativ nettside med interessante opplysninger om pilegrimsreiser i Norge, samt et interaktivt kart. Kartet inneholdt narrativer fra rurAllure og andre "Points of Interest" som brukere kunne generere ved å fylle ut et skjema.
+
+### Gruppemedlemmer:
+
+[**Mons Stenbråten (BWU)**](https://avgangsutstilling.no/bwu/monsst) <br/>
+[**Sivert Grønli Amundsen (BWU)**](https://avgangsutstilling.no/bwu/siverga)

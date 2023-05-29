@@ -1,6 +1,6 @@
 ---
 title: "Magnus Moen"
-profile_picture: "Magnus Moen_Magnus Moen.jpg"
+profile_picture: "Magnus Moen_Magnus Moen.webp"
 portfolio: "https://www.magnusmoen.no"
 email: "magnumoe@stud.ntnu.no"
 linkedin: "https://www.linkedin.com/in/magnus-moen/"

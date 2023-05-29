@@ -1,7 +1,7 @@
 ---
 title: "Min digitale huskelapp"
 heading: "Praksis hos Norsk Tipping"
-image: "project_1_Gina Bjorøy Naley.jpg"
+image: "project_1_Gina Bjorøy Naley.webp"
 ---
 
 Mange av Norsk Tipping sine kunder har en form for lykkekupong de bruker i lotto. De kan ha  laget den selv med sine favoritt tall, brukt tall som har betydning for dem,  eller de kan ha arvet en kupong av familien. Derfor har Norsk tipping laget en funksjon som heter “lykkekupong”, der kunder kan lagre sine favoritt kuponger. Vi fant derimot ut at funksjonen ikke blir tatt i bruk i den grad den blir etterspurt av kundene. Målet er å finne hvorfor funksjonen ikke blir tatt i bruk, finne problemet og finne en potensiell løsning. 

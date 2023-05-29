@@ -1,9 +1,9 @@
 ---
 title: "Eirin Lothe Albriktsen"
-profile_picture: "Eirin Lothe Albriktsen_Eirin Lothe Albriktsen.jpg"
-portfolio: "eirinla.com"
+profile_picture: "Eirin Lothe Albriktsen_Eirin Lothe Albriktsen.webp"
+portfolio: "https://eirinla.com"
 email: "eirinlal@stud.ntnu.no"
-linkedin: "linkedin.com/in/eirin-lothe-albriktsen-5aa9b123b"
+linkedin: "https://linkedin.com/in/eirin-lothe-albriktsen-5aa9b123b"
 twitter: ""
 facebook: ""
 behance: ""

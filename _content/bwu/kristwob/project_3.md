@@ -1,7 +1,7 @@
 ---
 title: "CoffeeMaker"
 heading: "Fullstack"
-image: "project_3_Kristian Wobbes.jpg"
+image: "project_3_Kristian Wobbes.webp"
 ---
 
 Dette prosjektet var laget som en del av eksamen i emnet IDG2100 Fullstack-utvikling. Denne siden lar de ansatte ved institutt for design på Gjøvik brygge kaffe basert på de lagrede kaffebønnene i databasen. Dette prosjektet lar også de ansatte stemme på hvilket kaffebrygg de liker best.

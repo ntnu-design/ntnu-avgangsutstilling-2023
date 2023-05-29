@@ -1,14 +1,13 @@
 ---
 title: "Et smartespeil"
 heading: "Når det analoge og teknologiske møtes gjennom WoT, Web of Things"
-image: "project_1_Anne Sophie Tjøm.jpg"
+image: "project_1_Anne Sophie Tjøm.webp"
 ---
 
-Alle har et speil i hjemmet og bruker det daglig, så hvorfor ikke kombinere det med flere praktiske formål?!
- 
-Vi lagde som en del av emnet Web of Things, et digitalt personlig smartspeil hvor studenter får oversikt over uken og tilstrekkelig informasjon. 
+Alle har et speil hjemme som brukes daglig, så hvorfor ikke utnytte det til flere praktiske formål?
 
-I emnet skulle vi designe og utvikle web-tilkoblede elektroniske systemer gjennom å skape et innovative produkt som løser en virkelighetsnære problemstilling overfor valgt målgruppe sine behov.Problemmet vi ønsker å løse; 
-`Hvordan kan vi ved bruk av smartteknologi hjelpe studenter ved NTNU Gjøvik med å få oversikt over dagene sine, hvor løsningen kan bistå til å redusere unødig tidsbruk på telefon eller datamaskinen?`
+I løpet av emnet Web of Things, utviklet vi et digitalt personlig smartspeil som gir studenter en oversikt over nødvendig informasjon for uken.
 
-Løsningen vår var et smartspeil hvor vi kombinerte de analoge funksjonene til et speil med teknologi, som ville kunne gi brukerne våre en oversikt over deres oppsatte gjøremål, avtaler, få oppdaterte nyheter og værvarsel fremover. Informasjonen vil bistå med å redusere bruken av mobiltelefon eller datamaskin for å få en dagsoversikt, og kunne være med på å effektivisere hverdagen ved å unngå unødvendige forstyrrelser og distraksjoner.
+Målet med emnet var å designe og utvikle web-tilkoblede elektroniske systemer ved å skape et innovativt produkt som løser en virkelighetsnær problemstilling for en bestemt målgruppe. Vi ønsket å løse følgende problemstilling: Hvordan kan vi bruke smartteknologi for å hjelpe studenter ved NTNU Gjøvik med å organisere hverdagen sin bedre og redusere tiden de bruker på telefonen eller datamaskinen?
+
+Vår løsning var et smartspeil som kombinerer de tradisjonelle funksjonene til et speil med moderne teknologi. Speilet gir brukerne en oversikt over deres planlagte gjøremål, avtaler, oppdaterte nyheter og værvarsel. Ved å gi denne informasjonen bidrar speilet til å redusere behovet for å bruke mobiltelefonen eller datamaskinen for å få en oversikt over dagen. Som kan resultere i å effektivisere hverdagen ved å unngå unødvendige forstyrrelser og tidstyver.

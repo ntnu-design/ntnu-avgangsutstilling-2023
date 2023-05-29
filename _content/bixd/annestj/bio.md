@@ -1,8 +1,8 @@
 ---
 title: "Anne Sophie Tjøm"
-profile_picture: "Anne Sophie Tjøm_Anne Sophie Tjøm.jpg"
+profile_picture: "Anne Sophie Tjøm_Anne Sophie Tjøm.webp"
 portfolio: "https://sophh.myportfolio.com/"
-email: "annestj@stud.ntnu.no"
+email: "sophie.tjom@gmail.com"
 linkedin: "https://www.linkedin.com/in/anne-sophie-tj%C3%B8m-771986115/"
 twitter: ""
 facebook: ""
@@ -12,11 +12,11 @@ studyProgram: "bixd"
 slug: "annestj"
 ---
 
-Heisann, mitt navn er Anne Sophie Tjøm
+Hei, mitt navn er Anne Sophie Tjøm!
 
-En som designer, trener, fotograferer og utforsker.
+Jeg er en designer, trener, fotograf og utforsker.
 
-Jeg er en Oslo basert interaksjonsdesigner som brenner for å designe brukervennlige produkter og tjenester. 
+Som interaksjonsdesigner basert i Oslo, er jeg lidenskapelig opptatt av å designe brukervennlige produkter og tjenester.
 
-Har du noen gang slitt med å åpne en dør, klart å skru på en TV på første forsøk, fått feil vare fra en automat eller fått en vare til feil adresse. Dette er negative opplevelser vi som brukere får som følge av en interaksjon som ikke samsvarte med forventningene våre. Og det er dette utdanningen min handler om. 
-Hvordan man skal designe og utforme produkter og tjenester som bistår brukerne med å oppnå sine målene på en brukervennlig måte. Se mer om hvordan jeg har arbeider og min prosess i portfolioen min.
+Har du opplevde at printeren er tverr eller blitt dobbeltfakturert for en vare? Dette er eksempler på negative opplevelser som oppstår når interaksjonen ikke lever opp til våre forventninger som brukere. Og dette er nettopp fokuset i utdanningen min - hvordan designe og utforme produkter og tjenester som hjelper brukerne med å oppnå sine mål på en brukervennlig måte. 
+Du kan få mer innsikt i arbeidet mitt og min arbeidsprosess i min portefølje.

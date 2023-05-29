@@ -1,8 +1,8 @@
 ---
 title: "Anina Rasmussen"
-profile_picture: "Anina Rasmussen_Anina Rasmussen.jpg"
-portfolio: ""
-email: "aninar@stud.ntnu.no"
+profile_picture: "Anina Rasmussen_Anina Rasmussen.webp"
+portfolio: "https://www.aninarasmussen.com"
+email: "aninar.ar@gmail.com"
 linkedin: "https://www.linkedin.com/in/aninarasmussen"
 twitter: ""
 facebook: ""

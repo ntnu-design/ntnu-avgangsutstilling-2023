@@ -1,8 +1,10 @@
 ---
-title: "Crescent Moon Skincare; Visuell identitet og emballasjedesign"
+title: "Visuell identitet og emballasjedesign"
 heading: "IDG3014 Emneoverbyggende prosjekt"
-image: "project_1_Henriette Greve Schjelderup.jpg"
+image: "project_1_Henriette Greve Schjelderup.webp"
 ---
 
-Dette prosjektet er en selvvalgt oppgave i faget IDG3014 Emneoverbyggende prosjekt som består av visuell identitet og emballasjedesign for et fiktivt hudpleie/ansiktspleie merke ved navn Crescent Moon Skincare. De ønsket et moderne og elegant design som kunne appellerer til unge jenter i aldersgruppe 16 til 27 år da produktene deres er spesielt egnet for yngre hud og dens utfordringer. 
-Crescent Moon Skincare ønsker å informere, opplyse og fremme de mange positive virkningene daglig praktiseringen av “self-care” kan ha på en person sitt velvære. Dette ønsker de å fremme gjennom hud og ansiktspleie. “Self-care” handler om å ta vare på en selv og gjøre en selv godt og Crescent Moon Skincare ønsker å oppfordre målgruppen til å ta en liten pause hver dag for å gjøre akkurat dette, ved pleie av egen hud og ansikt.
+Design konseptet, Crescent Moon Skincare, er en hudpleieserie for ung hud som vektlegger det å ta vare på seg selv og huden sin. 
+Designet har et sterkt feminint uttrykk, tydeliggjort med symbol, farger og utforming. Designet har et moderne, friskt og delikat uttrykk som skal appellere til unge jenter. 
+Farger brukes aktivt gjennom designet for viser til produktets funksjonalitet og bruksområder. For eksempel at blåfarge er en viktig indikator for produkt funksjonaliteten; fuktighetsgivende. 
+Produktets farger og symboler indikerer også om produktet skal brukes på dagtid eller kveldstid. Dagproduktene består av lysere fargepalett med symboler som sol, blomster og skyer. Kveldsproduktene har en mørkere fargepalett med symboler som måne og stjerner.

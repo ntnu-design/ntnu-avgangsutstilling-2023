@@ -1,7 +1,7 @@
 ---
-title: "2nd Examiner"
-heading: "Webprosjekt - lærersystem for examenshåndtering"
-image: "project_1_Håkon Asdøl.jpg"
+title: "Modernisering av salgsoppgaver"
+heading: "Bacheloroppgave"
+image: "project_1_Håkon Asdøl.webp"
 ---
 
-Målet med denne nettsiden var å lage en nettløsning for lærere slik at de kan håndtere eksamener og finne en såkalt «second examiner». Vi oppnår dette ved å la de med tilgang legge til, redigere og slette personlige forespørsler, og la lærere godkjenne forespørsler slik at de selv ble den andre eksaminatoren
+I dette prosjektet fokuserte vi på modernisering av salgsoppgaver, spesielt rettet mot EiendomsMegler 1 sin løsning. Etter å ha utført omfattende arbeid med deres nåværende PDF-baserte løsning, kom vi frem til at en oppdatert salgsoppgave kunne være til stor nytte. Vi implementerte navigasjon og andre funksjoner, som for eksempel kart, for å forbedre opplevelsen både for interessentene og megleren. Vi brukte React, Firebase og Algolia i prosjektet.

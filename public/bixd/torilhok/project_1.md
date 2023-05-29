@@ -1,0 +1,7 @@
+---
+title: "POG - Pharmaceutical Organization Guard"
+heading: "Bacheloroppgave i Interaksjonsdesign"
+image: "project_1_Toril Hokseggen.jpg"
+---
+
+I dette prosjektet samarbeidet vi med veterinærklinikk AniCura Gjøvik for å utforske, definere og løse utfordringer innen vareflyt og varetelling av medisiner. Løsningen er en digital tavle som skaper oversikt over hvilke medisiner klinikken trenger, hvor sluttbruker raskt og enkelt kan registrere ønskede medisin. Løsningen gir og en detaljert oversikt over lagerbeholdning ved hjelp av registrering av uttak og oversiktlig liste for varetelling.

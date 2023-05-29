@@ -1,13 +1,13 @@
 ---
 title: "Jostein Aasbø"
-profile_picture: "Jostein Aasbø_Jostein Aasbø.jpg"
+profile_picture: "Jostein Aasbø_Jostein Aasbø.webp"
 portfolio: "https://aasboe.design/work"
 email: "aasboee@gmail.com"
 linkedin: ""
 twitter: ""
 facebook: ""
 behance: ""
-instagram: ""
+instagram: "https://www.instagram.com/aasboedesign/?hl=nb"
 studyProgram: "bmed"
 slug: "josta"
 ---

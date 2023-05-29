@@ -1,7 +1,7 @@
 ---
-title: "“Besafer”"
-heading: "Tingenes web (2022 Høst)"
+title: "Mitt Sit- et design for et helsefremmende universitet"
+heading: "Bacheloroppgave BIXD (2023 Vår)"
 image: "project_1_Andrea Røgeberg.jpg"
 ---
 
-Bakgrunnen for dette prosjektet var å utvikle en WoT- løsning ved bygge en webbasert fysisk enhet ved hjelp av kommunikasjonsteknologi. Dette var et tverrfaglig prosjekt med BWU, der løsningen skulle løse et problem for brukeren ved å øke effektiviteten og menneskets kvalitet i hverdagen. Målet med prosjektet “Besafer” var å utvikle en løsningen, som varslet foreldre ved høye temperaturer i bilen for å forhindre heteslag blant barn.
+Denne bacheloroppgaven har undersøkt årsaken til mentale utfordringer som studenter ved NTNU Gjøvik kan møte på i løpet av studietiden, og i hvilken grad NTNU bidrar som et helsefremmende universitet. Initiativet til prosjektet oppsto da gruppen ønsket å utforske studenters mentale helse, påvirkende faktorer, og deres opplevelse av ivaretakelse på universitetet. Basert på egne erfaringer fra studielivet, dannet dette et stort engasjement til å utforske temaet og bakgrunn for økningen av studenter med uhelse og manglende livskvalitet.

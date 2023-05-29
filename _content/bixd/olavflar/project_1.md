@@ -1,7 +1,7 @@
 ---
-title: "My first Homepage"
-heading: "IDG1292 - Web Coding"
-image: "project_2_Olav Friisberg Larssen.jpg"
+title: "Bachelorprosjekt"
+heading: "Sømløse brukerkontoer og skjemamaler for kommuner - et prosjekt for et fremtidig Nasjonal Designsystem"
+image: "project_1_Olav Friisberg Larssen.webp"
 ---
 
-The first website I coded during the first semester https://folk.ntnu.no/olavflar/oblig1/
+Denne bacheloroppgaven undersøker designet av offentlige digitale tjenester innenfor rammen av et nasjonalt designsystem, og hvordan det kan fungere som et verktøy for kommuner for å levere sammenhengende og brukervennlige grensesnitt. Prosjektteamet fikk Digitaliseringsdirektoratet som oppdragsgiver for et avsluttende interaksjonsdesignprosjekt i Instituttet for design ved Norges Teknisk-Naturvitenskapelige Universitet i Gjøvik. Oppgaven ble initiert på grunn av den fragmenterte brukeropplevelsen blant offentlige digitale tjenester som NAV, UDI og Altinn, som var tjenestene som ble undersøkt - et problem både teamet og brukerne våre opplevde i ulike perioder av livet. Prosjektgruppen samlet en innsiktsdatabase gjennom en rekke innsikts- og forskningsmetoder. Vi oppsummerte at våre brukergrupper, både flytende og ikke-flytende norsktalende opplever informasjonsoverbelastning og er forvirret av de inkonsistente designmønstrene som presenteres i moderne offentlige digitale tjenester. Dette var spesielt utbredt når brukerne gjennomfører skjemaer. I denne rapporten vil vi presentere i detalj prosjektgruppens hybridløsning bestående av retningslinjer og prototyper der gruppen så til spilldesign som inspirasjon.

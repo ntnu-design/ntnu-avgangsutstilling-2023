@@ -1,7 +1,9 @@
 ---
-title: "Rørosmeieriet"
-heading: "Emballasjedesign"
-image: "project_1_Kristine Meek Strand.jpg"
+title: "Bokdesign"
+heading: "Bli hvis du kan-trilogien"
+image: "project_1_Kristine Meek Strand.webp"
 ---
 
-Oppgaven bestod av å designe et nytt grafisk design for produktene til Rørosmeieriet. Vi skulle velge ut minst 4 av de allerede eksisterende produkter deres, og skulle via designet nå ut til en yngre målgruppe men også bevare den eldre de allerede hadde. Designet skulle ikke ha noen likhet med det tidligere designet, men selve materiale og teknisk løsning skal ikke bli endret på.
+Design en bokserie på minimum tre bind. Bøkene skal være innbundet med smussomslag. Lag design til smussomslag, perm og forsats. Velg papirkvalitet, innbindingsløsning og -materiale.  
+
+Du kan velge skjønnlitteratur eller generell litteratur, rettet mot voksne lesere. Alle bøkene må være tidligere utgitt på norske forlag. Serien kan for eksempel inneholde romaner, essays, poesi, skuespill, noveller, biografi, dokumentar eller akademisk litteratur.

@@ -1,7 +1,7 @@
 ---
-title: "Påmms"
-heading: "Drømmeprosjekt"
-image: "project_1_Veronica Sæther.jpg"
+title: "UngFritid"
+heading: "Design og prototyping for digitale produkter"
+image: "project_1_Veronica Sæther.webp"
 ---
 
-Påmms er en matbod som tilbyr den populære on-the-go retten `patat met`. Navnet og konseptet er inspirert av et nederlandsk folkeeventyr om en gutt som var svært glad i mat – så mye at han drømte om mat når han sov. Rettene består av krøllete pommes frites med ulike typer nederlandske oster og sauser, samt noen norske varianter. Matboden har en leken og uformell stil som skaper en autentisk opplevelse, med egne uniformer, unikt bestikk og beholdere, morsomme menyer, egenprodusert skrifttype, klistremerker og andre spesielle detaljer.
+UngFritid er en digital oppslagstavle for frivillige organisasjoner som tilbyr fritidsaktiviteter for barn og unge opptil 26 år. Nettstedet har blitt redesignet med fokus på universell utforming for å skape en mer engasjerende og brukervennlig opplevelse. Dette innebærer en ny visuell profil med lekne farger, skrifttyper og ikoner som appellerer til målgruppen. Mikrointeraksjoner og en mer intuitiv navigasjon er blitt introdusert for å forbedre brukeropplevelsen, og nettstedet er nå tilgjengelig på både mobiltelefoner og PC. Utviklingen ble gjennomført i samarbeid med Ellen Rikke Teigen og Thor Magnus Vathe.

@@ -1,11 +1,13 @@
 ---
-title: "Omslagsdesign for barnebokserie"
-heading: "Redesign av barnebokserien 10:12 Ønskereprise"
-image: "project_1_Judith Dyngeland.jpg"
+title: "10:12 Ønskereprise"
+heading: "Emneoverbyggjande prosjekt // Drøymeprosjekt"
+image: "project_1_Judith Dyngeland.webp"
 ---
 
-10:12 Ønskereprise inneheldt bøker 
-som har vore ynskja tilbake i hyllane. 
-Gyldendal forlag ynskja å modernisere serien sin 10:12 ønskereprise, slik 
-at den blei meir aktuell for barn i dag. 
-I oppgåva har eg redesigna omslaga til tre bøker: Jug av Heidi Linde, Så lenge jeg lever av Sally Nicholls og Det kom eit skip til Bjørgvin i 1349 av Torill Thorstad Hauger.
+10:12 Ønskereprise inneheldt bøker som har vore ynskja tilbake 
+i hyllane. Gyldendal forlag ynskjer å modernisere serien sin 10:12 
+Ønskereprise, slik at den blir meir aktuell for barn i dag. Dei noverande omslaga er over ti år gamle og for barn er omslaga utdatert. 
+Seriepreget er ikkje tilstades på framsida. På baksida og ryggen er 
+seriepreget tydleg men det er ikkje relevant ut for innhaldet i bøkene. 
+Gyldendal ynskjer tre ferdige omslag som visar eit tydleg seriepreg gjennomført på heile omslaget. Omslaga skal vere retta mot aldersgruppa 
+9-12 år.

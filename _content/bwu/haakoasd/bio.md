@@ -1,8 +1,8 @@
 ---
 title: "Håkon Asdøl"
-profile_picture: "placeholder.jpg"
-portfolio: "https://www.comingsoon.com"
-email: "haakoasd@stud.ntnu.no"
+profile_picture: "Håkon Asdøl_Håkon Asdøl.webp"
+portfolio: "https://portfolio-3f622.firebaseapp.com"
+email: "hasdol98@gmail.com"
 linkedin: ""
 twitter: ""
 facebook: "https://www.facebook.com/hasdol/"
@@ -12,4 +12,6 @@ studyProgram: "bwu"
 slug: "haakoasd"
 ---
 
-Jeg heter Håkon Asdøl, er 25 år og kommer fra Bærum. Jeg går mitt tredje år på webutvikling på Gjøvik. Underveis på videregående fikk jeg mer og mer sansen for IT og teknologi generelt. Derfor søkte jeg en retning som ga mulighet for å være kreativ med teknologi, nemlig webutvikling. Jeg går også aktivt på ski noe som har lært meg å være tålmodig og målrettet. Dette har hjulpet meg på mange områder, og spesielt som webutvikler.
+Jeg er Håkon Asdøl, en dedikert webutvikler og engasjert langrennsløper. Jeg har alltid hatt interesse for teknologi, og jeg valgte derfor å studere webutvikling ved NTNU Gjøvik. Min lidenskap ligger i å skape moderne og brukervennlige nettsider ved hjelp av de nyeste webteknologiene.
+
+Mine erfaringer som idrettsutøver har lært meg verdien av målrettet innsats og tålmodighet. Jeg tror at denne holdningen kan ha en positiv innvirkning på mitt arbeid som webutvikler. Jeg er vant til å sette meg ambisiøse mål og arbeide hardt for å oppnå dem. Denne mentaliteten gjenspeiles i mitt arbeid, der jeg hele tiden søker innovative løsninger og utvider mine ferdigheter.

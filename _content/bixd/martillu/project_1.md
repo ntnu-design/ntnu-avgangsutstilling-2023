@@ -1,7 +1,7 @@
 ---
-title: "PreViS"
+title: "PreVis"
 heading: "Design av sikkerhetskritiske systemer"
-image: "project_1_Martine Langgård Lund.jpg"
+image: "project_1_Martine Langgård Lund.webp"
 ---
 
 PreViS er et svensk prosjekt som skal teste ut og utvikle videoteknologi som beslutningsstøtte i helsesektoren. Sykehuset Innlandet samarbeider med PreViS om å utvikle en helhetlig videoløsning som kombinerer fastmonterte kamera i ambulanse og mobilt hodekamera. Videoassistert beslutningsstøtte skal gi leger mulighet til å se og vurdere pasienter digitalt, slik at ambulansepersonell kan motta bistand og igangsette riktig behandling tidligere, samt unngå unødvendige reiser. 

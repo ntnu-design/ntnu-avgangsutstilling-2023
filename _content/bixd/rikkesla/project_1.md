@@ -1,8 +1,8 @@
 ---
-title: "Visit Oslo"
-heading: "Designpraksis i bedrift"
-image: "project_1_Rikke Slåttsveen.jpg"
+title: "Mitt Sit"
+heading: "Bacheloroppgave, vår 2023"
+image: "project_1_Rikke Slåttsveen.webp"
 ---
 
-Under praksisperioden var jeg med på å designe en ny arrangementskalender for Visit Oslo. Målet med dette prosjektet var å designe en kalender hvor navigeringen skal både være enkel og lett å bruke. Prosjektet er basert på Double Diamond, for å sikre brukervennlighet, og designvalgene er basert på hva brukerne faktisk etterspør. For å kunne kartlegge dette ble det brukt ulike metoder som Desktop Research fra andre liknende nettsider, observasjoner av ulike brukere på den nåværende kalenderen og hvordan de navigerte seg rundt på siden og det ble også laget Personas for å kunne forstå brukernes behov og eventuelle utfordringer. I løpet av dette prosjektet har jeg tilegnet meg mer kunnskap om hvordan det er å jobbe i et tverrfaglig team og smaken av hvordan det er å jobbe som interaksjonsdesigner. 
-Mer informasjon om prosjektet finner du i min portefølje!
+Bacheloroppgaven har undersøkt årsaken til mentale utfordringer som studenter ved NTNU Gjøvik kan møte på i løpet av studietiden, og i hvilken grad NTNU bidrar som et helsefremmende universitet. Prosjektet er utført som et avsluttende arbeid i Interaksjonsdesign ved Institutt for Design på Norges tekniske- naturvitenskapelige universitet på Gjøvik. Initiativet til prosjektet oppsto da gruppen ønsket å utforske studenters mentale helse, påvirkende faktorer, og deres opplevelse av ivaretakelse på universitetet. Basert på egne erfaringer fra studielivet, dannet dette et stort engasjement til å utforske temaet og bakgrunn for økningen av studenter med uhelse og manglende livskvalitet. For å kunne designe en løsning for sunnere mental helse for studenter, har vi sett på hvordan NTNU som universitet tilrettelegger for mentale helsetilbud, slik at studietiden kan virke mindre belastende og øke studentenes opplevelse av et verdifullt liv. Gjennom prosjektet har det blitt benyttet designmetoder for å utvikle et konsept for å bedre studentenes trivsel, og det er beskrevet i detalj hvordan prosjektgruppen kom frem til løsningen «Mitt Sit – Et design for et helsefremmende universitet». 
+Mer informasjon om prosjektet finner du i porteføljen min!

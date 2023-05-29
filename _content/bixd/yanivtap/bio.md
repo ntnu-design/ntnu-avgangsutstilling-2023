@@ -1,9 +1,9 @@
 ---
 title: "Yaniv-Tamer Pries"
-profile_picture: "Yaniv-Tamer Pries_Yaniv-Tamer Pries.jpg"
+profile_picture: "Yaniv-Tamer Pries_Yaniv-Tamer Pries.webp"
 portfolio: "https://www.behance.net/beynbio"
 email: "yanivpries@gmail.com"
-linkedin: "https://www.linkedin.com/in/yaniv-tamer-pries-4012071a3/"
+linkedin: "https://www.linkedin.com/in/beynbio/"
 twitter: ""
 facebook: ""
 behance: "https://www.behance.net/beynbio"
@@ -12,6 +12,6 @@ studyProgram: "bixd"
 slug: "yanivtap"
 ---
 
-Hei, my name is Yaniv-Tamer Pries, I am designer who focuses on human-machine interaction and information architecture. Oh, and i’ve been dabbling with graphic and motion design since 2017.
+Hiya! I'm Yaniv-Tamer Pries - interaction, graphic and motion designer and specialize primarily in human-machine interaction and information architecture for both digital and hybrid solutions. I'm always curious and enthusiastic to create ideas and solutions with a hint of rationale and experimentation.
 
-Part German and part Filipino, raised in both the Philippines and Norway, my roots stem from a family that has always worked with something technical. My late father introduced me to computers and its hardware when i was younger. I was fascinated by how it worked, especially with interfaces such as the humble keyboard and mouse.
+I believe that design shouldn’t just also be a treat for the eyes, but also one that can serve people of many walks of life. While i do want to make sure that i can translate a brief and clients ideas to their favored medium, I also want it to make more opportunities.

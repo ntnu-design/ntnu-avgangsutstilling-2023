@@ -1,7 +1,7 @@
 ---
-title: "PreVis- Prehospital beslutningsstøtte"
-heading: "Design av sikkerhetskritiske systemer (2022 Vår)"
-image: "project_3_Andrea Røgeberg.jpg"
+title: "Kommunikasjonsplattform for NT6"
+heading: "Designpraksis i bedrift (2022 Høst)"
+image: "project_3_Andrea Røgeberg.webp"
 ---
 
-Dette prosjektet er i samarbeid med Sykehuset Innlandet, hvor de ønsket å utvikle videoteknologi for helsepersonell i beredskapskjeden. Gjennom løsning skal ambulansepersonell ha en større mulighet til å diagnostisere pasienter tidligere, for å forbedre pasientbehandlingen under utrykning. Prosjektet består av en digital løsning og inneholder en visuell oversikt over pasientbehandling i beredskapskjeden, der ambulansepersonellet får tilgang til besluttningsstøtte fra leger og spesialister.
+I emnet “Designpraksis i bedrift” fullført jeg min praksisperiode hos NT6 på Gjøvik, høsten 2022. NT6 er et tverrfaglig kompetansemiljø bestående av 30 ulike bedrifter innenfor teknologi, kommunikasjon og design. Under praksisperioden arbeidet jeg med å utvikle en ny kommunikasjonsmodul for NT6 administrasjonen, slik at de lettere kunne nå ut til sine leietakere og samarbeidspartnere.

@@ -1,6 +1,6 @@
 ---
 title: "Kristian Wobbes"
-profile_picture: "Kristian Wobbes_Kristian Wobbes.jpg"
+profile_picture: "Kristian Wobbes_Kristian Wobbes.webp"
 portfolio: "https://kristianwobbes.netlify.app"
 email: "kristian.wobbes@gmail.com"
 linkedin: "https://www.linkedin.com/in/kristian-wobbes-219098194/"

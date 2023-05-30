@@ -1,7 +1,7 @@
 ---
 title: "Design av digital læringsplattform"
 heading: "Informasjonsarkitektur"
-image: "project_3_Pia Sophie Thorshaug.webp"
+image: "project_3_Pia Sophie Thorshaug.png"
 ---
 
 Classio er en læringsplattform som ble designet med fokus på å forbedre hverdagen for både studenter og emneansvarlige. Løsningen består av både en desktop-versjon tilpasset emneansvarlige for enkel opprettelse av obligatoriske innleveringer, og en mobil-versjon som er designet for å gjøre det enkelt for studenter å finne grupper i ulike emner. Visjonen bak Classio var å gjøre læring bedre, «Learning made better», og dette ble videreført i løsningen ved at plattformen inneholder verktøy for god organisering og kommunikasjon som reduserer belastningen i den hektiske studiehverdagen og skaper en mer effektiv hverdag og læringsopplevelse.

@@ -1,7 +1,7 @@
 ---
 title: "Redesign av Nordlys-avisa"
 heading: "Redaksjonell design"
-image: "project_2_Pia Sophie Thorshaug.webp"
+image: "project_2_Pia Sophie Thorshaug.jpg"
 ---
 
 I dette prosjektet valgte jeg å redesigne Nordlys-avisen, som er Nord-Norges største mediehus. Etter å ha undersøkt avisen sitt opprinnelige design, kom jeg frem til at den ikke skilte seg like godt ut fra mindre lokalaviser. Jeg ønsket derfor å gi avisen et helt nytt uttrykk som ville tiltrekke seg oppmerksomhet og samtidig gi den et moderne og luftig preg.

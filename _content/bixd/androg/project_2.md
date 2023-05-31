@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Bsafer"
 heading: "Tingenes web (2022 Høst)"
 image: "project_2_Andrea Røgeberg.webp"
 ---

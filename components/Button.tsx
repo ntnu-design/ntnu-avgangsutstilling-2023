@@ -1,4 +1,4 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import { StudyProgramme } from "../interfaces/student"
 
 const Button = ({
@@ -8,6 +8,7 @@ const Button = ({
     isActive,
     tabIndex,
     children,
+    style,
 }: Props) => {
     const baseClassName = `border-2 py-2 px-8 rounded transition`
     let borderColor, hoverColor
@@ -38,7 +39,7 @@ const Button = ({
     return (
         <button
             className={buttonClassName}
-            style={{ width: "11em" }}
+            style={style || { width: "11em" }}
             onClick={onButtonClick}
             disabled={onDisabled}
             tabIndex={tabIndex}
@@ -57,4 +58,5 @@ interface Props {
     onDisabled?: boolean
     isActive?: boolean
     tabIndex?: number
+    style?: CSSProperties
 }

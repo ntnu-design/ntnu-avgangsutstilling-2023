@@ -14,7 +14,10 @@ slug: "frodli"
 
 Jeg tar en bachelor i interaksjonsdesign på NTNU Gjøvik
 
-Jeg er opptatt av brukerinvolvering, innsiktsarbeid og brukeropplevelser. Favorittemner innen interaksjonsdesign er tjenestedesign og universell utforming. Tjenestedesign handler om å ta utgangspunkt i mennesker og deres behov, og skape løsninger gjennom nysgjerrighet, kreativitet og design. Universell utforming handler om å gjøre samfunnet enklere å orientere seg i for flest mulig. Jeg er interessert i AR-teknologi (Augmented Reality), og skriver en bachelor om AR i læring/opplæring i skole og bedrift. 
+Jeg er opptatt av brukerinvolvering, innsiktsarbeid og brukeropplevelser. Favorittemner innen interaksjonsdesign er tjenestedesign og universell utforming. Tjenestedesign handler om å ta utgangspunkt i mennesker og deres behov, og skape løsninger gjennom nysgjerrighet, kreativitet og design. Universell utforming handler om å gjøre samfunnet enklere å orientere seg i for flest mulig. 
+
+Jeg er interessert i AR-teknologi (Augmented Reality), og skriver en bachelor om AR i læring/opplæring i skole og bedrift.
+
 Tre stikkord om meg: Engasjert, nysgjerrig og lærevillig. 
 Trives i et arbeidsmiljø med utfordrende oppgaver der viljen til å skape noe sammen er stor og tonen er uformell.  
 

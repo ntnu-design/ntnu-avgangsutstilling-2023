@@ -1,7 +1,7 @@
 ---
 title: "Monica Jankila"
 profile_picture: "Monica Jankila_Monica Jankila.webp"
-portfolio: "https://monicajan.myportfolio.com/"
+portfolio: "https://issuu.com/monicajan/docs/portef_lje_monica_jankila_2023?fr=sNGVmNDYxMDMzNjU"
 email: "monicajankila@gmail.com"
 linkedin: "https://www.linkedin.com/in/monica-jankila-022884277"
 twitter: ""
